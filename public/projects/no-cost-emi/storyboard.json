@@ -1,0 +1,916 @@
+{
+  "title": "No Cost EMI ka sach",
+  "audio": "vo.mp3",
+  "music": "/music/Inspire_The_World_-_by_DensoMusic_Emotional_Hopeful_Epic_Piano.mp3",
+  "musicVolume": 0.1,
+  "endPadding": 0.4,
+  "scenes": [
+    {
+      "id": "hook-showroom",
+      "start": 0,
+      "end": 4.45,
+      "set": {
+        "builtin": "showroom",
+        "options": {
+          "banner": "MEGA SALE"
+        }
+      },
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.06,
+        "focusY": 0.7
+      },
+      "headlines": [
+        {
+          "at": 0.1,
+          "small": "JEB MEIN",
+          "big": "₹5,000",
+          "bigAt": 0.9
+        },
+        {
+          "at": 2.08,
+          "small": "PHONE CHAHIYE",
+          "big": "₹30,000 KA",
+          "bigAt": 3
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "assets/wallet.png",
+          "x": 0.26,
+          "y": 0.8,
+          "w": 0.36,
+          "rotate": -8,
+          "at": 0.15,
+          "enter": "drop"
+        },
+        {
+          "type": "image",
+          "src": "assets/notes_500.png",
+          "x": 0.6,
+          "y": 0.84,
+          "w": 0.4,
+          "rotate": 6,
+          "at": 0.5,
+          "enter": "drop"
+        },
+        {
+          "type": "price",
+          "value": "5,000",
+          "label": "JEB MEIN",
+          "style": "card",
+          "x": 0.27,
+          "y": 0.62,
+          "w": 0.34,
+          "at": 0.9,
+          "enter": "pop",
+          "ambient": "breathe"
+        },
+        {
+          "type": "price",
+          "value": "30,000",
+          "label": "PHONE",
+          "x": 0.7,
+          "y": 0.6,
+          "w": 0.44,
+          "rotate": 4,
+          "at": 3,
+          "enter": "drop",
+          "ambient": "sway"
+        },
+        {
+          "type": "prop",
+          "name": "question",
+          "x": 0.9,
+          "y": 0.46,
+          "w": 0.08,
+          "at": 3.4,
+          "ambient": "bob"
+        }
+      ]
+    },
+    {
+      "id": "no-cost-emi-banner",
+      "start": 4.45,
+      "end": 10.94,
+      "set": {
+        "builtin": "showroom",
+        "options": {
+          "banner": "NO COST EMI",
+          "banner2": "0% EMI"
+        }
+      },
+      "transitionIn": "push",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.03,
+        "focusY": 0.32,
+        "pushAt": 6.94,
+        "pushTo": 1.3,
+        "shakeAt": [
+          7
+        ]
+      },
+      "headlines": [
+        {
+          "at": 4.5,
+          "small": "TABHI SCREEN PAR",
+          "big": "BADE AKSHAR",
+          "bigAt": 5.6
+        },
+        {
+          "at": 6.94,
+          "big": "NO COST EMI"
+        },
+        {
+          "at": 8.94,
+          "small": "MATLAB",
+          "big": "BILKUL FREE?",
+          "bigAt": 9.55
+        }
+      ],
+      "layers": [
+        {
+          "type": "prop",
+          "name": "phone",
+          "text": "0% EMI",
+          "x": 0.3,
+          "y": 0.62,
+          "w": 0.26,
+          "at": 4.6,
+          "enter": "slide-up",
+          "ambient": "bob"
+        },
+        {
+          "type": "price",
+          "value": "2,500/mo",
+          "label": "× 12 MONTHS",
+          "style": "card",
+          "x": 0.66,
+          "y": 0.66,
+          "w": 0.48,
+          "at": 7.4,
+          "enter": "pop",
+          "ambient": "breathe"
+        },
+        {
+          "type": "burst",
+          "text": "FREE?!",
+          "x": 0.7,
+          "y": 0.84,
+          "w": 0.34,
+          "at": 9.6
+        },
+        {
+          "type": "prop",
+          "name": "question",
+          "x": 0.14,
+          "y": 0.84,
+          "w": 0.09,
+          "at": 9.8,
+          "ambient": "bob"
+        }
+      ]
+    },
+    {
+      "id": "bank-mama",
+      "start": 10.94,
+      "end": 14.97,
+      "set": {
+        "builtin": "bank",
+        "options": {
+          "windows": [
+            "LOANS",
+            "EMI",
+            "CASH"
+          ]
+        }
+      },
+      "transitionIn": "wipe-left",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05
+      },
+      "headlines": [
+        {
+          "at": 10.94,
+          "small": "BANK FREE MEIN",
+          "big": "PAISE KYUN DEGA?",
+          "bigAt": 11.6
+        },
+        {
+          "at": 13.22,
+          "small": "TUMHARA",
+          "big": "MAMA LAGTA HAI?",
+          "bigAt": 13.4
+        }
+      ],
+      "layers": [
+        {
+          "type": "price",
+          "value": "0%",
+          "prefix": "",
+          "label": "BYAAJ",
+          "style": "card",
+          "x": 0.5,
+          "y": 0.62,
+          "w": 0.32,
+          "at": 11.4,
+          "enter": "pop",
+          "ambient": "bob",
+          "out": 12.9
+        },
+        {
+          "type": "chat",
+          "name": "Mama ji",
+          "x": 0.5,
+          "y": 0.66,
+          "w": 0.66,
+          "at": 12.95,
+          "enter": "slide-up",
+          "messages": [
+            {
+              "from": "them",
+              "text": "Beta, le ₹30,000. Byaaj? Kaisa byaaj! Mama hoon tera",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rbi-2013-news",
+      "start": 14.97,
+      "end": 22.62,
+      "set": {
+        "builtin": "office"
+      },
+      "transitionIn": "scan",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.06
+      },
+      "headlines": [
+        {
+          "at": 15,
+          "small": "SACH YEH HAI",
+          "big": "RBI, SEPT 2013",
+          "bigAt": 16.8
+        },
+        {
+          "at": 19.51,
+          "small": "0% BYAAJ JAISA",
+          "big": "KUCH HOTA HI NAHI",
+          "bigAt": 20.4
+        }
+      ],
+      "layers": [
+        {
+          "type": "newspaper",
+          "date": "SEPTEMBER 2013",
+          "headline": "'0% EMI' JAISA KUCH NAHI: RBI",
+          "sub": "Banks ko chetaavni — zero percent byaaj ek bhram hai",
+          "x": 0.5,
+          "y": 0.56,
+          "w": 0.9,
+          "rotate": -3,
+          "at": 15.3,
+          "enter": "drop",
+          "markAt": 5.1
+        },
+        {
+          "type": "stamp",
+          "text": "0% = MYTH",
+          "x": 0.62,
+          "y": 0.84,
+          "w": 0.56,
+          "rotate": -8,
+          "at": 21.3
+        }
+      ]
+    },
+    {
+      "id": "where-interest-goes",
+      "start": 22.62,
+      "end": 29.56,
+      "set": {
+        "builtin": "bank",
+        "options": {
+          "windows": [
+            "LOANS",
+            "EMI",
+            "CASH"
+          ]
+        }
+      },
+      "transitionIn": "blur",
+      "camera": {
+        "zoomFrom": 1.04,
+        "zoomTo": 1
+      },
+      "headlines": [
+        {
+          "at": 22.65,
+          "small": "TO BYAAJ",
+          "big": "JAATA KAHAN HAI?",
+          "bigAt": 23.2
+        },
+        {
+          "at": 24.7,
+          "small": "DUKAAN DETI HAI",
+          "big": "PEHLE DISCOUNT",
+          "bigAt": 25.3
+        },
+        {
+          "at": 26.87,
+          "small": "BANK VASOOLTA HAI",
+          "big": "UTNA HI BYAAJ",
+          "bigAt": 27.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "price",
+          "value": "30,000",
+          "label": "PHONE",
+          "x": 0.5,
+          "y": 0.4,
+          "w": 0.5,
+          "rotate": -3,
+          "at": 22.8,
+          "enter": "drop",
+          "ambient": "sway"
+        },
+        {
+          "type": "image",
+          "src": "assets/shopping_bags.png",
+          "x": 0.2,
+          "y": 0.6,
+          "w": 0.24,
+          "at": 24.75,
+          "enter": "drop",
+          "ambient": "sway",
+          "ambientAmount": 0.5
+        },
+        {
+          "type": "price",
+          "value": "1,500",
+          "prefix": "−₹",
+          "label": "DUKAAN: DISCOUNT",
+          "style": "card",
+          "color": "#2b5d3a",
+          "x": 0.28,
+          "y": 0.8,
+          "w": 0.42,
+          "at": 25.3,
+          "enter": "pop",
+          "ambient": "breathe"
+        },
+        {
+          "type": "image",
+          "src": "assets/notes_500.png",
+          "x": 0.8,
+          "y": 0.62,
+          "w": 0.3,
+          "rotate": 8,
+          "at": 26.95,
+          "enter": "drop"
+        },
+        {
+          "type": "price",
+          "value": "1,500",
+          "prefix": "+₹",
+          "label": "BANK: BYAAJ",
+          "style": "card",
+          "color": "#8a1f14",
+          "x": 0.72,
+          "y": 0.8,
+          "w": 0.42,
+          "at": 27.6,
+          "enter": "pop",
+          "ambient": "breathe"
+        }
+      ]
+    },
+    {
+      "id": "balance-equal",
+      "start": 29.56,
+      "end": 35.3,
+      "set": {
+        "builtin": "paper"
+      },
+      "tint": "warm",
+      "transitionIn": "push",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05,
+        "shakeAt": [
+          34.2
+        ]
+      },
+      "headlines": [
+        {
+          "at": 29.6,
+          "small": "₹30,000 PHONE PAR",
+          "big": "₹1,500 DISCOUNT",
+          "bigAt": 31
+        },
+        {
+          "at": 32.38,
+          "small": "AUR",
+          "big": "₹1,500 BYAAJ",
+          "bigAt": 32.6
+        },
+        {
+          "at": 34.15,
+          "big": "BARAABAR.",
+          "bigColor": "ink"
+        }
+      ],
+      "layers": [
+        {
+          "type": "balance",
+          "left": {
+            "label": "DISCOUNT",
+            "value": "₹1,500"
+          },
+          "right": {
+            "label": "BYAAJ",
+            "value": "₹1,500"
+          },
+          "rightAt": 2.9,
+          "x": 0.5,
+          "y": 0.58,
+          "w": 0.9,
+          "at": 30.1,
+          "enter": "fade"
+        },
+        {
+          "type": "stamp",
+          "text": "= BARAABAR",
+          "x": 0.5,
+          "y": 0.88,
+          "w": 0.6,
+          "rotate": -6,
+          "at": 34.25
+        }
+      ]
+    },
+    {
+      "id": "iceberg-hidden-cost",
+      "start": 35.3,
+      "end": 53.95,
+      "set": {
+        "builtin": "iceberg"
+      },
+      "transitionIn": "scan",
+      "camera": {
+        "zoomFrom": 1.35,
+        "zoomTo": 1,
+        "focusY": 0.3,
+        "shakeAt": [
+          48.4,
+          52.5
+        ]
+      },
+      "headlines": [
+        {
+          "at": 35.35,
+          "small": "PAR AGAR BARAABAR HAI",
+          "big": "NUKSAAN KAHAN?",
+          "bigAt": 36.65
+        },
+        {
+          "at": 38.06,
+          "small": "BYAAJ PAR LAGTA HAI",
+          "big": "18% GST",
+          "bigAt": 39.3
+        },
+        {
+          "at": 41.35,
+          "small": "KAREEB",
+          "big": "₹270",
+          "bigAt": 41.6
+        },
+        {
+          "at": 43.38,
+          "small": "UPAR SE BANK KI",
+          "big": "PROCESSING FEE",
+          "bigAt": 44.6
+        },
+        {
+          "at": 46.4,
+          "small": "MAAN LO",
+          "big": "₹235",
+          "bigAt": 46.8
+        },
+        {
+          "at": 48.27,
+          "small": "KUL",
+          "big": "₹505 EXTRA",
+          "bigAt": 48.5
+        },
+        {
+          "at": 49.76,
+          "small": "AUR PATA BHI",
+          "big": "NAHI CHALA",
+          "bigAt": 50
+        },
+        {
+          "at": 51.27,
+          "small": "FREE PHONE KI JAGAH",
+          "big": "CHUNA LAG GAYA!",
+          "bigAt": 52.5
+        }
+      ],
+      "layers": [
+        {
+          "type": "price",
+          "value": "0% EMI",
+          "prefix": "",
+          "style": "card",
+          "x": 0.5,
+          "y": 0.335,
+          "w": 0.3,
+          "at": 35.6,
+          "enter": "pop",
+          "ambient": "bob"
+        },
+        {
+          "type": "price",
+          "value": "270",
+          "label": "GST 18%",
+          "x": 0.38,
+          "y": 0.53,
+          "w": 0.34,
+          "rotate": -4,
+          "at": 41.45,
+          "enter": "zoom-in",
+          "ambient": "sway"
+        },
+        {
+          "type": "price",
+          "value": "235",
+          "label": "PROCESSING FEE",
+          "x": 0.64,
+          "y": 0.65,
+          "w": 0.36,
+          "rotate": 5,
+          "at": 46.5,
+          "enter": "zoom-in",
+          "ambient": "sway"
+        },
+        {
+          "type": "price",
+          "value": "505",
+          "label": "KUL EXTRA",
+          "style": "card",
+          "x": 0.5,
+          "y": 0.8,
+          "w": 0.42,
+          "at": 48.3,
+          "enter": "pop",
+          "markAt": 1.5
+        },
+        {
+          "type": "stamp",
+          "text": "CHUNA LAG GAYA!",
+          "x": 0.5,
+          "y": 0.93,
+          "w": 0.75,
+          "rotate": -5,
+          "at": 52.5
+        }
+      ]
+    },
+    {
+      "id": "upi-vs-emi",
+      "start": 53.95,
+      "end": 62.3,
+      "set": {
+        "builtin": "showroom",
+        "options": {
+          "banner": "SALE"
+        }
+      },
+      "transitionIn": "wipe-left",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05,
+        "focusY": 0.65
+      },
+      "headlines": [
+        {
+          "at": 54.42,
+          "small": "AUR SABSE",
+          "big": "BADA KHEL",
+          "bigAt": 54.9
+        },
+        {
+          "at": 56.03,
+          "small": "UPI YA CASH PE",
+          "big": "ASLI DISCOUNT",
+          "bigAt": 58
+        },
+        {
+          "at": 59.96,
+          "small": "EMI MEIN",
+          "big": "GAAYAB!",
+          "bigAt": 60.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "prop",
+          "name": "qr-stand",
+          "x": 0.25,
+          "y": 0.68,
+          "w": 0.34,
+          "at": 56.1,
+          "enter": "drop"
+        },
+        {
+          "type": "price",
+          "value": "28,500",
+          "old": "30,000",
+          "label": "UPI / CASH",
+          "x": 0.7,
+          "y": 0.52,
+          "w": 0.46,
+          "rotate": -3,
+          "at": 57.8,
+          "enter": "drop",
+          "ambient": "sway",
+          "markAt": 0.5
+        },
+        {
+          "type": "price",
+          "value": "30,000",
+          "label": "NO COST EMI",
+          "style": "card",
+          "x": 0.7,
+          "y": 0.76,
+          "w": 0.42,
+          "at": 59.96,
+          "enter": "pop"
+        },
+        {
+          "type": "stamp",
+          "text": "DISCOUNT GAAYAB",
+          "x": 0.6,
+          "y": 0.86,
+          "w": 0.66,
+          "rotate": -7,
+          "at": 60.6
+        }
+      ]
+    },
+    {
+      "id": "two-bills",
+      "start": 62.3,
+      "end": 73.42,
+      "set": {
+        "builtin": "bank",
+        "options": {
+          "windows": [
+            "LOANS",
+            "EMI",
+            "CASH"
+          ]
+        }
+      },
+      "transitionIn": "blur",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.04,
+        "focusY": 0.7
+      },
+      "headlines": [
+        {
+          "at": 62.3,
+          "small": "TO",
+          "big": "BACHEIN KAISE?",
+          "bigAt": 62.5
+        },
+        {
+          "at": 63.63,
+          "small": "TRICK",
+          "big": "EK HI HAI",
+          "bigAt": 63.9
+        },
+        {
+          "at": 65.02,
+          "small": "KHAREEDNE SE PEHLE",
+          "big": "DO BILL DEKHO",
+          "bigAt": 65.9
+        },
+        {
+          "at": 67.31,
+          "small": "BILL 1",
+          "big": "POORA PAISA",
+          "bigAt": 67.6
+        },
+        {
+          "at": 68.98,
+          "small": "BILL 2",
+          "big": "EMI KA TOTAL",
+          "bigAt": 69.3
+        },
+        {
+          "at": 70.95,
+          "small": "JO KAM",
+          "big": "WAHI SAUDA!",
+          "bigAt": 71.85
+        }
+      ],
+      "layers": [
+        {
+          "type": "receipt",
+          "title": "FULL PAY",
+          "x": 0.27,
+          "y": 0.6,
+          "w": 0.47,
+          "rotate": -3,
+          "at": 65.1,
+          "enter": "slide-up",
+          "items": [
+            {
+              "label": "PHONE",
+              "price": 30000,
+              "at": 2.2
+            },
+            {
+              "label": "UPI OFF",
+              "price": -1500,
+              "at": 2.6
+            }
+          ],
+          "markTotalAt": 5.95
+        },
+        {
+          "type": "receipt",
+          "title": "NO COST EMI",
+          "x": 0.74,
+          "y": 0.63,
+          "w": 0.47,
+          "rotate": 3,
+          "at": 65.4,
+          "enter": "slide-up",
+          "items": [
+            {
+              "label": "12 × 2,500",
+              "price": 30000,
+              "at": 3.6
+            },
+            {
+              "label": "GST",
+              "price": 270,
+              "at": 3.9
+            },
+            {
+              "label": "FEE",
+              "price": 235,
+              "at": 4.2
+            }
+          ]
+        },
+        {
+          "type": "mark",
+          "kind": "check",
+          "color": "#3a8a4a",
+          "x": 0.27,
+          "y": 0.87,
+          "w": 0.22,
+          "h": 220,
+          "at": 71.95,
+          "dur": 0.4
+        }
+      ]
+    },
+    {
+      "id": "iceberg-not-free",
+      "start": 73.42,
+      "end": 79.35,
+      "set": {
+        "builtin": "iceberg"
+      },
+      "transitionIn": "scan",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05,
+        "focusY": 0.6
+      },
+      "headlines": [
+        {
+          "at": 73.45,
+          "small": "NO COST EMI",
+          "big": "FREE NAHI HAI",
+          "bigAt": 74.3
+        },
+        {
+          "at": 75.62,
+          "small": "BAS CHAALAAKI SE",
+          "big": "BYAAJ CHHUPA HAI",
+          "bigAt": 77.4
+        }
+      ],
+      "layers": [
+        {
+          "type": "price",
+          "value": "0% EMI",
+          "prefix": "",
+          "style": "card",
+          "x": 0.5,
+          "y": 0.335,
+          "w": 0.3,
+          "at": 73.5,
+          "enter": "pop"
+        },
+        {
+          "type": "mark",
+          "kind": "cross",
+          "x": 0.5,
+          "y": 0.335,
+          "w": 0.3,
+          "h": 200,
+          "at": 74.3,
+          "dur": 0.45
+        },
+        {
+          "type": "price",
+          "value": "505",
+          "prefix": "+₹",
+          "label": "CHHUPA BYAAJ",
+          "style": "card",
+          "x": 0.5,
+          "y": 0.68,
+          "w": 0.46,
+          "at": 77.4,
+          "enter": "zoom-in",
+          "glow": true,
+          "ambient": "breathe"
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "start": 79.35,
+      "end": 85.47,
+      "set": {
+        "builtin": "showroom",
+        "options": {
+          "banner": "NO COST EMI"
+        }
+      },
+      "tint": "warm",
+      "transitionIn": "push",
+      "headlines": [
+        {
+          "at": 79.4,
+          "small": "YE VIDEO US DOST KO",
+          "big": "BHEJO",
+          "bigAt": 80.2
+        },
+        {
+          "at": 82.87,
+          "small": "JO BOLTA HAI",
+          "big": "EMI HAI NA!",
+          "bigAt": 83
+        }
+      ],
+      "layers": [
+        {
+          "type": "chat",
+          "name": "Bunty",
+          "x": 0.5,
+          "y": 0.68,
+          "w": 0.66,
+          "at": 79.5,
+          "enter": "slide-up",
+          "messages": [
+            {
+              "from": "me",
+              "text": "Bhai ye video dekh pehle ▶",
+              "at": 0.6
+            },
+            {
+              "from": "them",
+              "text": "Arre EMI hai na, kaun sa byaaj lag raha hai!",
+              "at": 3.6
+            }
+          ]
+        },
+        {
+          "type": "prop",
+          "name": "exclaim",
+          "x": 0.12,
+          "y": 0.8,
+          "w": 0.08,
+          "at": 83.2,
+          "ambient": "bob"
+        }
+      ]
+    }
+  ]
+}

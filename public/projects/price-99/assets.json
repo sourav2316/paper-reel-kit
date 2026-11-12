@@ -1,0 +1,15 @@
+[
+  { "file": "assets/phone.png", "kind": "cutout", "query": "smartphone front isolated" },
+  { "file": "assets/hand_phone.png", "kind": "cutout", "query": "hand holding smartphone", "allowCut": ["bottom", "right"] },
+  { "file": "assets/calculator.png", "kind": "cutout", "query": "calculator" },
+  { "file": "assets/coin.png", "kind": "cutout", "query": "indian rupee coin" },
+  { "file": "assets/cash.png", "kind": "cutout", "query": "indian rupee notes" },
+  { "file": "assets/wallet.png", "kind": "cutout", "query": "leather wallet" },
+  { "file": "assets/tshirt.png", "kind": "cutout", "query": "t-shirt on hanger" },
+  { "file": "assets/megaphone.png", "kind": "cutout", "query": "megaphone" },
+  { "file": "assets/mousetrap.png", "kind": "cutout", "query": "mouse trap" },
+  { "file": "assets/phone_case.png", "kind": "cutout", "query": "phone case" },
+  { "file": "assets/charger.png", "kind": "cutout", "query": "phone charger" },
+  { "file": "assets/oil_can.png", "kind": "cutout", "query": "oil can" },
+  { "file": "assets/shopping_bags.png", "kind": "cutout", "query": "shopping bags" }
+]

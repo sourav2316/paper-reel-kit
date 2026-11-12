@@ -1,0 +1,8 @@
+[
+  { "file": "assets/magnifier.png", "kind": "cutout", "query": "magnifying glass" },
+  { "file": "assets/notes_500.png", "kind": "cutout", "query": "500 rupee notes" },
+  { "file": "assets/wallet.png", "kind": "cutout", "source": "manual" },
+  { "file": "assets/shopping_bags.png", "kind": "cutout", "source": "manual" },
+  { "file": "assets/calculator.png", "kind": "cutout", "source": "manual" },
+  { "file": "assets/hand_phone.png", "kind": "cutout", "source": "manual" }
+]

@@ -1,0 +1,127 @@
+{
+  "title": "Demo — what stress does (built-in assets only)",
+  "audio": "vo.mp3",
+  "endPadding": 0.6,
+  "scenes": [
+    {
+      "id": "hook-chowk",
+      "start": 0, "end": 7,
+      "set": { "builtin": "skyline" },
+      "camera": { "zoomFrom": 1.0, "zoomTo": 1.06, "focusY": 0.6 },
+      "tintChanges": [{ "at": 4.6, "tint": "desaturate" }],
+      "headlines": [
+        { "at": 0.2, "big": "STRESS" },
+        { "at": 2.3, "small": "YOU'VE", "big": "FELT IT" },
+        { "at": 4.7, "small": "CHRONIC", "big": "STRESS?" }
+      ],
+      "layers": [
+        { "type": "birds", "at": 0.3, "count": 4, "y": 0.3 },
+        { "type": "burst", "text": "PEEP!", "x": 0.28, "y": 0.66, "w": 0.24, "at": 0.8, "out": 1.6, "sfx": "/sfx/pop.mp3" },
+        { "type": "burst", "text": "HONK!", "x": 0.72, "y": 0.69, "w": 0.26, "at": 1.5, "out": 2.4 },
+        { "type": "prop", "name": "phone", "x": 0.72, "y": 0.8, "w": 0.26, "at": 2.3, "enter": "slide-up", "ambient": "bob", "out": 4.5, "exit": "slide-down" },
+        { "type": "notifications", "items": ["EMI DUE TODAY", "FAMILY GROUP · 12 NEW", "BOSS: CALL ME"], "x": 0.36, "y": 0.47, "w": 0.6, "at": 2.6, "enter": "none", "out": 4.5 },
+        { "type": "prop", "name": "question", "x": 0.82, "y": 0.27, "w": 0.1, "at": 5.4, "ambient": "bob" }
+      ]
+    },
+    {
+      "id": "balcony-all-good",
+      "start": 7, "end": 11,
+      "set": { "builtin": "balcony" },
+      "transitionIn": "blur",
+      "camera": { "zoomFrom": 1.04, "zoomTo": 1.0 },
+      "headlines": [{ "at": 7.3, "big": "YOUR MIND SAYS" }],
+      "layers": [
+        { "type": "birds", "at": 7, "count": 3, "y": 0.4 },
+        { "type": "prop", "name": "chai", "x": 0.2, "y": 0.73, "w": 0.13, "enter": "none" },
+        { "type": "steam", "x": 0.2, "y": 0.62, "w": 0.1 },
+        { "type": "prop", "name": "plant", "x": 0.82, "y": 0.71, "w": 0.2, "enter": "none" },
+        { "type": "bubble", "text": "ALL GOOD", "check": true, "x": 0.5, "y": 0.35, "w": 0.6, "at": 8.2, "ambient": "bob" }
+      ]
+    },
+    {
+      "id": "but-inside",
+      "start": 11, "end": 17,
+      "set": { "builtin": "anatomy" },
+      "transitionIn": "scan",
+      "camera": { "zoomFrom": 1.0, "zoomTo": 1.03, "focusX": 0.5, "focusY": 0.17, "pushAt": 15.0, "pushTo": 1.7, "shakeAt": [15.3] },
+      "headlines": [
+        { "at": 11.4, "small": "BUT", "big": "INSIDE..." },
+        { "at": 13.2, "small": "YOUR BODY'S", "big": "ALARM" },
+        { "at": 15.1, "small": "DANGER", "big": "TO THE BRAIN" }
+      ],
+      "layers": [
+        { "type": "body", "x": 0.47, "y": 0.62, "w": 0.95, "enter": "fade", "bell": true, "ringing": false, "out": 13.0 },
+        { "type": "body", "x": 0.47, "y": 0.62, "w": 0.95, "enter": "none", "at": 13.0, "bell": true, "ringing": true, "brain": "glow" },
+        { "type": "flare", "x": 0.5, "y": 0.3, "at": 15.3 }
+      ]
+    },
+    {
+      "id": "adrenaline",
+      "start": 17, "end": 21,
+      "set": { "builtin": "anatomy" },
+      "transitionIn": "push",
+      "headlines": [
+        { "at": 17.2, "small": "FIRST", "big": "ADRENALINE" },
+        { "at": 19.0, "big": "THEN CORTISOL", "bigColor": "cream" }
+      ],
+      "layers": [
+        { "type": "body", "x": 0.5, "y": 0.6, "w": 1.0, "zoom": "torso", "enter": "fade", "adrenals": "glow", "kidneys": "on", "heart": "glow", "particles": true },
+        { "type": "prop", "name": "battery", "x": 0.2, "y": 0.42, "w": 0.18, "at": 19.0, "ambient": "breathe" }
+      ]
+    },
+    {
+      "id": "overthinking",
+      "start": 21, "end": 24.5,
+      "set": { "builtin": "room" },
+      "transitionIn": "blur",
+      "headlines": [{ "at": 21.3, "big": "OVERTHINKING" }],
+      "layers": [
+        { "type": "calendar", "x": 0.25, "y": 0.4, "w": 0.24, "enter": "none", "month": "OCTOBER" },
+        { "type": "bubble", "x": 0.5, "y": 0.5, "w": 0.95, "at": 21.5 },
+        { "type": "orbit", "items": ["EMI", "BOSS", "EXAMS", "CAREER"], "x": 0.5, "y": 0.5, "w": 0.7, "at": 21.9, "enter": "fade" },
+        { "type": "prop", "name": "alarm-clock", "x": 0.62, "y": 0.69, "w": 0.15, "enter": "none", "ringing": true }
+      ]
+    },
+    {
+      "id": "study",
+      "start": 24.5, "end": 28.5,
+      "set": { "builtin": "lab" },
+      "transitionIn": "wipe-left",
+      "headlines": [
+        { "at": 24.7, "small": "HIGH STRESS:", "big": "CAUGHT A COLD" }
+      ],
+      "layers": [
+        { "type": "isotype", "rows": 8, "cols": 10, "fill": 47, "x": 0.5, "y": 0.52, "w": 0.78, "at": 25.0, "enter": "fade", "dur": 2 },
+        { "type": "counter", "to": 47, "digits": 2, "suffix": "%", "x": 0.5, "y": 0.8, "w": 0.38, "at": 25.0, "dur": 2 }
+      ]
+    },
+    {
+      "id": "risk-chart",
+      "start": 28.5, "end": 31.5,
+      "set": { "builtin": "corkboard" },
+      "transitionIn": "blur",
+      "headlines": [{ "at": 28.7, "big": "THE RISK" }],
+      "layers": [
+        { "type": "bars", "values": [1, 2.6], "labels": ["LOW", "HIGH"], "x": 0.5, "y": 0.52, "w": 0.7, "at": 28.8, "enter": "fade" },
+        { "type": "stamp", "text": "2–3×", "x": 0.7, "y": 0.3, "w": 0.3, "rotate": -6, "at": 30.2 }
+      ]
+    },
+    {
+      "id": "cta",
+      "start": 31.5, "end": 35,
+      "set": { "builtin": "wood-desk" },
+      "transitionIn": "push",
+      "headlines": [
+        { "at": 31.7, "small": "WHAT'S YOUR", "big": "STRESS?" },
+        { "at": 33.5, "small": "TELL US", "big": "IN THE COMMENTS" }
+      ],
+      "layers": [
+        { "type": "prop", "name": "coffee", "x": 0.18, "y": 0.36, "w": 0.2, "enter": "none" },
+        { "type": "note", "text": "MY STRESS IS:", "x": 0.45, "y": 0.53, "w": 0.66, "rotate": -3, "enter": "drop", "at": 31.8 },
+        { "type": "mark", "kind": "squiggle", "x": 0.42, "y": 0.6, "w": 0.48, "h": 80, "at": 32.6, "dur": 1.8, "color": "#2b2b2b" },
+        { "type": "prop", "name": "pen", "x": 0.72, "y": 0.66, "w": 0.55, "rotate": -32, "at": 32.4, "enter": "slide-left", "move": { "toX": 0.8, "at": 32.6, "dur": 1.8 } },
+        { "type": "prop", "name": "glasses", "x": 0.2, "y": 0.78, "w": 0.24, "rotate": 10, "enter": "none" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "TEMPLATE — copy this folder, rename it, replace everything",
+  "audio": "vo.mp3",
+  "scenes": [
+    {
+      "id": "hook",
+      "start": 0, "end": 4,
+      "set": { "builtin": "street" },
+      "headlines": [{ "at": 0.2, "big": "TOPIC" }, { "at": 2.0, "small": "SMALL LINE", "big": "BIG LINE" }],
+      "layers": [
+        { "type": "birds", "count": 3, "y": 0.3 },
+        { "type": "image", "src": "assets/auto.png", "x": -0.3, "y": 0.68, "w": 0.4, "enter": "none", "ambient": "bob", "ambientAmount": 0.3, "move": { "toX": 1.3, "at": 0, "dur": 4, "ease": "linear" } },
+        { "type": "burst", "text": "PEEP!", "x": 0.6, "y": 0.6, "at": 1.2, "out": 2.0 }
+      ]
+    },
+    {
+      "id": "inside",
+      "start": 4, "end": 8,
+      "set": { "builtin": "anatomy" },
+      "transitionIn": "scan",
+      "headlines": [{ "at": 4.3, "small": "BUT", "big": "INSIDE..." }],
+      "layers": [{ "type": "body", "x": 0.47, "y": 0.62, "w": 0.95, "bell": true, "ringing": true, "enter": "fade" }]
+    }
+  ]
+}

@@ -1,0 +1,1372 @@
+{
+  "title": "₹9,999 ka khel — 99 wala price trick",
+  "audio": "vo.mp3",
+  "endPadding": 0.4,
+  "scenes": [
+    {
+      "id": "hook-street",
+      "start": 0,
+      "end": 3.23,
+      "set": {
+        "builtin": "street",
+        "options": {
+          "signs": [
+            {
+              "text": "MOBILE ZONE",
+              "color": "#2F5D7A"
+            },
+            {
+              "text": "RAJU CHAI CORNER",
+              "color": "#C0392B"
+            },
+            {
+              "text": "FASHION HUB",
+              "color": "#2F6B4F"
+            },
+            {
+              "text": "RECHARGE POINT",
+              "color": "#D9A13B"
+            }
+          ]
+        }
+      },
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.07,
+        "focusY": 0.55
+      },
+      "headlines": [
+        {
+          "at": 0.1,
+          "small": "KABHI DEKHA HAI",
+          "big": "₹10,000 KA PHONE?",
+          "bigAt": 1.2
+        }
+      ],
+      "layers": [
+        {
+          "type": "birds",
+          "count": 3,
+          "y": 0.27
+        },
+        {
+          "type": "image",
+          "src": "assets/auto.png",
+          "x": -0.3,
+          "y": 0.73,
+          "w": 0.42,
+          "enter": "none",
+          "ambient": "bob",
+          "ambientAmount": 0.3,
+          "move": {
+            "toX": 1.35,
+            "at": 0,
+            "dur": 3.4,
+            "ease": "linear"
+          }
+        },
+        {
+          "type": "burst",
+          "text": "PEEP!",
+          "x": 0.68,
+          "y": 0.62,
+          "w": 0.24,
+          "at": 1.4,
+          "out": 2.2
+        },
+        {
+          "type": "prop",
+          "name": "phone",
+          "x": 0.5,
+          "y": 0.42,
+          "w": 0.24,
+          "at": 0.4,
+          "ambient": "bob",
+          "text": "₹10,000"
+        },
+        {
+          "type": "prop",
+          "name": "question",
+          "x": 0.72,
+          "y": 0.35,
+          "w": 0.09,
+          "at": 1.3,
+          "ambient": "sway"
+        }
+      ]
+    },
+    {
+      "id": "shop-app",
+      "start": 3.23,
+      "end": 7.85,
+      "set": {
+        "builtin": "paper"
+      },
+      "transitionIn": "push",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.04
+      },
+      "headlines": [
+        {
+          "at": 3.3,
+          "small": "AMAZON KHOLO",
+          "big": "FLIPKART KHOLO",
+          "bigAt": 4
+        },
+        {
+          "at": 5.2,
+          "big": "₹9,999"
+        }
+      ],
+      "layers": [
+        {
+          "type": "listing",
+          "title": "Nova 5G (6GB / 128GB)",
+          "price": "9,999",
+          "old": "13,999",
+          "off": "28%",
+          "badge": "DEAL",
+          "x": 0.5,
+          "y": 0.4,
+          "w": 0.88,
+          "at": 3.4,
+          "enter": "slide-up",
+          "markAt": 1.9
+        },
+        {
+          "type": "listing",
+          "title": "Zeta Pro (8GB / 128GB)",
+          "price": "9,999",
+          "old": "12,499",
+          "off": "20%",
+          "rating": 4.1,
+          "x": 0.5,
+          "y": 0.6,
+          "w": 0.88,
+          "at": 4,
+          "enter": "slide-up",
+          "markAt": 2.05
+        },
+        {
+          "type": "listing",
+          "title": "Pixelon M3 (4GB / 64GB)",
+          "price": "9,999",
+          "old": "11,999",
+          "off": "16%",
+          "rating": 4.4,
+          "x": 0.5,
+          "y": 0.8,
+          "w": 0.88,
+          "at": 4.6,
+          "enter": "slide-up",
+          "markAt": 2.2
+        }
+      ]
+    },
+    {
+      "id": "why-one-less",
+      "start": 7.85,
+      "end": 13.55,
+      "set": {
+        "builtin": "corkboard"
+      },
+      "transitionIn": "blur",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05,
+        "shakeAt": [
+          11
+        ]
+      },
+      "headlines": [
+        {
+          "at": 7.9,
+          "small": "HAR PHONE",
+          "big": "₹1 KAM KYUN?",
+          "bigAt": 8.6
+        },
+        {
+          "at": 10.92,
+          "small": "COMPANIES KE PAAS",
+          "big": "CALCULATOR NAHI?",
+          "bigAt": 11.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "price",
+          "value": "9,999",
+          "x": 0.42,
+          "y": 0.4,
+          "w": 0.55,
+          "rotate": -4,
+          "at": 8,
+          "enter": "drop",
+          "ambient": "sway"
+        },
+        {
+          "type": "price",
+          "value": "9,999",
+          "x": 0.6,
+          "y": 0.55,
+          "w": 0.5,
+          "rotate": 5,
+          "at": 8.4,
+          "enter": "drop",
+          "ambient": "sway"
+        },
+        {
+          "type": "price",
+          "value": "9,999",
+          "x": 0.4,
+          "y": 0.7,
+          "w": 0.5,
+          "rotate": -2,
+          "at": 8.8,
+          "enter": "drop",
+          "ambient": "sway"
+        },
+        {
+          "type": "image",
+          "src": "assets/calculator.png",
+          "x": 0.55,
+          "y": 0.62,
+          "w": 0.6,
+          "rotate": -10,
+          "at": 10.95,
+          "enter": "drop",
+          "z": 20
+        },
+        {
+          "type": "prop",
+          "name": "question",
+          "x": 0.83,
+          "y": 0.42,
+          "w": 0.1,
+          "at": 11.4,
+          "ambient": "bob",
+          "z": 21
+        },
+        {
+          "type": "prop",
+          "name": "question",
+          "x": 0.2,
+          "y": 0.5,
+          "w": 0.08,
+          "at": 11.7,
+          "ambient": "bob",
+          "rotate": -15,
+          "z": 21
+        }
+      ]
+    },
+    {
+      "id": "for-your-brain",
+      "start": 13.55,
+      "end": 19.57,
+      "set": {
+        "builtin": "anatomy"
+      },
+      "transitionIn": "scan",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.04,
+        "focusY": 0.3,
+        "pushAt": 17.3,
+        "pushTo": 1.35
+      },
+      "headlines": [
+        {
+          "at": 13.6,
+          "big": "NAHI BHAI."
+        },
+        {
+          "at": 14.51,
+          "small": "₹1 TUMHARE LIYE",
+          "big": "NAHI HAI",
+          "bigAt": 15.6
+        },
+        {
+          "at": 17.27,
+          "small": "WO HAI",
+          "big": "DIMAAG KE LIYE",
+          "bigAt": 17.7
+        }
+      ],
+      "layers": [
+        {
+          "type": "body",
+          "x": 0.5,
+          "y": 0.6,
+          "w": 1,
+          "zoom": "head",
+          "enter": "fade",
+          "out": 17.6
+        },
+        {
+          "type": "body",
+          "x": 0.5,
+          "y": 0.6,
+          "w": 1,
+          "zoom": "head",
+          "brain": "glow",
+          "enter": "none",
+          "at": 17.6
+        },
+        {
+          "type": "image",
+          "src": "assets/coin.png",
+          "x": 0.8,
+          "y": 0.86,
+          "w": 0.26,
+          "at": 14.6,
+          "enter": "slide-up",
+          "ambient": "spin",
+          "ambientAmount": 0.25,
+          "move": {
+            "toX": 0.5,
+            "toY": 0.55,
+            "toW": 0.09,
+            "at": 17.3,
+            "dur": 0.6,
+            "ease": "inOut"
+          },
+          "out": 17.9,
+          "exit": "fade"
+        },
+        {
+          "type": "flare",
+          "x": 0.5,
+          "y": 0.55,
+          "at": 17.85
+        }
+      ]
+    },
+    {
+      "id": "left-to-right",
+      "start": 19.57,
+      "end": 33.69,
+      "set": {
+        "builtin": "anatomy"
+      },
+      "transitionIn": "blur",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05,
+        "shakeAt": [
+          32.7
+        ]
+      },
+      "headlines": [
+        {
+          "at": 19.6,
+          "small": "PAR DIMAAG KA",
+          "big": "KYA LENA DENA?",
+          "bigAt": 20.3
+        },
+        {
+          "at": 22.13,
+          "small": "DIMAAG PADHTA HAI",
+          "big": "BAAYEN → DAAYEN",
+          "bigAt": 22.9
+        },
+        {
+          "at": 25.12,
+          "small": "PEHLA NUMBER PAKDA",
+          "big": "PADHNA BAND!",
+          "bigAt": 26.6
+        },
+        {
+          "at": 29.03,
+          "small": "PADHA",
+          "big": "9 HAZAAR",
+          "bigAt": 29.2
+        },
+        {
+          "at": 30.36,
+          "small": "DIMAAG BOLA",
+          "big": "10K SE KAM HAI",
+          "bigAt": 31
+        },
+        {
+          "at": 32.69,
+          "big": "BAS.",
+          "bigColor": "cream"
+        }
+      ],
+      "layers": [
+        {
+          "type": "body",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 0.95,
+          "zoom": "head",
+          "gears": true,
+          "brain": "on",
+          "enter": "fade",
+          "opacity": 0.7
+        },
+        {
+          "type": "price",
+          "value": "9,999",
+          "style": "plain",
+          "color": "#F1E7D0",
+          "x": 0.5,
+          "y": 0.73,
+          "w": 0.8,
+          "at": 22.2,
+          "out": 25.05,
+          "exit": "fade",
+          "enter": "pop"
+        },
+        {
+          "type": "mark",
+          "kind": "arrow",
+          "color": "#E3B23C",
+          "x": 0.5,
+          "y": 0.85,
+          "w": 0.7,
+          "h": 160,
+          "at": 22.9,
+          "dur": 1.2,
+          "out": 25.05
+        },
+        {
+          "type": "price",
+          "value": "9,999",
+          "style": "plain",
+          "color": "#F1E7D0",
+          "scan": true,
+          "x": 0.5,
+          "y": 0.73,
+          "w": 0.8,
+          "at": 25.1,
+          "enter": "none",
+          "markFirstAt": 1.3,
+          "markColor": "#E3B23C"
+        },
+        {
+          "type": "stamp",
+          "text": "10K SE KAM!",
+          "x": 0.55,
+          "y": 0.9,
+          "w": 0.6,
+          "rotate": -6,
+          "at": 31.1
+        }
+      ]
+    },
+    {
+      "id": "that-friend",
+      "start": 33.69,
+      "end": 39.4,
+      "set": {
+        "builtin": "room"
+      },
+      "transitionIn": "blur",
+      "headlines": [
+        {
+          "at": 33.75,
+          "small": "BILKUL US",
+          "big": "DOST KI TARAH",
+          "bigAt": 34.3
+        },
+        {
+          "at": 36.6,
+          "small": "PEHLI LINE PADHI",
+          "big": "REPLY MAAR DIYA",
+          "bigAt": 37.7
+        }
+      ],
+      "layers": [
+        {
+          "type": "chat",
+          "name": "Rahul",
+          "x": 0.5,
+          "y": 0.62,
+          "w": 0.7,
+          "at": 34,
+          "enter": "slide-up",
+          "messages": [
+            {
+              "from": "me",
+              "text": "Bhai kal 5 baje milte hain. Par pehle bank jaana hai, phir tera laptop lena hai, aur 6 baje tak wapas...",
+              "at": 0.4
+            },
+            {
+              "from": "them",
+              "text": "haan bhai done!",
+              "at": 3.6
+            }
+          ]
+        },
+        {
+          "type": "mark",
+          "kind": "underline",
+          "x": 0.52,
+          "y": 0.537,
+          "w": 0.4,
+          "h": 60,
+          "at": 36.9,
+          "dur": 0.4
+        },
+        {
+          "type": "prop",
+          "name": "alarm-clock",
+          "x": 0.86,
+          "y": 0.86,
+          "w": 0.13,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "why-not-9500",
+      "start": 39.4,
+      "end": 49.78,
+      "set": {
+        "builtin": "corkboard"
+      },
+      "transitionIn": "wipe-left",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05
+      },
+      "headlines": [
+        {
+          "at": 39.45,
+          "big": "PAR RUKO!",
+          "bigColor": "ink"
+        },
+        {
+          "at": 41.01,
+          "small": "AGAR BAAT SIRF",
+          "big": "PEHLE NUMBER KI",
+          "bigAt": 41.8
+        },
+        {
+          "at": 43.6,
+          "small": "TO",
+          "big": "₹9,500 KYUN NAHI?",
+          "bigAt": 44
+        },
+        {
+          "at": 45.96,
+          "small": "WO TO",
+          "big": "AUR SASTA HAI",
+          "bigAt": 46.3
+        },
+        {
+          "at": 47.48,
+          "small": "PHIR",
+          "big": "99 HI KYUN?",
+          "bigAt": 47.8
+        }
+      ],
+      "layers": [
+        {
+          "type": "price",
+          "value": "9,999",
+          "x": 0.33,
+          "y": 0.45,
+          "w": 0.48,
+          "rotate": -5,
+          "at": 39.6,
+          "enter": "drop",
+          "ambient": "sway",
+          "markLastAt": 8.3
+        },
+        {
+          "type": "price",
+          "value": "9,500",
+          "style": "card",
+          "x": 0.68,
+          "y": 0.62,
+          "w": 0.46,
+          "at": 43.7,
+          "enter": "pop",
+          "ambient": "breathe"
+        },
+        {
+          "type": "mark",
+          "kind": "check",
+          "color": "#3a8a4a",
+          "x": 0.82,
+          "y": 0.73,
+          "w": 0.18,
+          "h": 200,
+          "at": 46,
+          "dur": 0.4
+        },
+        {
+          "type": "prop",
+          "name": "question",
+          "x": 0.3,
+          "y": 0.73,
+          "w": 0.1,
+          "at": 48,
+          "ambient": "bob"
+        },
+        {
+          "type": "prop",
+          "name": "question",
+          "x": 0.52,
+          "y": 0.3,
+          "w": 0.08,
+          "at": 48.2,
+          "ambient": "bob",
+          "rotate": 12
+        }
+      ]
+    },
+    {
+      "id": "sale-signal",
+      "start": 49.78,
+      "end": 55.63,
+      "set": {
+        "builtin": "anatomy"
+      },
+      "transitionIn": "scan",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.06,
+        "focusY": 0.3
+      },
+      "headlines": [
+        {
+          "at": 49.85,
+          "small": "9 PAR KHATAM DAAM",
+          "big": "= SALE SIGNAL",
+          "bigAt": 52.2
+        }
+      ],
+      "layers": [
+        {
+          "type": "body",
+          "x": 0.47,
+          "y": 0.6,
+          "w": 0.95,
+          "zoom": "head",
+          "bell": true,
+          "ringing": false,
+          "enter": "fade",
+          "out": 52.2
+        },
+        {
+          "type": "body",
+          "x": 0.47,
+          "y": 0.6,
+          "w": 0.95,
+          "zoom": "head",
+          "bell": true,
+          "ringing": true,
+          "brain": "glow",
+          "enter": "none",
+          "at": 52.2
+        },
+        {
+          "type": "price",
+          "value": "..99",
+          "style": "card",
+          "x": 0.3,
+          "y": 0.86,
+          "w": 0.34,
+          "at": 50.6,
+          "enter": "pop",
+          "ambient": "breathe"
+        },
+        {
+          "type": "burst",
+          "text": "SALE!",
+          "x": 0.74,
+          "y": 0.84,
+          "w": 0.32,
+          "at": 52.4
+        }
+      ]
+    },
+    {
+      "id": "fashion",
+      "start": 55.63,
+      "end": 70.06,
+      "set": {
+        "builtin": "street",
+        "options": {
+          "signs": [
+            {
+              "text": "FASHION HUB",
+              "color": "#2F6B4F"
+            },
+            {
+              "text": "TRENDZ",
+              "color": "#C0392B"
+            },
+            {
+              "text": "STYLE BAZAAR",
+              "color": "#D97A2B"
+            }
+          ]
+        }
+      },
+      "transitionIn": "blur",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.06,
+        "focusY": 0.6,
+        "shakeAt": [
+          67.3
+        ]
+      },
+      "tintChanges": [
+        {
+          "at": 60.39,
+          "tint": "warm"
+        }
+      ],
+      "headlines": [
+        {
+          "at": 55.7,
+          "small": "BADE FASHION BRANDS",
+          "big": "REGULAR = ROUND",
+          "bigAt": 57.6
+        },
+        {
+          "at": 60.39,
+          "small": "DISCOUNT WALA MAAL",
+          "big": "SIRF 99 PAR",
+          "bigAt": 61.4
+        },
+        {
+          "at": 63.96,
+          "small": "SALE BOARD KI",
+          "big": "ZARURAT HI NAHI",
+          "bigAt": 64.4
+        },
+        {
+          "at": 65.64,
+          "small": "9 KHUD",
+          "big": "CHILLA RAHA HAI",
+          "bigAt": 66
+        },
+        {
+          "at": 67.29,
+          "big": "SASTA HAI!"
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "assets/tshirt.png",
+          "x": 0.27,
+          "y": 0.62,
+          "w": 0.4,
+          "at": 55.8,
+          "enter": "drop",
+          "ambient": "sway",
+          "ambientAmount": 0.6
+        },
+        {
+          "type": "price",
+          "value": "2,000",
+          "label": "REGULAR",
+          "x": 0.26,
+          "y": 0.79,
+          "w": 0.32,
+          "rotate": -4,
+          "at": 56.6,
+          "enter": "drop",
+          "ambient": "sway"
+        },
+        {
+          "type": "image",
+          "src": "assets/shopping_bags.png",
+          "x": 0.74,
+          "y": 0.6,
+          "w": 0.34,
+          "at": 60.4,
+          "enter": "drop",
+          "ambient": "sway",
+          "ambientAmount": 0.6
+        },
+        {
+          "type": "price",
+          "value": "1,999",
+          "label": "SALE",
+          "style": "card",
+          "x": 0.74,
+          "y": 0.8,
+          "w": 0.32,
+          "at": 61.3,
+          "enter": "pop",
+          "ambient": "breathe"
+        },
+        {
+          "type": "stamp",
+          "text": "NO SALE BOARD",
+          "x": 0.5,
+          "y": 0.43,
+          "w": 0.6,
+          "at": 64,
+          "out": 65.6,
+          "exit": "pop"
+        },
+        {
+          "type": "image",
+          "src": "assets/megaphone.png",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 0.3,
+          "at": 65.6,
+          "enter": "slide-left",
+          "ambient": "vibrate",
+          "ambientAmount": 0.4,
+          "out": 69.9
+        },
+        {
+          "type": "burst",
+          "text": "SASTA HAI!",
+          "x": 0.72,
+          "y": 0.36,
+          "w": 0.4,
+          "at": 67.3
+        },
+        {
+          "type": "burst",
+          "text": "SASTA HAI!",
+          "x": 0.28,
+          "y": 0.42,
+          "w": 0.36,
+          "rotate": -10,
+          "at": 68.2
+        }
+      ]
+    },
+    {
+      "id": "the-trap",
+      "start": 70.06,
+      "end": 72.39,
+      "set": {
+        "builtin": "checker-room"
+      },
+      "transitionIn": "push",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.08,
+        "focusY": 0.6
+      },
+      "headlines": [
+        {
+          "at": 70.1,
+          "small": "TO YE JAAL",
+          "big": "KITNA BADA HAI?",
+          "bigAt": 70.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "assets/mousetrap.png",
+          "x": 0.5,
+          "y": 0.66,
+          "w": 0.75,
+          "enter": "drop"
+        },
+        {
+          "type": "price",
+          "value": "99",
+          "style": "card",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 0.26,
+          "at": 70.5,
+          "enter": "pop",
+          "ambient": "bob"
+        }
+      ]
+    },
+    {
+      "id": "recharge",
+      "start": 72.39,
+      "end": 85.66,
+      "set": {
+        "builtin": "lab"
+      },
+      "transitionIn": "wipe-left",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.04
+      },
+      "headlines": [
+        {
+          "at": 72.4,
+          "small": "RECHARGE PLAN",
+          "big": "DEKH LO",
+          "bigAt": 72.9
+        },
+        {
+          "at": 78,
+          "small": "KITNI BAAR DEKHA",
+          "big": "₹300 KA PLAN?",
+          "bigAt": 78.8
+        },
+        {
+          "at": 80.69,
+          "small": "ROZ",
+          "big": "SAIKDON BAAR",
+          "bigAt": 81
+        },
+        {
+          "at": 83.68,
+          "small": "AUR PATA BHI",
+          "big": "NAHI CHALTA",
+          "bigAt": 84.1
+        }
+      ],
+      "layers": [
+        {
+          "type": "price",
+          "value": "199",
+          "style": "card",
+          "x": 0.27,
+          "y": 0.36,
+          "w": 0.3,
+          "rotate": -5,
+          "at": 74.05,
+          "enter": "pop",
+          "ambient": "breathe",
+          "out": 80.6
+        },
+        {
+          "type": "price",
+          "value": "299",
+          "style": "card",
+          "x": 0.52,
+          "y": 0.43,
+          "w": 0.3,
+          "rotate": 3,
+          "at": 75.15,
+          "enter": "pop",
+          "ambient": "breathe",
+          "out": 80.6
+        },
+        {
+          "type": "price",
+          "value": "399",
+          "style": "card",
+          "x": 0.77,
+          "y": 0.36,
+          "w": 0.3,
+          "rotate": -2,
+          "at": 76.25,
+          "enter": "pop",
+          "ambient": "breathe",
+          "out": 80.6
+        },
+        {
+          "type": "price",
+          "value": "300",
+          "x": 0.5,
+          "y": 0.66,
+          "w": 0.46,
+          "at": 78.6,
+          "enter": "drop",
+          "out": 80.6
+        },
+        {
+          "type": "mark",
+          "kind": "cross",
+          "x": 0.52,
+          "y": 0.66,
+          "w": 0.4,
+          "h": 220,
+          "at": 79.3,
+          "dur": 0.4,
+          "out": 80.6
+        },
+        {
+          "type": "counter",
+          "from": 0,
+          "to": 365,
+          "digits": 3,
+          "suffix": "×",
+          "x": 0.5,
+          "y": 0.45,
+          "w": 0.5,
+          "at": 80.9,
+          "dur": 2.2
+        },
+        {
+          "type": "isotype",
+          "rows": 4,
+          "cols": 10,
+          "fill": 100,
+          "x": 0.5,
+          "y": 0.72,
+          "w": 0.75,
+          "at": 81.2,
+          "enter": "fade",
+          "dur": 2.4
+        },
+        {
+          "type": "prop",
+          "name": "question",
+          "x": 0.85,
+          "y": 0.4,
+          "w": 0.08,
+          "at": 84,
+          "ambient": "bob"
+        }
+      ]
+    },
+    {
+      "id": "budget",
+      "start": 85.66,
+      "end": 98.69,
+      "set": {
+        "builtin": "wood-desk"
+      },
+      "transitionIn": "push",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.04,
+        "shakeAt": [
+          96.3
+        ]
+      },
+      "headlines": [
+        {
+          "at": 85.7,
+          "small": "SABSE",
+          "big": "SHOCKING BAAT?",
+          "bigAt": 86
+        },
+        {
+          "at": 87.39,
+          "small": "BUDGET LEKE GAYE",
+          "big": "₹10,000",
+          "bigAt": 87.9
+        },
+        {
+          "at": 89.37,
+          "small": "PHONE MILA",
+          "big": "₹9,999",
+          "bigAt": 90.2
+        },
+        {
+          "at": 92.02,
+          "big": "KHUSH!",
+          "bigColor": "mustard"
+        },
+        {
+          "at": 93.02,
+          "small": "PHIR COVER, GLASS",
+          "big": "AUR CHARGER BHI",
+          "bigAt": 94.6
+        },
+        {
+          "at": 96.57,
+          "small": "BUDGET GAYA",
+          "big": "TEL LENE!",
+          "bigAt": 96.9
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "assets/wallet.png",
+          "x": 0.3,
+          "y": 0.42,
+          "w": 0.4,
+          "rotate": -8,
+          "at": 87.45,
+          "enter": "drop",
+          "out": 92.9
+        },
+        {
+          "type": "image",
+          "src": "assets/cash.png",
+          "x": 0.68,
+          "y": 0.47,
+          "w": 0.46,
+          "rotate": 6,
+          "at": 87.9,
+          "enter": "drop",
+          "out": 92.9
+        },
+        {
+          "type": "listing",
+          "title": "Nova 5G (6GB / 128GB)",
+          "price": "9,999",
+          "old": "13,999",
+          "off": "28%",
+          "x": 0.5,
+          "y": 0.7,
+          "w": 0.86,
+          "at": 89.4,
+          "enter": "slide-up",
+          "out": 92.9
+        },
+        {
+          "type": "mark",
+          "kind": "check",
+          "color": "#3a8a4a",
+          "x": 0.83,
+          "y": 0.62,
+          "w": 0.16,
+          "h": 200,
+          "at": 92.05,
+          "dur": 0.35,
+          "out": 92.9
+        },
+        {
+          "type": "receipt",
+          "x": 0.5,
+          "y": 0.6,
+          "w": 0.72,
+          "at": 93,
+          "enter": "slide-up",
+          "budget": 10000,
+          "interval": 0.8,
+          "items": [
+            {
+              "label": "PHONE",
+              "price": 9999
+            },
+            {
+              "label": "COVER",
+              "price": 499
+            },
+            {
+              "label": "TEMPERED GLASS",
+              "price": 299
+            },
+            {
+              "label": "CHARGER",
+              "price": 999
+            }
+          ]
+        },
+        {
+          "type": "burst",
+          "text": "TEL LENE!",
+          "x": 0.74,
+          "y": 0.86,
+          "w": 0.4,
+          "at": 97
+        }
+      ]
+    },
+    {
+      "id": "read-10000",
+      "start": 98.69,
+      "end": 103.92,
+      "set": {
+        "builtin": "corkboard"
+      },
+      "transitionIn": "blur",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.06
+      },
+      "headlines": [
+        {
+          "at": 98.75,
+          "small": "AGLI BAAR DIKHE",
+          "big": "₹9,999",
+          "bigAt": 99.6
+        },
+        {
+          "at": 101.84,
+          "small": "TO USE PADHNA",
+          "big": "₹10,000",
+          "bigAt": 102.4
+        }
+      ],
+      "layers": [
+        {
+          "type": "price",
+          "value": "9,999",
+          "x": 0.5,
+          "y": 0.52,
+          "w": 0.7,
+          "rotate": -3,
+          "at": 98.8,
+          "enter": "drop",
+          "ambient": "sway",
+          "countTo": 10000,
+          "countAt": 3.3,
+          "countDur": 0.7
+        },
+        {
+          "type": "mark",
+          "kind": "underline",
+          "x": 0.55,
+          "y": 0.62,
+          "w": 0.55,
+          "h": 80,
+          "at": 102.6,
+          "dur": 0.4
+        }
+      ]
+    },
+    {
+      "id": "buying-your-brain",
+      "start": 103.92,
+      "end": 109.91,
+      "set": {
+        "builtin": "anatomy"
+      },
+      "transitionIn": "scan",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05,
+        "focusY": 0.3,
+        "pushAt": 107.3,
+        "pushTo": 1.25
+      },
+      "headlines": [
+        {
+          "at": 103.95,
+          "small": "DUKAANDAAR ₹1",
+          "big": "NAHI BACHA RAHA",
+          "bigAt": 105
+        },
+        {
+          "at": 107.32,
+          "small": "WO TUMHARA",
+          "big": "DIMAAG KHAREED RAHA",
+          "bigAt": 107.9
+        }
+      ],
+      "layers": [
+        {
+          "type": "body",
+          "x": 0.5,
+          "y": 0.6,
+          "w": 1,
+          "zoom": "head",
+          "brain": "glow",
+          "enter": "fade"
+        },
+        {
+          "type": "image",
+          "src": "assets/coin.png",
+          "x": 0.5,
+          "y": 0.86,
+          "w": 0.2,
+          "at": 104,
+          "enter": "pop",
+          "ambient": "spin",
+          "ambientAmount": 0.3,
+          "out": 106.8,
+          "exit": "pop"
+        },
+        {
+          "type": "mark",
+          "kind": "cross",
+          "x": 0.5,
+          "y": 0.86,
+          "w": 0.22,
+          "h": 300,
+          "at": 105.2,
+          "dur": 0.35,
+          "out": 106.8
+        },
+        {
+          "type": "price",
+          "value": "9,999",
+          "label": "SOLD",
+          "x": 0.66,
+          "y": 0.7,
+          "w": 0.34,
+          "rotate": 10,
+          "at": 107.4,
+          "enter": "drop",
+          "ambient": "sway"
+        },
+        {
+          "type": "stamp",
+          "text": "SOLD",
+          "x": 0.42,
+          "y": 0.5,
+          "w": 0.4,
+          "rotate": -12,
+          "at": 108
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "start": 109.91,
+      "end": 115.07,
+      "set": {
+        "builtin": "wood-desk"
+      },
+      "transitionIn": "push",
+      "headlines": [
+        {
+          "at": 109.95,
+          "small": "YE VIDEO US DOST KO",
+          "big": "BHEJO",
+          "bigAt": 110.8
+        },
+        {
+          "at": 113.48,
+          "small": "JO BOLTA HAI",
+          "big": "10K SE KAM MEIN!",
+          "bigAt": 113.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "prop",
+          "name": "coffee",
+          "x": 0.15,
+          "y": 0.4,
+          "w": 0.2,
+          "enter": "none"
+        },
+        {
+          "type": "prop",
+          "name": "glasses",
+          "x": 0.86,
+          "y": 0.86,
+          "w": 0.22,
+          "rotate": -10,
+          "enter": "none"
+        },
+        {
+          "type": "chat",
+          "name": "Bunty",
+          "x": 0.55,
+          "y": 0.62,
+          "w": 0.66,
+          "at": 110,
+          "enter": "slide-up",
+          "messages": [
+            {
+              "from": "me",
+              "text": "Bhai ye video dekh pehle ▶",
+              "at": 0.6
+            },
+            {
+              "from": "them",
+              "text": "Bhai mujhe toh 10,000 se kam mein mil gaya!",
+              "at": 3.6
+            }
+          ]
+        },
+        {
+          "type": "prop",
+          "name": "exclaim",
+          "x": 0.15,
+          "y": 0.75,
+          "w": 0.08,
+          "at": 113.7,
+          "ambient": "bob"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1188 @@
+{
+  "title": "Raat 3 baje tak reels — Revenge Bedtime Procrastination",
+  "audio": "vo.mp3",
+  "music": "/music/Inspire_The_World_-_by_DensoMusic_Emotional_Hopeful_Epic_Piano.mp3",
+  "musicVolume": 0.1,
+  "endPadding": 0.4,
+  "scenes": [
+    {
+      "id": "bed-3am",
+      "start": 0,
+      "end": 5.04,
+      "set": {
+        "builtin": "bedroom",
+        "options": {
+          "light": "phone",
+          "clock": "3:00"
+        }
+      },
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.08,
+        "focusX": 0.6,
+        "focusY": 0.75
+      },
+      "headlines": [
+        {
+          "at": 0.05,
+          "small": "RAAT KE",
+          "big": "3 BAJE HAIN",
+          "bigAt": 0.5
+        },
+        {
+          "at": 1.85,
+          "small": "SUBAH 7 BAJE",
+          "big": "UTHNA HAI",
+          "bigAt": 3.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "lie-phone",
+          "x": 0.64,
+          "y": 0.79,
+          "w": 0.82,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "reel-211",
+      "start": 5.04,
+      "end": 8.66,
+      "set": {
+        "builtin": "bedroom",
+        "options": {
+          "light": "dark",
+          "clock": "3:00"
+        }
+      },
+      "transitionIn": "push",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.06
+      },
+      "headlines": [
+        {
+          "at": 5.1,
+          "small": "AUR TUM DEKH RAHE HO",
+          "big": "REEL #211",
+          "bigAt": 6.9
+        }
+      ],
+      "layers": [
+        {
+          "type": "reelfeed",
+          "from": 205,
+          "to": 211,
+          "interval": 0.45,
+          "x": 0.5,
+          "y": 0.62,
+          "w": 0.6,
+          "at": 5.1,
+          "enter": "slide-up"
+        }
+      ]
+    },
+    {
+      "id": "cant-let-go",
+      "start": 8.66,
+      "end": 12.55,
+      "set": {
+        "builtin": "bedroom",
+        "options": {
+          "light": "phone",
+          "clock": "3:07"
+        }
+      },
+      "transitionIn": "blur",
+      "camera": {
+        "zoomFrom": 1.15,
+        "zoomTo": 1.25,
+        "focusX": 0.55,
+        "focusY": 0.8
+      },
+      "headlines": [
+        {
+          "at": 8.7,
+          "small": "NEEND AA RAHI HAI",
+          "big": "PHONE NAHI CHHOOTA",
+          "bigAt": 10
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "lie-phone",
+          "x": 0.6,
+          "y": 0.79,
+          "w": 0.82,
+          "enter": "none"
+        },
+        {
+          "type": "burst",
+          "text": "YAWN!",
+          "x": 0.24,
+          "y": 0.68,
+          "w": 0.26,
+          "at": 9.2,
+          "out": 10.1
+        }
+      ]
+    },
+    {
+      "id": "whose-fault",
+      "start": 12.55,
+      "end": 16.55,
+      "set": {
+        "builtin": "night-city"
+      },
+      "transitionIn": "wipe-left",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05
+      },
+      "headlines": [
+        {
+          "at": 12.55,
+          "small": "GALTI TUMHARI",
+          "big": "YA PHONE KI?",
+          "bigAt": 13.4
+        },
+        {
+          "at": 15.06,
+          "big": "DONO KI NAHI."
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "stand",
+          "x": 0.3,
+          "y": 0.66,
+          "w": 0.4,
+          "enter": "pop",
+          "at": 12.6
+        },
+        {
+          "type": "prop",
+          "name": "phone",
+          "text": "REELS",
+          "x": 0.72,
+          "y": 0.64,
+          "w": 0.24,
+          "at": 12.9,
+          "ambient": "bob"
+        },
+        {
+          "type": "prop",
+          "name": "question",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 0.1,
+          "at": 13.5,
+          "ambient": "sway"
+        },
+        {
+          "type": "mark",
+          "kind": "cross",
+          "x": 0.3,
+          "y": 0.62,
+          "w": 0.32,
+          "h": 300,
+          "at": 15.1,
+          "dur": 0.35
+        },
+        {
+          "type": "mark",
+          "kind": "cross",
+          "x": 0.72,
+          "y": 0.64,
+          "w": 0.28,
+          "h": 300,
+          "at": 15.8,
+          "dur": 0.35
+        }
+      ]
+    },
+    {
+      "id": "the-name",
+      "start": 16.55,
+      "end": 21.26,
+      "set": {
+        "builtin": "library"
+      },
+      "transitionIn": "scan",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05
+      },
+      "headlines": [
+        {
+          "at": 16.6,
+          "small": "ASLI WAJAH KA",
+          "big": "NAAM BHI HAI",
+          "bigAt": 17.3
+        },
+        {
+          "at": 18.61,
+          "small": "REVENGE BEDTIME",
+          "big": "PROCRASTINATION",
+          "bigAt": 19
+        }
+      ],
+      "layers": [
+        {
+          "type": "note",
+          "text": "REVENGE BEDTIME",
+          "sub": "procrastination (n.)",
+          "x": 0.5,
+          "y": 0.62,
+          "w": 0.66,
+          "rotate": -3,
+          "at": 16.8,
+          "enter": "drop"
+        },
+        {
+          "type": "mark",
+          "kind": "underline",
+          "x": 0.5,
+          "y": 0.475,
+          "w": 0.56,
+          "h": 70,
+          "at": 19.1,
+          "dur": 0.5
+        }
+      ]
+    },
+    {
+      "id": "revenge-on-day",
+      "start": 21.26,
+      "end": 24.95,
+      "set": {
+        "builtin": "bedroom",
+        "options": {
+          "light": "lamp",
+          "clock": "3:15",
+          "sky": "night",
+          "skyChanges": [
+            {
+              "at": 23.4,
+              "sky": "day"
+            },
+            {
+              "at": 24.3,
+              "sky": "dusk"
+            }
+          ]
+        }
+      },
+      "transitionIn": "push",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.1,
+        "focusX": 0.75,
+        "focusY": 0.42
+      },
+      "headlines": [
+        {
+          "at": 21.26,
+          "big": "BADLA?"
+        },
+        {
+          "at": 22.2,
+          "small": "PAR",
+          "big": "KISSE?"
+        },
+        {
+          "at": 23.34,
+          "small": "APNE",
+          "big": "DIN SE!"
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "slump",
+          "x": 0.3,
+          "y": 0.68,
+          "w": 0.42,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "day-office",
+      "start": 24.95,
+      "end": 26,
+      "set": {
+        "builtin": "office"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.06
+      },
+      "headlines": [
+        {
+          "at": 24.95,
+          "small": "DIN BHAR",
+          "big": "OFFICE",
+          "bigAt": 25.2
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "sit-desk",
+          "x": 0.5,
+          "y": 0.72,
+          "w": 0.6,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "day-study",
+      "start": 26,
+      "end": 26.9,
+      "set": {
+        "builtin": "library"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "zoomFrom": 1.04,
+        "zoomTo": 1
+      },
+      "headlines": [
+        {
+          "at": 26,
+          "big": "PADHAI"
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "sit-desk",
+          "x": 0.45,
+          "y": 0.76,
+          "w": 0.6,
+          "enter": "none",
+          "flipX": true
+        }
+      ]
+    },
+    {
+      "id": "day-chores",
+      "start": 26.9,
+      "end": 28.57,
+      "set": {
+        "builtin": "kitchen"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.06
+      },
+      "headlines": [
+        {
+          "at": 26.9,
+          "small": "GHARWALON KE",
+          "big": "KAAM",
+          "bigAt": 27.2
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "walk",
+          "x": 0.25,
+          "y": 0.72,
+          "w": 0.44,
+          "enter": "none",
+          "move": {
+            "toX": 0.7,
+            "at": 26.9,
+            "dur": 1.7,
+            "ease": "linear"
+          }
+        },
+        {
+          "type": "steam",
+          "x": 0.7,
+          "y": 0.5,
+          "w": 0.12
+        }
+      ]
+    },
+    {
+      "id": "own-time-zero",
+      "start": 28.57,
+      "end": 31.02,
+      "set": {
+        "builtin": "office"
+      },
+      "tint": "sunset",
+      "transitionIn": "blur",
+      "headlines": [
+        {
+          "at": 28.6,
+          "small": "TUMHARA APNA TIME",
+          "big": "ZERO",
+          "bigAt": 29.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "prop",
+          "name": "stopwatch",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 0.34,
+          "at": 28.7,
+          "enter": "pop"
+        },
+        {
+          "type": "counter",
+          "from": 240,
+          "to": 0,
+          "digits": 3,
+          "suffix": "MIN",
+          "x": 0.5,
+          "y": 0.75,
+          "w": 0.6,
+          "at": 28.8,
+          "dur": 1.2
+        }
+      ]
+    },
+    {
+      "id": "brain-steals",
+      "start": 31.02,
+      "end": 35.28,
+      "set": {
+        "builtin": "anatomy"
+      },
+      "transitionIn": "scan",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.08,
+        "focusY": 0.4
+      },
+      "headlines": [
+        {
+          "at": 31.05,
+          "small": "RAAT KO DIMAAG",
+          "big": "TIME CHHEENTA HAI",
+          "bigAt": 32.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "body",
+          "x": 0.5,
+          "y": 0.6,
+          "w": 1,
+          "zoom": "head",
+          "brain": "glow",
+          "gears": true,
+          "enter": "fade"
+        },
+        {
+          "type": "prop",
+          "name": "alarm-clock",
+          "x": 0.8,
+          "y": 0.84,
+          "w": 0.24,
+          "at": 31.4,
+          "enter": "pop",
+          "ringing": true,
+          "move": {
+            "toX": 0.5,
+            "toY": 0.42,
+            "toW": 0.08,
+            "at": 33.4,
+            "dur": 0.8,
+            "ease": "inOut"
+          },
+          "out": 34.3
+        },
+        {
+          "type": "flare",
+          "x": 0.5,
+          "y": 0.42,
+          "at": 34.2
+        }
+      ]
+    },
+    {
+      "id": "netherlands-study",
+      "start": 35.28,
+      "end": 41.43,
+      "set": {
+        "builtin": "library"
+      },
+      "transitionIn": "wipe-left",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05
+      },
+      "headlines": [
+        {
+          "at": 35.3,
+          "small": "NETHERLANDS KI",
+          "big": "UNIVERSITY NE",
+          "bigAt": 36.3
+        },
+        {
+          "at": 37.86,
+          "small": "BINA KISI WAJAH",
+          "big": "JAANBOOJHKAR DER",
+          "bigAt": 39
+        }
+      ],
+      "layers": [
+        {
+          "type": "note",
+          "text": "NETHERLANDS, 2014",
+          "sub": "study: bedtime procrastination",
+          "x": 0.42,
+          "y": 0.62,
+          "w": 0.6,
+          "rotate": -4,
+          "at": 35.5,
+          "enter": "drop"
+        },
+        {
+          "type": "prop",
+          "name": "alarm-clock",
+          "x": 0.8,
+          "y": 0.78,
+          "w": 0.2,
+          "at": 37.9,
+          "enter": "pop",
+          "ringing": true
+        },
+        {
+          "type": "stamp",
+          "text": "LATE BY CHOICE",
+          "x": 0.5,
+          "y": 0.86,
+          "w": 0.62,
+          "rotate": -6,
+          "at": 39.4
+        }
+      ]
+    },
+    {
+      "id": "not-insomnia",
+      "start": 41.43,
+      "end": 44.6,
+      "set": {
+        "builtin": "bedroom",
+        "options": {
+          "light": "dark",
+          "clock": "3:30"
+        }
+      },
+      "transitionIn": "blur",
+      "camera": {
+        "zoomFrom": 1.1,
+        "zoomTo": 1.2,
+        "focusX": 0.6,
+        "focusY": 0.8
+      },
+      "headlines": [
+        {
+          "at": 41.43,
+          "small": "YEH",
+          "big": "INSOMNIA NAHI",
+          "bigAt": 41.9
+        },
+        {
+          "at": 42.93,
+          "small": "WAHAN",
+          "big": "NEEND NAHI AATI",
+          "bigAt": 43.3
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "lie-awake",
+          "x": 0.62,
+          "y": 0.79,
+          "w": 0.82,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "not-going-to-bed",
+      "start": 44.6,
+      "end": 49.1,
+      "set": {
+        "builtin": "bedroom",
+        "options": {
+          "light": "lamp",
+          "clock": "3:34"
+        }
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05
+      },
+      "headlines": [
+        {
+          "at": 44.6,
+          "small": "YAHAN",
+          "big": "NEEND AA RAHI HAI",
+          "bigAt": 45.2
+        },
+        {
+          "at": 46.63,
+          "small": "BAS TUM BISTAR PE",
+          "big": "JA HI NAHI RAHE",
+          "bigAt": 47.4
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "sit-phone",
+          "x": 0.26,
+          "y": 0.78,
+          "w": 0.42,
+          "enter": "none"
+        },
+        {
+          "type": "mark",
+          "kind": "arrow",
+          "x": 0.62,
+          "y": 0.66,
+          "w": 0.5,
+          "h": 220,
+          "at": 47.5,
+          "dur": 0.6
+        }
+      ]
+    },
+    {
+      "id": "battery-2",
+      "start": 49.1,
+      "end": 54.96,
+      "set": {
+        "builtin": "night-city"
+      },
+      "transitionIn": "push",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05
+      },
+      "headlines": [
+        {
+          "at": 49.1,
+          "small": "TO PHIR",
+          "big": "RUKTE KYUN NAHI?",
+          "bigAt": 49.5
+        },
+        {
+          "at": 50.57,
+          "small": "SELF CONTROL KI",
+          "big": "BATTERY: 2%",
+          "bigAt": 52.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "slump",
+          "x": 0.3,
+          "y": 0.66,
+          "w": 0.4,
+          "enter": "pop",
+          "at": 49.2
+        },
+        {
+          "type": "prop",
+          "name": "battery",
+          "value": 0,
+          "text": "2%",
+          "x": 0.72,
+          "y": 0.62,
+          "w": 0.3,
+          "at": 51,
+          "enter": "pop",
+          "ambient": "breathe"
+        }
+      ]
+    },
+    {
+      "id": "no-end",
+      "start": 54.96,
+      "end": 61.73,
+      "set": {
+        "builtin": "library"
+      },
+      "transitionIn": "wipe-left",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.04
+      },
+      "headlines": [
+        {
+          "at": 54.96,
+          "small": "UPAR SE REEL KA",
+          "big": "KOI END NAHI",
+          "bigAt": 55.6
+        },
+        {
+          "at": 57.43,
+          "small": "KITAAB MEIN",
+          "big": "CHAPTER KHATAM",
+          "bigAt": 58
+        },
+        {
+          "at": 59.43,
+          "small": "REEL MEIN",
+          "big": "BAS AGLI REEL",
+          "bigAt": 59.9
+        }
+      ],
+      "layers": [
+        {
+          "type": "reelfeed",
+          "from": 1,
+          "interval": 0.5,
+          "x": 0.72,
+          "y": 0.6,
+          "w": 0.42,
+          "at": 55,
+          "enter": "slide-up"
+        },
+        {
+          "type": "prop",
+          "name": "book",
+          "text": "THE END",
+          "x": 0.3,
+          "y": 0.66,
+          "w": 0.5,
+          "at": 57.5,
+          "enter": "drop"
+        },
+        {
+          "type": "mark",
+          "kind": "check",
+          "color": "#3a8a4a",
+          "x": 0.3,
+          "y": 0.76,
+          "w": 0.2,
+          "h": 200,
+          "at": 58.2,
+          "dur": 0.4
+        }
+      ]
+    },
+    {
+      "id": "study-2500",
+      "start": 61.73,
+      "end": 70.26,
+      "set": {
+        "builtin": "paper"
+      },
+      "tint": "warm",
+      "transitionIn": "blur",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.04,
+        "shakeAt": [
+          68.2
+        ]
+      },
+      "headlines": [
+        {
+          "at": 61.75,
+          "small": "EK STUDY:",
+          "big": "2,500 LOG",
+          "bigAt": 62.8
+        },
+        {
+          "at": 64.96,
+          "small": "JINKA SELF CONTROL",
+          "big": "KAMZOR THA",
+          "bigAt": 65.6
+        },
+        {
+          "at": 67.11,
+          "big": "KAM SOYE"
+        },
+        {
+          "at": 68.11,
+          "small": "AGLE DIN",
+          "big": "ZYADA THAKE",
+          "bigAt": 68.8
+        }
+      ],
+      "layers": [
+        {
+          "type": "counter",
+          "from": 0,
+          "to": 2500,
+          "digits": 4,
+          "x": 0.5,
+          "y": 0.37,
+          "w": 0.58,
+          "at": 61.9,
+          "dur": 1.6
+        },
+        {
+          "type": "isotype",
+          "rows": 6,
+          "cols": 10,
+          "fill": 40,
+          "x": 0.5,
+          "y": 0.64,
+          "w": 0.8,
+          "at": 64.9,
+          "enter": "fade",
+          "dur": 1.4
+        },
+        {
+          "type": "figure",
+          "pose": "slump",
+          "x": 0.82,
+          "y": 0.86,
+          "w": 0.22,
+          "at": 68.2,
+          "enter": "pop"
+        },
+        {
+          "type": "stamp",
+          "text": "THAKAAN",
+          "x": 0.42,
+          "y": 0.88,
+          "w": 0.46,
+          "rotate": -6,
+          "at": 68.9
+        }
+      ]
+    },
+    {
+      "id": "throw-phone",
+      "start": 70.26,
+      "end": 73.43,
+      "set": {
+        "builtin": "bedroom",
+        "options": {
+          "light": "lamp",
+          "clock": "3:50"
+        }
+      },
+      "transitionIn": "push",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05,
+        "shakeAt": [
+          72.6
+        ]
+      },
+      "headlines": [
+        {
+          "at": 70.26,
+          "small": "TO ILAAJ KYA?",
+          "big": "PHONE PHENK DEIN?",
+          "bigAt": 71.35
+        },
+        {
+          "at": 72.55,
+          "big": "NAHI."
+        }
+      ],
+      "layers": [
+        {
+          "type": "prop",
+          "name": "phone",
+          "text": "REELS",
+          "x": 0.5,
+          "y": 0.6,
+          "w": 0.26,
+          "at": 70.4,
+          "enter": "pop",
+          "move": {
+            "toX": 1.25,
+            "toY": 0.35,
+            "at": 71.5,
+            "dur": 0.7,
+            "ease": "inOut"
+          },
+          "out": 72.2
+        },
+        {
+          "type": "stamp",
+          "text": "NAHI!",
+          "x": 0.5,
+          "y": 0.58,
+          "w": 0.62,
+          "rotate": -8,
+          "at": 72.6
+        }
+      ]
+    },
+    {
+      "id": "own-time-evening",
+      "start": 73.43,
+      "end": 78.86,
+      "set": {
+        "builtin": "jungle"
+      },
+      "tint": "sunset",
+      "transitionIn": "blur",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.06
+      },
+      "headlines": [
+        {
+          "at": 73.45,
+          "small": "APNA TIME",
+          "big": "DIN MEIN NIKAALO",
+          "bigAt": 74
+        },
+        {
+          "at": 75.38,
+          "small": "SHAAM KO BAS",
+          "big": "15 MINUTE",
+          "bigAt": 76
+        },
+        {
+          "at": 77.16,
+          "small": "JISMEIN",
+          "big": "KOI KAAM NAHI",
+          "bigAt": 77.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "birds",
+          "count": 4,
+          "y": 0.3
+        },
+        {
+          "type": "figure",
+          "pose": "walk",
+          "x": 0.3,
+          "y": 0.72,
+          "w": 0.42,
+          "enter": "none",
+          "move": {
+            "toX": 0.62,
+            "at": 73.5,
+            "dur": 5.2,
+            "ease": "linear"
+          }
+        },
+        {
+          "type": "counter",
+          "from": 0,
+          "to": 15,
+          "digits": 2,
+          "suffix": "MIN",
+          "x": 0.5,
+          "y": 0.4,
+          "w": 0.46,
+          "at": 75.6,
+          "dur": 1
+        }
+      ]
+    },
+    {
+      "id": "phone-away",
+      "start": 78.86,
+      "end": 86.63,
+      "set": {
+        "builtin": "bedroom",
+        "options": {
+          "light": "dark",
+          "clock": "10:30"
+        }
+      },
+      "transitionIn": "push",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.08,
+        "focusX": 0.55,
+        "focusY": 0.7
+      },
+      "headlines": [
+        {
+          "at": 78.86,
+          "small": "SONE SE",
+          "big": "1 GHANTA PEHLE",
+          "bigAt": 79.6
+        },
+        {
+          "at": 80.91,
+          "small": "PHONE BISTAR SE",
+          "big": "DOOR CHARGING PE",
+          "bigAt": 81.9
+        },
+        {
+          "at": 83.82,
+          "small": "AALAS PEHLI BAAR",
+          "big": "KAAM AAYEGA",
+          "bigAt": 84.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "sleep",
+          "x": 0.62,
+          "y": 0.79,
+          "w": 0.82,
+          "enter": "none"
+        },
+        {
+          "type": "prop",
+          "name": "charger",
+          "x": 0.17,
+          "y": 0.47,
+          "w": 0.15,
+          "at": 80.95,
+          "enter": "drop"
+        },
+        {
+          "type": "mark",
+          "kind": "circle",
+          "color": "#7CFF8B",
+          "x": 0.17,
+          "y": 0.47,
+          "w": 0.26,
+          "h": 360,
+          "at": 82,
+          "dur": 0.5
+        }
+      ]
+    },
+    {
+      "id": "morning-thanks",
+      "start": 86.63,
+      "end": 91.36,
+      "set": {
+        "builtin": "bedroom",
+        "options": {
+          "light": "lamp",
+          "clock": "7:00",
+          "sky": "night",
+          "skyChanges": [
+            {
+              "at": 87.2,
+              "sky": "dawn"
+            },
+            {
+              "at": 88.7,
+              "sky": "day"
+            }
+          ]
+        }
+      },
+      "dark": true,
+      "transitionIn": "blur",
+      "camera": {
+        "zoomFrom": 1,
+        "zoomTo": 1.05
+      },
+      "headlines": [
+        {
+          "at": 86.65,
+          "small": "AAJ RAAT",
+          "big": "1 REEL KAM DEKHO",
+          "bigAt": 87.3
+        },
+        {
+          "at": 88.9,
+          "small": "KAL SUBAH",
+          "big": "THANK YOU BOLEGI",
+          "bigAt": 89.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "figure",
+          "pose": "sleep",
+          "x": 0.62,
+          "y": 0.79,
+          "w": 0.82,
+          "enter": "none",
+          "out": 88.8
+        },
+        {
+          "type": "figure",
+          "pose": "stretch",
+          "x": 0.3,
+          "y": 0.72,
+          "w": 0.42,
+          "at": 88.85,
+          "enter": "pop"
+        },
+        {
+          "type": "bubble",
+          "text": "THANK YOU!",
+          "x": 0.66,
+          "y": 0.6,
+          "w": 0.6,
+          "at": 89.6,
+          "ambient": "bob"
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "start": 91.36,
+      "end": 96.91,
+      "set": {
+        "builtin": "night-city"
+      },
+      "transitionIn": "push",
+      "headlines": [
+        {
+          "at": 91.4,
+          "small": "YE VIDEO US DOST KO",
+          "big": "BHEJO",
+          "bigAt": 92
+        },
+        {
+          "at": 93.5,
+          "small": "JO RAAT 3 BAJE BHI",
+          "big": "ONLINE DIKHTA HAI",
+          "bigAt": 94.6
+        }
+      ],
+      "layers": [
+        {
+          "type": "chat",
+          "name": "Bunty",
+          "x": 0.5,
+          "y": 0.66,
+          "w": 0.66,
+          "at": 91.5,
+          "enter": "slide-up",
+          "messages": [
+            {
+              "from": "me",
+              "text": "Bhai 3 baj gaye, so ja! Ye video dekh ▶",
+              "at": 0.6
+            },
+            {
+              "from": "them",
+              "text": "bas ek aur reel bhai...",
+              "at": 3.4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
