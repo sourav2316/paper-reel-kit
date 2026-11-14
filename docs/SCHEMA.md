@@ -8,8 +8,8 @@
 {
   "title": "Why stress makes you sick",
   "audio": "vo.mp3",
-  "music": "/music/curious-pizzicato.mp3",   // optional — omitted = auto-picked from public/music/, false = none
-  "musicVolume": 0.065,                       // optional — default 6.5%
+  "music": "/music/curious-pizzicato.mp3",   // optional — omitted = kit default, false = none
+  "musicVolume": 0.08,                        // optional — default 8%
   "endPadding": 0.6,
   "scenes": [ { ...scene }, ... ]
 }
@@ -125,3 +125,20 @@ For any other place (a temple, a hospital, a railway platform…), generate an i
 ## Sizes that work (w)
 Auto rickshaw 0.4 · car (side) 0.45 · car (front, close) 0.7→1.1 · bus 0.8 · POV hands 0.9 · hand with phone 0.45 ·
 person 0.35 · tiger 0.6 · cup 0.13 · plant 0.2 · alarm clock 0.15–0.3 · bubble 0.55–0.95 · note 0.3–0.6 · counter 0.4 · isotype 0.8.
+
+### Animated illustrations
+Layer type `motion` uses the standard placement and timing fields (`x`, `y`, `w`, `at`, `move`, etc.). Choose a `kind`:
+- `shield`, `particle`, `entry` (cross-section), `route` (guided anatomical diagram), `brain`
+- `stream` (running water), `foliage`, `light`, `ball`, `pulse`
+- `week` (seven date cards) or `year` (twelve month cards)
+
+Optional `dur` controls the time to fully reveal a progressive illustration (default 2.5 seconds).
+Use `tone: "deep"` for a deeper cut in `entry`, or a CSS color for the `pulse` stroke and glow.
+A `text` layer can use `backplate: true` for a compact, dark paper label.
+
+A `text` layer can align text with `align: "left" | "center" | "right"`. Newlines are preserved.
+A `written-card` draws uppercase Latin text using the photographic marker at `hand`. Each entry in `rows` uses `text`, a start `at` relative to the layer, and `dur`. Rows must be sequential and should leave at least 0.26 seconds for the hand to travel between them.
+A `clinical` layer supports `kind: "monitor" | "prohibit" | "anatomy-travel"`. On the monitor, `dur` sets the moment of the flatline relative to layer entrance. Anatomy travel uses a registered anatomical illustration in `src` and `dur` for the guided zoom.
+Optional written-card fields: `textScale` scales the handwriting (default 1) and `rowSpacing` sets line spacing in paper coordinates (default 105).
+An `atmosphere` layer adds `kind: "night-window" | "lamplight" | "breath" | "signal"`, with optional `tone` and `dim` (for the signal indicator). Position with the common layer fields.
+Use `anchor: "top"` for a hanging layer such as a curtain, so it sways around its upper edge.

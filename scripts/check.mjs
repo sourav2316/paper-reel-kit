@@ -2,7 +2,7 @@
 // Usage: npm run check -- <name>
 import fs from "node:fs";
 import path from "node:path";
-import { projectName, loadStoryboard, listPublic, referencedFiles, projectDir } from "./lib.mjs";
+import { projectName, loadStoryboard, listPublic, referencedFiles, projectDir, musicDefaults } from "./lib.mjs";
 
 const name = projectName();
 const sb = loadStoryboard(name);
@@ -28,7 +28,20 @@ scenes.forEach((s, i) => {
     if ((h.big ?? "").length > 18) warnings.push(`scene ${s.id}: big headline "${h.big}" is long (>18 chars) — will shrink; keep it punchy`);
   }
   for (const l of s.layers ?? []) {
-    if (!TYPES.includes(l.type)) errors.push(`scene ${s.id}: unknown layer type "${l.type}"`);
+    if (l.type === "atmosphere") {
+      if (!["night-window","lamplight","breath","signal"].includes(l.kind)) errors.push(`scene ${s.id}: unknown atmosphere "${l.kind}"`);
+    } else if (l.type === "motion") {
+      if (!["shield", "particle", "entry", "route", "brain", "stream", "foliage", "week", "year", "light", "ball", "pulse"].includes(l.kind)) {
+        errors.push(`scene ${s.id}: unknown motion illustration "${l.kind}"`);
+      }
+    } else if (l.type === "clinical") {
+      if (!["monitor", "prohibit", "anatomy-travel"].includes(l.kind)) errors.push(`scene ${s.id}: unknown clinical illustration "${l.kind}"`);
+      if (l.kind === "anatomy-travel" && !l.src) errors.push(`scene ${s.id}: anatomy-travel requires an image`);
+    } else if (l.type === "written-card") {
+      if (!l.hand || !l.rows?.length || l.rows.some((row, i) => !row.text || row.dur <= 0 || (i > 0 && row.at < l.rows[i-1].at + l.rows[i-1].dur))) {
+        errors.push(`scene ${s.id}: invalid written-card timing or missing hand`);
+      }
+    } else if (!TYPES.includes(l.type)) errors.push(`scene ${s.id}: unknown layer type "${l.type}"`);
     if (l.type === "prop" && !PROPS.includes(l.name)) errors.push(`scene ${s.id}: unknown prop "${l.name}"`);
     if (l.at !== undefined && (l.at < s.start - 0.01 || l.at > s.end)) warnings.push(`scene ${s.id}: layer ${l.type} at ${l.at}s is outside the scene`);
   }
@@ -67,7 +80,7 @@ fs.writeFileSync(path.join(projectDir(name), "ASSET_PROMPTS.md"), lines.join("\n
 
 console.log(`\n== ${sb.title} ==  ${scenes.length} scenes, ${scenes.at(-1)?.end ?? 0}s`);
 console.log(sb.music
-  ? `Music: ${sb.music}${sb._musicAuto ? " (auto-picked from public/music/)" : ""} at ${Math.round((sb.musicVolume ?? 0.065) * 1000) / 10}%`
+  ? `Music: ${sb.music}${sb._musicAuto ? " (kit default)" : ""} at ${Math.round((sb.musicVolume ?? musicDefaults.musicVolume) * 1000) / 10}%`
   : "Music: none — put royalty-free tracks in public/music/ (see public/music/README.md)");
 if (errors.length) console.log(`\nERRORS:\n - ${errors.join("\n - ")}`);
 if (warnings.length) console.log(`\nWarnings:\n - ${warnings.join("\n - ")}`);

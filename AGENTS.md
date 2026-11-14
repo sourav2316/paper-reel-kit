@@ -46,8 +46,8 @@ Read these before your first video: `docs/STYLE.md` (how to direct), `docs/SCHEM
     you would improve.
 
 ## Background music (every video)
-Every render adds background music automatically: a track from `public/music/` with fades. The user's preferred
-level is **10%**, so set `"musicVolume": 0.1` unless they ask for another level. If `public/music/` is empty, tell the user to add royalty-free
+New renders use the Epic Music Waves track configured in `src/music-defaults.json` with fades. The user's preferred
+level is **8%** (`"musicVolume": 0.08`). Leave the track and volume unset to use the defaults unless the user requests an override. If `public/music/` is empty, tell the user to add royalty-free
 tracks (see `public/music/README.md`). Never use film songs or trending audio.
 
 ## People in every video

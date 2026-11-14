@@ -11,6 +11,10 @@ import { Price, Listing, Chat, Receipt } from "../components/Commerce";
 import { Newspaper, Balance, QrStand } from "../components/Widgets2";
 import { ReelFeed } from "../components/Widgets3";
 import { Figure } from "../components/Figure";
+import { MotionIllustration } from "../components/MotionIllustration";
+import { ClinicalMotion } from "../components/ClinicalMotion";
+import { WrittenCard } from "../components/WrittenCard";
+import { Atmosphere } from "../components/Atmosphere";
 import type { HandLink } from "../components/HandDraw";
 
 export const resolvePath = (base: string, p: string) => (p.startsWith("/") ? p.slice(1) : `${base}/${p}`);
@@ -87,7 +91,7 @@ export const LayerView: React.FC<{ layer: Layer; t: number; sceneStart: number; 
   const glow = layer.glow ? `drop-shadow(0 0 ${18 + Math.sin(t * 6) * 6}px ${C.glow})` : "";
 
   return (
-    <div style={{ position: "absolute", left: x * W, top: y * H, width: w * W, transform, transformOrigin: enter === "grow-up" ? "50% 100%" : "50% 50%",
+    <div style={{ position: "absolute", left: x * W, top: y * H, width: w * W, transform, transformOrigin: layer.anchor === "top" ? "50% 0%" : enter === "grow-up" ? "50% 100%" : "50% 50%",
       opacity: en.o * amb.o * exitO * (layer.opacity ?? 1), filter: [shadow, glow].filter(Boolean).join(" ") || undefined, zIndex: layer.z ?? index + 1 }}>
       <Inner layer={layer} local={local} ctx={ctx} boxW={w * W} />
     </div>
@@ -101,6 +105,10 @@ const Placeholder: React.FC<{ label: string }> = ({ label }) => (
 
 const Inner: React.FC<{ layer: Layer; local: number; ctx: Ctx; boxW: number }> = ({ layer, local, ctx, boxW }) => {
   switch (layer.type) {
+    case "atmosphere": return <Atmosphere kind={layer.kind} local={local} tone={layer.tone} dim={layer.dim} />;
+    case "written-card": return <WrittenCard rows={layer.rows} local={local} hand={resolvePath(ctx.base,layer.hand)} textScale={layer.textScale} rowSpacing={layer.rowSpacing} />;
+    case "clinical": return <ClinicalMotion kind={layer.kind} local={local} dur={layer.dur} src={layer.src ? resolvePath(ctx.base,layer.src) : undefined} />;
+    case "motion": return <MotionIllustration kind={layer.kind} local={local} dur={layer.dur} tone={layer.tone} />;
     case "image": {
       const path = resolvePath(ctx.base, layer.src);
       if (ctx.available && !ctx.available.includes(path)) return <Placeholder label={layer.label ?? layer.src} />;
@@ -138,7 +146,8 @@ const Inner: React.FC<{ layer: Layer; local: number; ctx: Ctx; boxW: number }> =
     case "balance": return <Balance left={layer.left} right={layer.right} rightAt={layer.rightAt} leftColor={layer.leftColor} rightColor={layer.rightColor} local={local} />;
     case "figure": return <Figure pose={layer.pose} local={local} style={layer.style} skin={layer.skin} hair={layer.hair} shirt={layer.shirt} pants={layer.pants} color={layer.color} rim={layer.rim} blanket={layer.blanket} />;
     case "reelfeed": return <ReelFeed local={local} from={layer.from} to={layer.to} interval={layer.interval} label={layer.label} boxW={boxW} />;
-    case "text": return <div style={{ fontFamily: layer.font === "mono" ? MONO_FONT : DISPLAY_FONT, fontSize: layer.size ?? 60, color: layer.color ?? C.ink, lineHeight: 1 }}>{layer.text}</div>;
+    case "text": return <div style={{ fontFamily: layer.font === "mono" ? MONO_FONT : DISPLAY_FONT, fontSize: layer.size ?? 60, color: layer.color ?? C.ink, lineHeight: 1, whiteSpace: "pre-line", textAlign: layer.align,
+      ...(layer.backplate ? { padding: "18px 23px", background: "#263f3e", borderLeft: "8px solid #d2a14c", boxShadow: "3px 5px 0 #211e19aa", textAlign: "center" } : {}) }}>{layer.text}</div>;
     default: return null;
   }
 };

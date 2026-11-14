@@ -1,4 +1,7 @@
 import type { Ambient, EnterKind } from "./anim";
+import type { MotionKind } from "../components/MotionIllustration";
+import type { ClinicalKind } from "../components/ClinicalMotion";
+import type { AtmosphereKind } from "../components/Atmosphere";
 
 /**
  * STORYBOARD SCHEMA — the only thing an AI agent writes for a new video.
@@ -10,8 +13,8 @@ export type Storyboard = {
   title: string;
   audio?: string;            // voiceover, e.g. "vo.mp3"
   audioVolume?: number;      // default 1
-  music?: string | false;    // background music; omitted = auto-picked from public/music/, false = none
-  musicVolume?: number;      // default 0.065 (6.5%)
+  music?: string | false;    // background music; omitted = kit default, false = none
+  musicVolume?: number;      // default 0.08 (8%)
   endPadding?: number;       // seconds of hold after the last scene, default 0.5
   scenes: Scene[];
 };
@@ -102,12 +105,17 @@ export type Base = {
   move?: { toX?: number; toY?: number; toW?: number; at?: number; dur?: number; ease?: "linear" | "inOut" | "out" };
   parallax?: number;           // 0 = locked to camera, 1 = full camera zoom (default 1)
   shadow?: boolean;            // soft contact shadow under cutouts (default true for images)
+  anchor?: "top" | "center";  // transform pivot for a hanging layer
   sfx?: string;                // sound played at `at`
   sfxVolume?: number;
   glow?: boolean;
 };
 
 export type Layer = Base & (
+  | { type: "atmosphere"; kind: AtmosphereKind; tone?: string; dim?: boolean }
+  | { type: "written-card"; hand: string; rows: { text: string; at: number; dur: number }[]; textScale?: number; rowSpacing?: number }
+  | { type: "clinical"; kind: ClinicalKind; dur?: number; src?: string }
+  | { type: "motion"; kind: MotionKind; dur?: number; tone?: string }
   | { type: "image"; src: string; blend?: "normal" | "multiply"; label?: string }
   | { type: "prop"; name: PropName; text?: string; color?: string; value?: number; ringing?: boolean }
   | { type: "cloud"; variant?: number }
@@ -129,7 +137,7 @@ export type Layer = Base & (
   | { type: "body"; brain?: OrganState; lungs?: OrganState; heart?: OrganState; stomach?: OrganState; adrenals?: OrganState; kidneys?: OrganState;
       bell?: boolean; ringing?: boolean; switchState?: "off" | "on" | "broken" | "none"; particles?: boolean; gears?: boolean; calm?: boolean; zoom?: "full" | "head" | "torso" }
   | { type: "orbit"; items: string[]; rx?: number; ry?: number }
-  | { type: "text"; text: string; size?: number; color?: string; font?: "display" | "mono" }
+  | { type: "text"; text: string; size?: number; color?: string; font?: "display" | "mono"; backplate?: boolean; align?: "left" | "center" | "right" }
   | { type: "price"; value: string; old?: string; prefix?: string; style?: "tag" | "plain" | "card"; color?: string; scan?: boolean; countTo?: number; countAt?: number; countDur?: number; label?: string; markAt?: number; markFirstAt?: number; markLastAt?: number; markColor?: string; hand?: boolean }
   | { type: "listing"; title: string; price: string; old?: string; off?: string; rating?: number; img?: string; badge?: string; markAt?: number }
   | { type: "chat"; name?: string; messages: { from: "me" | "them"; text: string; at?: number }[]; interval?: number }

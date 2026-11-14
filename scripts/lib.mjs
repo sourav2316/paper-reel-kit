@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const PUBLIC = path.join(ROOT, "public");
+export const musicDefaults = JSON.parse(fs.readFileSync(new URL("../src/music-defaults.json", import.meta.url), "utf8"));
 
 export const projectName = () => {
   const name = process.argv.slice(2).find((a) => !a.startsWith("--"));
@@ -25,16 +26,9 @@ export const loadStoryboard = (name) => {
   const p = path.join(projectDir(name), "storyboard.json");
   if (!fs.existsSync(p)) { console.error(`No storyboard at ${p}`); process.exit(1); }
   const sb = JSON.parse(fs.readFileSync(p, "utf8"));
-  // Every video gets background music: if the storyboard doesn't name a track, pick one from public/music/
-  // (stable per project name, so re-renders keep the same track). "music": false turns it off.
   if (sb.music === undefined) {
-    const dir = path.join(PUBLIC, "music");
-    const tracks = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => /.(mp3|wav|m4a|ogg)$/i.test(f)).sort() : [];
-    if (tracks.length) {
-      const h = [...name].reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
-      sb.music = `/music/${tracks[h % tracks.length]}`;
-      sb._musicAuto = true;
-    }
+    sb.music = musicDefaults.music;
+    sb._musicAuto = true;
   }
   if (sb.music === false) delete sb.music;
   return sb;
@@ -69,6 +63,8 @@ export const referencedFiles = (name, sb) => {
     for (const l of s.layers ?? []) {
       if (l.type === "listing" && l.img) refs.push({ path: resolveAsset(name, l.img), where: `scene ${s.id} listing`, kind: "cutout" });
       if (l.type === "image") refs.push({ path: resolveAsset(name, l.src), where: `scene ${s.id}`, kind: "cutout" });
+      if (l.type === "clinical" && l.src) refs.push({ path: resolveAsset(name, l.src), where: `scene ${s.id} clinical image`, kind: "cutout" });
+      if (l.type === "written-card" && l.hand) refs.push({ path: resolveAsset(name, l.hand), where: `scene ${s.id} handwriting`, kind: "cutout" });
       if (l.sfx) refs.push({ path: resolveAsset(name, l.sfx), where: `scene ${s.id} sfx`, kind: "sfx" });
     }
   }

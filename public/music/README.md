@@ -1,7 +1,7 @@
 # Background music folder
 
-Put 3–6 royalty-free tracks (.mp3) here. **Every video automatically gets one of them** at **6.5% volume**,
-with a 1 s fade-in and a 1.5 s fade-out. The same project always keeps the same track.
+The kit defaults to Epic Music Waves at **8% volume**,
+with a 1 s fade-in and a 1.5 s fade-out. The track and volume are set in `src/music-defaults.json`. [Original Epic Music Waves upload](https://www.youtube.com/watch?v=0dtUv6FsnzA)
 
 - Choose a specific track for a video: `"music": "/music/curious-pizzicato.mp3"` in storyboard.json
 - Change the level for one video: `"musicVolume": 0.07`

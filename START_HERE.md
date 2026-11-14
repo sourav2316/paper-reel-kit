@@ -90,7 +90,7 @@ Wo `storyboard.json` badlega, stills check karega aur dobara render karega.
 AGENTS.md            ← AI ke liye saare rules (Codex + Claude)
 docs/                ← STYLE (direction), SCHEMA (har cheez), ASSETS (images)
 public/projects/     ← har video ka folder; price-99, no-cost-emi, revenge-bedtime = examples
-public/music/        ← background music (har video mein 10% pe)
+public/music/        ← default background music (8% pe)
 public/hands/        ← marker wala haath
 src/                 ← style engine
 .env                 ← tumhari keys

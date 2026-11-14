@@ -4,6 +4,7 @@ import { PaperOverlay } from "../components/PaperOverlay";
 import { SceneView, isDarkScene, transitionSeconds } from "./SceneView";
 import { resolvePath } from "./LayerView";
 import type { Storyboard } from "./types";
+import musicDefaults from "../music-defaults.json";
 
 export type VideoProps = {
   storyboard: Storyboard;
@@ -11,8 +12,8 @@ export type VideoProps = {
   available?: string[] | null;  // list of existing public/ files (passed by the render script)
 };
 
-/** Default background-music level for every video (0.065 = 6.5%). Override per video with "musicVolume". */
-export const MUSIC_VOLUME = 0.065;
+/** Default background-music level for every video (0.08 = 8%). Override per video with "musicVolume". */
+export const MUSIC_VOLUME = musicDefaults.musicVolume;
 
 export const totalSeconds = (sb: Storyboard) => {
   const last = Math.max(...sb.scenes.map((s) => s.end));
@@ -49,7 +50,7 @@ export const Video: React.FC<VideoProps> = ({ storyboard, base, available }) => 
       {storyboard.music && has(resolvePath(base, storyboard.music)) ? (
         <Audio src={staticFile(resolvePath(base, storyboard.music))} loop
           volume={(f) => {
-            // kit default: background music at 6.5% under the voice, 1s fade-in, 1.5s fade-out at the end
+            // kit default: background music under the voice with a 1s fade-in, 1.5s fade-out at the end
             const base = storyboard.musicVolume ?? MUSIC_VOLUME;
             const fadeIn = Math.min(1, f / fps);
             const fadeOut = Math.min(1, (durationInFrames - f) / (1.5 * fps));

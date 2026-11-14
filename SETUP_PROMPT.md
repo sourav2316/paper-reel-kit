@@ -36,7 +36,7 @@ Make the video **end to end without stopping for approval**, following `AGENTS.m
    - every scene has motion: ambient props, camera drift or push, sky time-lapse, birds/steam, pops, counters
    - marker marks drawn by the **one real hand**: chain consecutive marks so a single hand travels between them;
      to circle a number use `markAt` / `markFirstAt` / `markLastAt` on `price`, `listing`, `receipt` or `newspaper`, never guessed positions
-   - music: `"musicVolume": 0.1` with a track from `public/music/`
+   - music: use the Epic Music Waves track at the kit default of 8%
    - **no thumbnail** (I make thumbnails myself)
 5. `assets.json` + images via route A → B → C, then `npm run check -- <name>` until there are no errors and nothing is missing.
 6. Review: `npm run stills -- <name> --every=2`, then **open and look at the stills yourself** (tile them into contact sheets with
