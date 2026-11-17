@@ -56,6 +56,10 @@ human, 9 poses). One main character = one shirt colour through the whole video. 
 specific action) is an `image` cutout: generate it (see "Images" below) — never use a random real person's photo.
 
 ## Images (backgrounds and people)
+
+Before generating art, search the existing project and shared asset libraries. Open likely PNGs and check subject, style, angle, transparency and fit for motion. Reuse matching assets and generate new art for any visual the library does not cover.
+
+Use `library/index.json` to find kit assets. Save all new generated source images under `library/originals/<project>/` and keep selected render-ready images in the project's `public/` assets. Refresh the index with `npm run library` after adding art.
 **Route A: your own image tool (preferred when you have one).** If you (Codex / ChatGPT) can generate images
 yourself, do it for every AI entry in `assets.json`. Save each one at its exact `file` path, as PNG.
 - **Backgrounds** (`kind: "background"`): 1024×1536 portrait (9:16). Start every prompt with the house style:
@@ -83,6 +87,28 @@ When an AI image for a person or a place is missing, don't block. Fall back to r
 ## Pace
 Change the scene or the camera angle every **2–5 s** (≈20+ scenes per 90 s), like the reference channel. A quick
 montage ("office, padhai, ghar ke kaam") = one 1-second scene per word with `transitionIn: "cut"`.
+
+## Motion reference for future reels
+
+Record user-approved animation beats in `docs/MOTION-REFERENCES.md`, with the versioned storyboard and exact beat. Use Chickenpox V3 for the same-particle-to-anatomy reveal and the connected focus shift onto the first skin marks.
+
+On this PC, keep reel exports, stills, scratch media and working files under `D:/paper-reel-kit/out/`. Use the kit's npm render and stills commands so their temporary files also stay under `out/` and are cleaned after the job.
+
+Keep background plates, moving characters, and interactive props in separate layers. On a focus change within the same location, carry over the previous camera framing. For a handoff, animate both hands and the prop through contact and release.
+
+Use the approved Snakebite V5 storyboard as a reference alongside Siachen. Match each visual action to the spoken cue. Where two beats share a location, keep the shot continuous when the camera can shift focus between them, as in the antibody diagram and antivenom reveal. Check hands and props at frame edges, review contact points in motion, and check the cut for repeated visuals before rendering.
+
+Use the supplied TB paper-cutout reel and the approved Siachen layered-motion cut as benchmarks for shot animation. Build moving actors and props with separate transparent PNGs and retain stable background plates with independent layers for weather, light, and depth. Keep practical effects attached to their sources, such as a beam at its torch lens or cloth at its flagpole. Plan motion with the narration before generating art. In the shot list, identify the action on the spoken cue, the pieces that need to move, what stays in contact, and where the camera follows or reframes.
+
+- Stage action with independently controllable parts or matched poses. A walk shifts weight between planted feet and swings the arms. A cough bends the torso and lifts the elbow before the particles appear. Hands keep their grip as a prop moves.
+- Build the location in depth. Separate the near objects, character, room or street, and the view outside. Let a curtain, window shutter, light beam, shadow or background extra move where the location calls for it. Anchor moving pieces to their hinges, hands, or ground. Keep the plate and faces free of full-image warping or displacement.
+- Keep location and blocking legible across the wide shot, close-up and reveal. The reference moves from a cough to the same window's light beam and then returns to the room. Its final shutters swing open before the camera moves toward the same street seen earlier.
+- Give diagrams and tabletop props an action tied to the narration. In the reference, cells assemble around a target and scissors cut a pill strip. Animate how the state changes and keep the resulting visual readable. Camera movement, drifting particles and headline pops support the action.
+- Before the full export, play the key action beats at normal speed and inspect short frame sequences for foot sliding, contact, occlusion, pose continuity and the exact spoken cue. Still frames are for composition checks. Revise motion in the preview when an actor or prop reads as a single flat cutout sliding through the set.
+
+## On-screen language
+
+Write all visible text in English, including top headlines, captions, labels, handwritten notes, diagrams, signs, prop text, and lettering in generated artwork. Translate Hindi or Hinglish narration cues into concise English and keep headlines in ALL CAPS. Use the supplied voiceover and script for the spoken audio. Check the rendered frames for on-screen language before export.
 
 ## Thumbnail
 Don't make one. The user makes thumbnails separately in ChatGPT.
@@ -116,3 +142,16 @@ The *style* stays the same: paper look, headlines, motion, marker hand. The *wor
   inside the same set.
 - Colours come from the theme. Don't use colours outside the palette in `docs/STYLE.md`.
 - Keep important things inside x 0.06–0.94 and y 0.12–0.92. The top 12–26% is reserved for the headline.
+
+### Scene continuity and object motion
+
+- In every shot, plan a background movement anchored to the location and a separate action that matches the narration. Use a window vine or curtain on its hinge, changing daylight or a practical light, flowing water, or suspended particles in a macro view. Keep a stable plate under these moving layers.
+- Save the cast, interacting props and foreground/background details as separate PNGs when they need independent movement. State the anchor and the placement at contact. When an object is passed or picked up, use the same art and world position through contact, occlusion and release.
+- Give each featured object a cue-matched entrance, a readable action, and a timed departure. When the object stays in the world, leave it there and let the camera move to the next point of interest. Use a continuous camera path through several narrated beats in the same location. Carry outgoing focus into the incoming shot, using a shared screen position or physical occlusion, especially for surface-to-interior transitions.
+- Before the full render, sample the frames immediately before, during and after the cue, at the point of contact, during the exit, and in the middle of transitions. Check that any study reveal has a visible document or other relevant subject as soon as the study is mentioned. Verify a scene's activity in motion as well as in a still.
+
+### Carry framing through visual handoffs
+
+At a narration-led transition, carry forward the outgoing camera's actual focus coordinates, zoom and active prop pose. Keep both plates in the same camera space during the reveal. Avoid a pullback in the middle of a push unless the narration calls for it. If patching an existing preview, start the replaced span before the first camera key whose interpolation changes and end after both plates have settled. Check the frames on both sides of each splice.
+
+After verifying the current export, clear known disposable render bundles, intermediate picture/audio files, review stills and superseded drafts from `out/`. Preserve active review or final exports and editable sources. Index reusable art in the D: library and examine likely matches before using ImageGen again.

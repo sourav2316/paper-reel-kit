@@ -1,7 +1,7 @@
 import React, { useId } from "react";
 import { rand } from "../engine/anim";
 
-export type AtmosphereKind = "night-window" | "lamplight" | "breath" | "signal";
+export type AtmosphereKind = "night-window" | "lamplight" | "breath" | "signal" | "contact-shadow";
 
 export const Atmosphere: React.FC<{kind: AtmosphereKind; local: number; tone?: string; dim?: boolean}> = ({kind, local, tone, dim}) => {
   const id = useId();
@@ -12,6 +12,7 @@ export const Atmosphere: React.FC<{kind: AtmosphereKind; local: number; tone?: s
       <radialGradient id={id}><stop stopColor={color} stopOpacity=".68"/><stop offset="1" stopColor={color} stopOpacity="0"/></radialGradient>
       <clipPath id={id+"-pane"}><rect x="7" y="7" width="346" height="285" rx="10"/></clipPath>
     </defs>
+    {kind === "contact-shadow" && <ellipse cx="180" cy="150" rx="170" ry="23" fill={"url(#"+id+")"} />}
     {kind === "lamplight" && <ellipse cx="180" cy="150" rx="173" ry="143" fill={"url(#"+id+")"} opacity={.57+.16*Math.sin(local*2.3)+.05*Math.sin(local*11.6)}/>}
     {kind === "night-window" && <g clipPath={"url(#"+id+"-pane)"}>
       {Array.from({length:17},(_,i)=><circle key={i} cx={12+rand(i+207)*336} cy={15+rand(i+28)*138} r={1+rand(i+4)*1.8} fill="#d7ecf7" opacity={.27+.25*Math.sin(i+local*1.45)}/>)}

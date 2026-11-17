@@ -3,6 +3,7 @@ import { AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig } from "
 import { W, H, MONO_FONT } from "../theme";
 import { SetView } from "../sets/Sets";
 import { LayerView, resolvePath } from "./LayerView";
+import { SetAtmosphere } from "../components/SetAtmosphere";
 import { HeadlineView } from "./Headline";
 import { clamp01, ease, ambientStyle } from "./anim";
 import type { Scene, Tint } from "./types";
@@ -56,7 +57,7 @@ export const isDarkScene = (s: Scene) => s.dark ?? ("builtin" in s.set && (s.set
 
 export const transitionSeconds = (s: Scene) => (s.transitionIn === "cut" ? 0 : s.transitionDuration ?? (s.transitionIn === "scan" ? 0.9 : 0.6));
 
-export const SceneView: React.FC<{ scene: Scene; seqStart: number; base: string; available?: string[] | null; isFirst: boolean }> = ({ scene, seqStart, base, available, isFirst }) => {
+export const SceneView: React.FC<{ scene: Scene; seqStart: number; base: string; available?: string[] | null; isFirst: boolean; next?: Scene }> = ({ scene, seqStart, base, available, isFirst, next }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = seqStart + frame / fps; // absolute seconds
@@ -75,10 +76,33 @@ export const SceneView: React.FC<{ scene: Scene; seqStart: number; base: string;
   const dur = Math.max(0.1, scene.end - scene.start);
   let zoom = (cam.zoomFrom ?? 1) + ((cam.zoomTo ?? 1.04) - (cam.zoomFrom ?? 1)) * clamp01(local / dur);
   if (cam.pushAt !== undefined) zoom *= 1 + ((cam.pushTo ?? 1.4) - 1) * ease(t, cam.pushAt, cam.pushAt + 0.7);
+  const cameraProgress = ease(local, 0, dur);
+  const focusX = cam.focusX ?? 0.5, focusY = cam.focusY ?? 0.5;
+  const cameraX = focusX + ((cam.focusToX ?? focusX) - focusX) * cameraProgress;
+  const cameraY = focusY + ((cam.focusToY ?? focusY) - focusY) * cameraProgress;
   let shx = 0, shy = 0;
   for (const s of cam.shakeAt ?? []) {
     const k = t - s;
     if (k >= 0 && k < 0.35) { const a = (1 - k / 0.35) * 18; shx += Math.sin(k * 90) * a; shy += Math.cos(k * 70) * a; }
+  }
+
+  const keys = cam.keyframes;
+  let framedCamera: React.CSSProperties | undefined;
+  if (keys?.length) {
+    const last = keys.length - 1;
+    const next = keys.findIndex(({ at }) => at > local);
+    const first = next < 0 ? keys[last] : keys[Math.max(0, next - 1)];
+    const second = next < 0 ? first : keys[next];
+    const p = first === second ? 0 : ease(local, first.at, second.at);
+    const scale = first.zoom + (second.zoom - first.zoom) * p;
+    const x = first.x + (second.x - first.x) * p;
+    const y = first.y + (second.y - first.y) * p;
+    const left = Math.max(W * (1 - scale), Math.min(0, W * (.5 - x * scale)));
+    const top = Math.max(H * (1 - scale), Math.min(0, H * (.5 - y * scale)));
+    framedCamera = {
+      transform: `translate(${left}px, ${top}px) scale(${scale})`,
+      transformOrigin: "0 0",
+    };
   }
 
   // transition in
@@ -87,6 +111,11 @@ export const SceneView: React.FC<{ scene: Scene; seqStart: number; base: string;
   let wrap: React.CSSProperties = {};
   let scanBar: React.ReactNode = null;
   switch (isFirst ? "cut" : scene.transitionIn ?? "blur") {
+    case "travel": {
+      const focus = scene.transitionFocus ?? { x: .5, y: .5 };
+      wrap = { opacity: p, transform: `scale(${1 + .15 * (1-p)})`, transformOrigin: `${focus.x * 100}% ${focus.y * 100}%` };
+      break;
+    }
     case "fade": wrap = { opacity: p }; break;
     case "blur": wrap = { opacity: p, filter: `blur(${(1 - p) * 14}px)` }; break;
     case "push": wrap = { opacity: clamp01(p * 2), transform: `scale(${1.25 - 0.25 * p})` }; break;
@@ -104,13 +133,19 @@ export const SceneView: React.FC<{ scene: Scene; seqStart: number; base: string;
 
   const setAmb = "image" in scene.set ? ambientStyle(scene.set.ambient, t, 3) : null;
   const headlines = scene.headlines ?? [];
+  const leaving = next?.transitionIn === "travel" ? ease(t, next.start, next.start + transitionSeconds(next)) : 0;
+  const exitFocus = next?.transitionFocus ?? { x: .5, y: .5 };
+  const exits = leaving > 0 ? {
+    transform: `scale(${1 + leaving * .18})`,
+    transformOrigin: `${exitFocus.x * 100}% ${exitFocus.y * 100}%`,
+  } : undefined;
   const handLinks = computeHandLinks(scene);
 
   return (
     <AbsoluteFill>
       <AbsoluteFill style={{ ...wrap, overflow: "hidden" }}>
-        <AbsoluteFill style={{ filter: tintFilter(tv) }}>
-          <AbsoluteFill style={{ transform: `translate(${shx}px, ${shy}px) scale(${zoom})`, transformOrigin: `${(cam.focusX ?? 0.5) * 100}% ${(cam.focusY ?? 0.5) * 100}%` }}>
+        <AbsoluteFill style={{ ...exits, filter: (scene.tint && scene.tint !== "normal") || scene.tintChanges?.length ? tintFilter(tv) : undefined }}>
+          <AbsoluteFill style={framedCamera ?? { transform: `translate(${shx}px, ${shy}px) scale(${zoom})`, transformOrigin: `${cameraX * 100}% ${cameraY * 100}%` }}>
             {"builtin" in scene.set ? (
               <SetView name={scene.set.builtin} options={scene.set.options} tAbs={t} />
             ) : available && !available.includes(resolvePath(base, scene.set.image)) ? (
@@ -129,11 +164,13 @@ export const SceneView: React.FC<{ scene: Scene; seqStart: number; base: string;
                 })}
               </AbsoluteFill>
             )}
-            {(scene.layers ?? []).map((l, i) => <LayerView key={i} layer={l} t={t} sceneStart={scene.start} index={i} ctx={{ base, available, sceneEnd: scene.end, links: handLinks[i] }} />)}
+            {"image" in scene.set && scene.set.motion && <SetAtmosphere kind={scene.set.motion} time={t} />}
+            {(scene.layers ?? []).map((l, i) => !l.screenSpace && <LayerView key={i} layer={l} t={t} sceneStart={scene.start} index={i} ctx={{ base, available, sceneEnd: scene.end, links: handLinks[i] }} />)}
           </AbsoluteFill>
         </AbsoluteFill>
+        {(scene.layers ?? []).map((l, i) => l.screenSpace && <LayerView key={i} layer={l} t={t} sceneStart={scene.start} index={i} ctx={{ base, available, sceneEnd: scene.end, links: handLinks[i] }} />)}
         {headlines.map((h, i) => (
-          <HeadlineView key={i} h={h} t={t} dark={dark} until={h.until ?? (headlines[i + 1] ? headlines[i + 1].at - 0.05 : scene.end + 1)} />
+          <HeadlineView key={i} h={h} t={t} dark={dark} until={h.until ?? (headlines[i + 1] ? headlines[i + 1].at - 0.05 : next?.transitionIn === "travel" ? scene.end - .08 : scene.end + 1)} />
         ))}
         {(scene.caption ?? (dark && "builtin" in scene.set && scene.set.builtin === "anatomy" ? "GRAY'S ANATOMY, 1918" : undefined)) ? (
           <div style={{ position: "absolute", right: W * 0.06, top: H * 0.124, fontFamily: MONO_FONT, fontSize: 20, letterSpacing: 2,

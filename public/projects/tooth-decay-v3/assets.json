@@ -1,0 +1,170 @@
+[
+  {
+    "file": "/projects/tooth-decay/assets/molar.png",
+    "kind": "background"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/decay-dot.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/larva.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/kitchen.png",
+    "kind": "background"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/vine.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/dish.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/laddu.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/golden-laddu.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/reaching-hand.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/sweet-hand.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/desk.png",
+    "kind": "background"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/desk-lamp.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/survey-report.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/tooth.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/probe-hand.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/bacteria.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/micro.png",
+    "kind": "background"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/sugar.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/acid-drop.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/roti.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/rice.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/biscuits.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "assets/mouth-interior.png",
+    "kind": "background"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/stopwatch.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/clock-needle.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/anatomy.png",
+    "kind": "background"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/bone.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/white-spot.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/glass.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/lesion-enamel.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/lesion-dentin.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/lesion-pulp.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/ice.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/clove.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/bottle.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay/assets/paste.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/rinse-clean.png",
+    "kind": "background"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/rinse-actor.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "assets/cavity-lens.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/clinic-clean.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/patient-actor.png",
+    "kind": "cutout"
+  },
+  {
+    "file": "/projects/tooth-decay-v2/assets/dentist-actor.png",
+    "kind": "cutout"
+  }
+]

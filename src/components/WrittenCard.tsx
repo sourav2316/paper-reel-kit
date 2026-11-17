@@ -6,7 +6,8 @@ import { createStrokes } from "./WritingStrokes";
 type Point = [number, number];
 const between = (from: Point, to: Point, p: number): Point => [from[0] + (to[0]-from[0])*p, from[1] + (to[1]-from[1])*p];
 
-export const WrittenCard: React.FC<{ rows: { text: string; at: number; dur: number }[]; local: number; hand: string; textScale?: number; rowSpacing?: number }> = ({ rows, local, hand, textScale = 1, rowSpacing = 105 }) => {
+export const WrittenCard: React.FC<{ rows: { text: string; at: number; dur: number }[]; local: number; hand: string; handTip?: Point; textScale?: number; rowSpacing?: number }> = ({ rows, local, hand, handTip, textScale = 1, rowSpacing = 105 }) => {
+  const nib = handTip ?? [.11962, .83014];
   const height = 102 + rows.length * rowSpacing;
   let tip: Point | undefined;
   let lastTip: Point | undefined;
@@ -21,7 +22,11 @@ export const WrittenCard: React.FC<{ rows: { text: string; at: number; dur: numb
       const end = between(from, to, Math.min(1, remaining / length));
       if (ink) paths.push(<line key={rowIndex + "-" + i} x1={from[0]} y1={from[1]} x2={end[0]} y2={end[1]} />);
       remaining -= length;
-      if (local >= at && local <= at + dur) { tip = end; opacity = 1; }
+      if (local >= at && local <= at + dur) {
+        const lift = !ink && handTip ? Math.sin(Math.PI * Math.min(1, (remaining + length) / length)) * 9 : 0;
+        tip = [end[0], end[1] - lift];
+        opacity = 1;
+      }
     }
     const start = strokes[0]?.from;
     if (start && local >= at - .26 && local <= at) {
@@ -46,6 +51,6 @@ export const WrittenCard: React.FC<{ rows: { text: string; at: number; dur: numb
       {rows.map((_, i) => <path key={i} d={"M35 " + (72 + 55 * textScale + i * rowSpacing) + "h827"} stroke="#a78e63" opacity=".36" strokeWidth="2"/>)}
       <g stroke="#873f2c" strokeWidth="5" fill="none" strokeLinecap="round">{ink}</g>
     </svg>
-    {tip && opacity > 0 && <Img src={staticFile(hand)} style={{position:"absolute",left:tip[0]/9+"%",top:tip[1]/height*100+"%",width:"37%",maxWidth:"none",opacity,transform:"translate(-11.962%, -83.014%)",filter:"drop-shadow(7px 9px 10px #2a231966)"}}/>}
+    {tip && opacity > 0 && <Img src={staticFile(hand)} style={{position:"absolute",left:tip[0]/9+"%",top:tip[1]/height*100+"%",width:"37%",maxWidth:"none",opacity,transform:`translate(${-100 * nib[0]}%, ${-100 * nib[1]}%)`,filter:"drop-shadow(7px 9px 10px #2a231966)"}}/>}
   </div>;
 };

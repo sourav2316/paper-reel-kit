@@ -41,11 +41,11 @@ export const Video: React.FC<VideoProps> = ({ storyboard, base, available }) => 
         const dur = Math.max(1, Math.round(endSec * fps) - from);
         return (
           <Sequence key={s.id + i} from={from} durationInFrames={dur} name={s.id}>
-            <SceneView scene={s} seqStart={s.start} base={base} available={available} isFirst={i === 0} />
+            <SceneView scene={s} seqStart={s.start} base={base} available={available} isFirst={i === 0} next={next} />
           </Sequence>
         );
       })}
-      <PaperOverlay dark={isDarkScene(current)} />
+      <PaperOverlay dark={isDarkScene(current)} creases={storyboard.paperCreases} />
       {storyboard.audio && has(resolvePath(base, storyboard.audio)) ? <Audio src={staticFile(resolvePath(base, storyboard.audio))} volume={storyboard.audioVolume ?? 1} /> : null}
       {storyboard.music && has(resolvePath(base, storyboard.music)) ? (
         <Audio src={staticFile(resolvePath(base, storyboard.music))} loop

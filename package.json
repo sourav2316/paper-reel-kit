@@ -8,11 +8,12 @@
     "check": "node scripts/check.mjs",
     "transcribe": "node scripts/transcribe.mjs",
     "images": "node scripts/images.mjs",
-    "render": "node scripts/render.mjs",
-    "stills": "node scripts/stills.mjs",
+    "render": "node scripts/remotion-task.mjs render",
+    "stills": "node scripts/remotion-task.mjs stills",
+    "library": "node scripts/index-library.mjs",
     "typecheck": "tsc --noEmit",
     "stock": "node scripts/stock.mjs",
-    "thumb": "node scripts/thumb.mjs",
+    "thumb": "node scripts/remotion-task.mjs thumb",
     "cutout": "node scripts/cutout.mjs"
   },
   "dependencies": {

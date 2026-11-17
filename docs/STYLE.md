@@ -61,4 +61,11 @@ For a 60 s reel, keep beats 1, 4, 5, 6, 8, 10 and 12, and shorten each.
 - **"That friend who…":** `room` + `chat` (a long "me" message, then a short lazy reply).
 
 ## Language
-For Hindi or Hinglish voiceovers, write headlines in **Roman Hinglish caps** ("DIMAAG KE LIYE", "BUDGET GAYA TEL LENE!"). The display font has no Devanagari. The ₹ symbol works.
+Write all on-screen text in **English**, including headings, captions, labels, handwriting, and lettering on props or generated artwork. For Hindi or Hinglish voiceovers, translate the spoken cue into a short English headline in ALL CAPS. Keep the supplied narration in its original language.
+
+### Scene continuity and object motion
+
+- In every shot, plan a background movement anchored to the location and a separate action that matches the narration. Use a window vine or curtain on its hinge, changing daylight or a practical light, flowing water, or suspended particles in a macro view. Keep a stable plate under these moving layers.
+- Save the cast, interacting props and foreground/background details as separate PNGs when they need independent movement. State the anchor and the placement at contact. When an object is passed or picked up, use the same art and world position through contact, occlusion and release.
+- Give each featured object a cue-matched entrance, a readable action, and a timed departure. When the object stays in the world, leave it there and let the camera move to the next point of interest. Use a continuous camera path through several narrated beats in the same location. Carry outgoing focus into the incoming shot, using a shared screen position or physical occlusion, especially for surface-to-interior transitions.
+- Before the full render, sample the frames immediately before, during and after the cue, at the point of contact, during the exit, and in the middle of transitions. Check that any study reveal has a visible document or other relevant subject as soon as the study is mentioned. Verify a scene's activity in motion as well as in a still.

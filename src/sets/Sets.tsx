@@ -5,6 +5,7 @@ import { rand } from "../engine/anim";
 import { SkyClouds } from "../components/Bits";
 import type { BuiltinSet } from "../engine/types";
 import { Showroom, Bank, Iceberg } from "./Sets2";
+import { LayeredPaperStage } from "./LayeredPaperStage";
 import { Bedroom, Library } from "./Sets3";
 
 type Opts = Record<string, any>;
@@ -118,6 +119,7 @@ export const SetView: React.FC<{ name: BuiltinSet; options?: Opts; tAbs?: number
   const frame = useCurrentFrame();
   const t = frame / 30;
   switch (name) {
+    case "layered-paper-stage": return <LayeredPaperStage time={tAbs} location={options.location} dawn={options.dawn} />;
     case "skyline":
       return (
         <AbsoluteFill>

@@ -15,6 +15,14 @@ import { MotionIllustration } from "../components/MotionIllustration";
 import { ClinicalMotion } from "../components/ClinicalMotion";
 import { WrittenCard } from "../components/WrittenCard";
 import { Atmosphere } from "../components/Atmosphere";
+import { SnowDrift } from "../components/SnowDrift";
+import { ClothFlag } from "../components/ClothFlag";
+import { RibbonCutout } from "../components/RibbonCutout";
+import { PaperDiagram } from "../components/PaperDiagram";
+import { WaterFlow } from "../components/WaterFlow";
+import { SceneTrace } from "../components/SceneTrace";
+import { ArticulatedCutout } from "../components/ArticulatedCutout";
+import { ActionEffect } from "../components/ActionEffect";
 import type { HandLink } from "../components/HandDraw";
 
 export const resolvePath = (base: string, p: string) => (p.startsWith("/") ? p.slice(1) : `${base}/${p}`);
@@ -31,9 +39,15 @@ export const LayerView: React.FC<{ layer: Layer; t: number; sceneStart: number; 
   const { fps } = useVideoConfig();
   const at = layer.at ?? sceneStart;
   if (t < at - 0.001) return null;
+  if (layer.out !== undefined && t >= layer.out + .3) return null;
   // full-frame effects don't need a box
   if (layer.type === "birds") return <Birds count={layer.count} local={t - at} y={(layer.y ?? 0.25) * H} />;
   if (layer.type === "rain") return <Rain />;
+  if (layer.type === "water-flow") return <div style={{ position: "absolute", inset: 0, zIndex: layer.z ?? index + 1, opacity: layer.opacity ?? 1 }}>
+    <WaterFlow source={layer.source} target={layer.target} width={layer.width} time={t - at} />
+  </div>;
+  if (layer.type === "trace") return <div style={{ position: "absolute", inset: 0, zIndex: layer.z ?? index + 1, opacity: (layer.opacity ?? 1) * (layer.out === undefined ? 1 : clamp01(1 - (t - layer.out) / .3)) }}><SceneTrace path={layer.path} time={t - at} seconds={layer.seconds} tone={layer.tone} kind={layer.style} weight={layer.weight} /></div>;
+  if (layer.type === "snow") return <div style={{position:"absolute",inset:0,zIndex: layer.z ?? index+1,opacity:layer.opacity ?? 1}}><SnowDrift time={t} density={layer.density} speed={layer.speed} near={layer.near} /></div>;
   if (layer.type === "sfx") return null;
   if (layer.type === "flare") {
     const p = clamp01((t - at) / 0.8);
@@ -74,6 +88,22 @@ export const LayerView: React.FC<{ layer: Layer; t: number; sceneStart: number; 
     if (layer.move.toW !== undefined) w = w + (layer.move.toW - w) * k;
   }
 
+  let rotate = layer.rotate ?? 0;
+  let poseOpacity = 1;
+  const poses = layer.keyframes;
+  if (poses?.length) {
+    const next = poses.findIndex(pose => pose.at > t);
+    const first = next < 0 ? poses[poses.length - 1] : poses[Math.max(0, next - 1)];
+    const second = next < 0 ? first : poses[next];
+    const mix = first === second ? 0 : Easing.inOut(Easing.sin)(clamp01((t - first.at) / (second.at - first.at)));
+    const blend = (a: number, b: number) => a + (b - a) * mix;
+    x = blend(first.x, second.x);
+    y = blend(first.y, second.y);
+    w = blend(first.w, second.w);
+    rotate = blend(first.rotate ?? rotate, second.rotate ?? rotate);
+    poseOpacity = blend(first.opacity ?? 1, second.opacity ?? 1);
+  }
+
   // stamp slam override
   let extraS = 1;
   if (layer.type === "stamp") extraS = 1 + (1 - Math.min(1, p)) * 1.2;
@@ -81,7 +111,7 @@ export const LayerView: React.FC<{ layer: Layer; t: number; sceneStart: number; 
   const transform = [
     "translate(-50%, -50%)",
     `translate(${en.tx + amb.tx + exitX}px, ${en.ty + amb.ty + exitY}px)`,
-    `rotate(${(layer.rotate ?? 0) + amb.r}deg)`,
+    `rotate(${rotate + amb.r}deg)`,
     `scale(${en.s * amb.s * exitS * extraS}, ${en.s * amb.s * exitS * extraS * en.sy})`,
     layer.flipX ? "scaleX(-1)" : "",
   ].join(" ");
@@ -92,7 +122,7 @@ export const LayerView: React.FC<{ layer: Layer; t: number; sceneStart: number; 
 
   return (
     <div style={{ position: "absolute", left: x * W, top: y * H, width: w * W, transform, transformOrigin: layer.anchor === "top" ? "50% 0%" : enter === "grow-up" ? "50% 100%" : "50% 50%",
-      opacity: en.o * amb.o * exitO * (layer.opacity ?? 1), filter: [shadow, glow].filter(Boolean).join(" ") || undefined, zIndex: layer.z ?? index + 1 }}>
+      opacity: en.o * amb.o * exitO * poseOpacity * (layer.opacity ?? 1), filter: [shadow, glow].filter(Boolean).join(" ") || undefined, zIndex: layer.z ?? index + 1 }}>
       <Inner layer={layer} local={local} ctx={ctx} boxW={w * W} />
     </div>
   );
@@ -105,10 +135,27 @@ const Placeholder: React.FC<{ label: string }> = ({ label }) => (
 
 const Inner: React.FC<{ layer: Layer; local: number; ctx: Ctx; boxW: number }> = ({ layer, local, ctx, boxW }) => {
   switch (layer.type) {
+    case "action": return <ActionEffect kind={layer.kind} time={local} />;
     case "atmosphere": return <Atmosphere kind={layer.kind} local={local} tone={layer.tone} dim={layer.dim} />;
-    case "written-card": return <WrittenCard rows={layer.rows} local={local} hand={resolvePath(ctx.base,layer.hand)} textScale={layer.textScale} rowSpacing={layer.rowSpacing} />;
+    case "written-card": return <WrittenCard rows={layer.rows} local={local} hand={resolvePath(ctx.base,layer.hand)} handTip={layer.handTip} textScale={layer.textScale} rowSpacing={layer.rowSpacing} />;
     case "clinical": return <ClinicalMotion kind={layer.kind} local={local} dur={layer.dur} src={layer.src ? resolvePath(ctx.base,layer.src) : undefined} />;
     case "motion": return <MotionIllustration kind={layer.kind} local={local} dur={layer.dur} tone={layer.tone} />;
+    case "ribbon-cutout": {
+      const path = resolvePath(ctx.base, layer.src);
+      if (ctx.available && !ctx.available.includes(path)) return <Placeholder label={layer.src} />;
+      return <RibbonCutout src={path} ratio={layer.ratio} amplitude={layer.amplitude} rooted={layer.rooted} time={local} />;
+    }
+    case "paper-diagram": return <PaperDiagram kind={layer.kind} time={local} mode={layer.mode} value={layer.value} />;
+    case "cloth-flag": {
+      const path = resolvePath(ctx.base, layer.src);
+      if (ctx.available && !ctx.available.includes(path)) return <Placeholder label={layer.src} />;
+      return <ClothFlag src={path} wind={layer.wind} time={local} />;
+    }
+    case "articulated-cutout": {
+      const path = resolvePath(ctx.base, layer.src);
+      if (ctx.available && !ctx.available.includes(path)) return <Placeholder label={layer.src} />;
+      return <ArticulatedCutout src={path} ratio={layer.ratio} parts={layer.parts} time={local} />;
+    }
     case "image": {
       const path = resolvePath(ctx.base, layer.src);
       if (ctx.available && !ctx.available.includes(path)) return <Placeholder label={layer.label ?? layer.src} />;

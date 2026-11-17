@@ -142,3 +142,33 @@ A `clinical` layer supports `kind: "monitor" | "prohibit" | "anatomy-travel"`. O
 Optional written-card fields: `textScale` scales the handwriting (default 1) and `rowSpacing` sets line spacing in paper coordinates (default 105).
 An `atmosphere` layer adds `kind: "night-window" | "lamplight" | "breath" | "signal"`, with optional `tone` and `dim` (for the signal indicator). Position with the common layer fields.
 Use `anchor: "top"` for a hanging layer such as a curtain, so it sways around its upper edge.
+A `snow` layer adds wind-driven flakes over the frame. Optional fields are `density` (1–120), `speed`, `near` (larger flakes), `opacity` and `z` for stacking.
+
+Use transparent PNG image layers for moving foreground elements. Animate them with `move` and `ambient`; keep the background plate intact.
+An `action` layer adds a timed `kind` of `torch`, `powder`, `radar`, `breath`, `flame`, `depth`, `radio`, or `rotor`. Use scene layer placement and `at` as usual.
+
+An `articulated-cutout` layer animates cropped parts of a transparent image. Set `src`, the source `ratio` (width divided by height), and ordered `parts`. Each part uses an SVG `outline` in 0–100 source coordinates. Optional `pivot` [x, y] and sorted `poses` [local seconds, degrees] rotate each piece. A part can carry nested `children` and a `light` with `tip` [x, y], `angle`, `reach` and `spread`. Draw stationary pieces first. Overlap crops near the joints so they stay connected when rotated.
+
+Use optional camera `focusToX` and `focusToY` to ease the zoom origin between two subjects during a shot. An articulated part can use `shifts` [local seconds, x, y] in source coordinates and `folds` [local seconds, scaleX] on its pivot for hinged flat objects. A `trace` layer draws a full-stage SVG `path` in 0–100 coordinates starting at `at` over `seconds`. Optional `style: "air"` adds traveling particles. Set `tone`, `weight`, and `opacity` to suit the scene.
+
+Use a `cloth-flag` layer with a 3:2 PNG `src` and optional `wind` (0–1.5) to animate the flag around a fixed pole. Use `light.lens: true` on an articulated torch part to draw a small practical light at the same tip that emits the beam.
+
+Set `paperCreases: false` at storyboard level to remove the three full-frame fold lines. Paper grain, vignette and the headline rule stay in the overlay.
+
+The `layered-paper-stage` built-in set composites paper scenery and moving environmental layers. Choose `options.location` from `yard`, `ritual`, `bedside`, `clinic`, `stable`, or `board`; add `options.dawn: true` for sunrise. Use `paper-diagram` for paper props with intrinsic motion. Choose `kind` from `globe`, `count`, `species`, `fang`, `pulse`, `clock`, `blocked`, `eye`, `breathing`, `antibodies`, `route`, or `prompt`. The count uses `value`, and `mode` selects the focus or state where supported.
+
+Use `ribbon-cutout` for a long transparent PNG that bends as it moves. Set `src`, `ratio` (source width divided by height), and optional `amplitude` from 0 to 8. The right-hand end stays rigid. Set `move` for forward motion.
+
+Camera `keyframes` define a continuous move within the same set. Each key uses scene-local `at` (seconds), `zoom` (at least 1), and normalized subject coordinates `x` and `y`. The viewport follows the subject with eased motion bounded by the plate edges. Add `screenSpace: true` to a label layer when it should stay in a fixed screen position during the move.
+
+An articulated part can emit moving particles from a local `trail` with a `tip` [x, y], a `drift` [dx, dy], and a color `tone`. The emitter follows the same part transforms as the artwork.
+
+### Background motion, focus transitions and object poses
+
+- An image set accepts `motion: "sunlight" | "plaque" | "specimen" | "clinic"` for anchored illumination and moving particles behind the interactive layers. Add the location's separate practical cutouts or effects on top.
+- Set `transitionIn: "travel"` with `transitionFocus: {x, y}` in screen fractions to match the focus point across adjacent shots. The outgoing world advances around that point while the incoming world settles into frame. Existing transition names remain available.
+- To choreograph a prop through multiple positions, use `keyframes` on the layer, with ordered entries `{at, x, y, w, rotate?, opacity?}`. Here `at` is an absolute voiceover time, and positions are normalized (offscreen entry is allowed). Poses interpolate continuously. Use identical contact poses for both versions of a prop when an occlusion or grip pose changes.
+- Set `rooted: true` on a `ribbon-cutout` to hold its left end steady while the rest flexes. Use layer keyframes to position that end on its physical origin during the animated reveal.
+
+A written-card layer accepts a measured handTip [x, y] in normalized sprite coordinates. With an explicit nib anchor, the pen also lifts during travel between ink strokes.
+A water-flow layer takes normalized source and target pairs for the faucet outlet and basin impact, plus an optional width in composition pixels. The stream, splash and ripples follow that same world-space placement.

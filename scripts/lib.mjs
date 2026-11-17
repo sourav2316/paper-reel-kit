@@ -62,7 +62,7 @@ export const referencedFiles = (name, sb) => {
     for (const v of s.set?.variants ?? []) refs.push({ path: resolveAsset(name, v.image), where: `scene ${s.id} background variant`, kind: "background" });
     for (const l of s.layers ?? []) {
       if (l.type === "listing" && l.img) refs.push({ path: resolveAsset(name, l.img), where: `scene ${s.id} listing`, kind: "cutout" });
-      if (l.type === "image") refs.push({ path: resolveAsset(name, l.src), where: `scene ${s.id}`, kind: "cutout" });
+      if ((l.type === "image" || l.type === "articulated-cutout" || l.type === "cloth-flag" || l.type === "ribbon-cutout") && l.src) refs.push({ path: resolveAsset(name, l.src), where: `scene ${s.id}`, kind: "cutout" });
       if (l.type === "clinical" && l.src) refs.push({ path: resolveAsset(name, l.src), where: `scene ${s.id} clinical image`, kind: "cutout" });
       if (l.type === "written-card" && l.hand) refs.push({ path: resolveAsset(name, l.hand), where: `scene ${s.id} handwriting`, kind: "cutout" });
       if (l.sfx) refs.push({ path: resolveAsset(name, l.sfx), where: `scene ${s.id} sfx`, kind: "sfx" });

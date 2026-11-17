@@ -1,0 +1,351 @@
+{
+  "t": {
+    "zero": 0,
+    "worm": 3.709,
+    "deny": 4.975,
+    "other": 5.982,
+    "child": 8.176,
+    "sweets": 9.89,
+    "warn": 10.92,
+    "study": 12.473,
+    "six": 14.69,
+    "noWorm": 18.843,
+    "black": 21.038,
+    "bacteria": 22.721,
+    "mutans": 24.448,
+    "mouth": 26.91,
+    "sweetFuel": 29.191,
+    "acid": 31.597,
+    "starch": 33.942,
+    "roti": 35.238,
+    "rice": 35.69,
+    "biscuit": 36.3,
+    "sugar": 38.29,
+    "minutes": 40.779,
+    "three": 42.291,
+    "enamel": 44.924,
+    "hard": 48.798,
+    "dissolve": 53.376,
+    "after": 55.684,
+    "thirty": 57.708,
+    "hole": 60.892,
+    "dentin": 62.737,
+    "outerDot": 66.268,
+    "tunnel": 68.724,
+    "nerve": 71.498,
+    "cold": 73.965,
+    "zap": 76.05,
+    "clove": 77.549,
+    "oil": 78.35,
+    "onlyPain": 81.025,
+    "noKill": 84.49,
+    "lost": 86.233,
+    "white": 89.517,
+    "formed": 92.53,
+    "next": 94.682,
+    "remember": 97.217,
+    "rinse": 100.553,
+    "dentist": 102.919,
+    "see": 106.493,
+    "nearEnd": 107.62,
+    "end": 108.278
+  },
+  "duration": 108.278,
+  "cues": [
+    {
+      "id": "zero",
+      "at": 0,
+      "voice": "वो मीम सुना है ना",
+      "action": "Open on a shadowed macro molar and track to the central pit."
+    },
+    {
+      "id": "worm",
+      "at": 3.709,
+      "voice": "दाँत का कीड़ा?",
+      "action": "A stylised worm briefly rises as the claim is posed."
+    },
+    {
+      "id": "deny",
+      "at": 4.975,
+      "voice": "कभी नहीं",
+      "action": "Cross out the imagined worm on the same tooth."
+    },
+    {
+      "id": "other",
+      "at": 5.982,
+      "voice": "असल में ये कुछ और ही चीज़ है",
+      "action": "Return focus to the cavity and the real cause."
+    },
+    {
+      "id": "child",
+      "at": 8.176,
+      "voice": "बचपन से हम सुनते आए हैं",
+      "action": "Mother and child at the table, followed by an insert of the sweet."
+    },
+    {
+      "id": "sweets",
+      "at": 9.89,
+      "voice": "ज़्यादा मीठा खाओगे",
+      "action": "Rack focus to the sweets within the memory."
+    },
+    {
+      "id": "warn",
+      "at": 10.92,
+      "voice": "तो कीड़ा लग जाएगा",
+      "action": "The camera lands on the lifted sweet and then moves to the survey."
+    },
+    {
+      "id": "study",
+      "at": 12.473,
+      "voice": "तमिल नाडु की एक स्टडी के हिसाब से",
+      "action": "Reveal a local survey on the desk."
+    },
+    {
+      "id": "six",
+      "at": 14.69,
+      "voice": "दस में से छह लोग मानते हैं",
+      "action": "Fill six of ten silhouettes and identify the sample."
+    },
+    {
+      "id": "noWorm",
+      "at": 18.843,
+      "voice": "जबकि वहाँ कोई कीड़ा है ही नहीं",
+      "action": "Replace the survey with a tooth and strike through the myth."
+    },
+    {
+      "id": "black",
+      "at": 21.038,
+      "voice": "ये जो काला छेद दिखता है",
+      "action": "Move a dental mirror into the foreground over the molar."
+    },
+    {
+      "id": "bacteria",
+      "at": 22.721,
+      "voice": "इसे बैक्टीरिया बनाते हैं",
+      "action": "Hold focus on the pit before the microscope view."
+    },
+    {
+      "id": "mutans",
+      "at": 24.448,
+      "voice": "इनमें सबसे मुख्य है एस म्यूटैन्स",
+      "action": "Introduce the plaque illustration and chain-shaped bacteria."
+    },
+    {
+      "id": "mouth",
+      "at": 26.91,
+      "voice": "जो ज़्यादातर लोगों के मुँह में होता है",
+      "action": "Reveal a wider patch of plaque."
+    },
+    {
+      "id": "sweetFuel",
+      "at": 29.191,
+      "voice": "तुम मीठा खाते हो तो वो भी खाता है",
+      "action": "Sugar crystals move toward the bacterial cluster."
+    },
+    {
+      "id": "acid",
+      "at": 31.597,
+      "voice": "और चीनी को एसिड में बदल देता है",
+      "action": "Acid particles appear at the cluster and head toward enamel."
+    },
+    {
+      "id": "starch",
+      "at": 33.942,
+      "voice": "सिर्फ़ मीठा ही नहीं",
+      "action": "Whip the focus back to food on the plate."
+    },
+    {
+      "id": "roti",
+      "at": 35.238,
+      "voice": "रोटी",
+      "action": "Reveal roti in the first area of the plate."
+    },
+    {
+      "id": "rice",
+      "at": 35.69,
+      "voice": "चावल",
+      "action": "Reveal rice beside it."
+    },
+    {
+      "id": "biscuit",
+      "at": 36.3,
+      "voice": "और बिस्कुट जैसी स्टार्च वाली चीज़ें",
+      "action": "Track over to the biscuit and complete the plate."
+    },
+    {
+      "id": "sugar",
+      "at": 38.29,
+      "voice": "भी मुँह में जाकर शुगर बन जाती हैं",
+      "action": "Sugar particles lift away from all three foods."
+    },
+    {
+      "id": "minutes",
+      "at": 40.779,
+      "voice": "मीठा खाने के बाद",
+      "action": "Bring the clock into the plaque environment."
+    },
+    {
+      "id": "three",
+      "at": 42.291,
+      "voice": "सिर्फ़ तीन मिनट में एसिड बनना शुरू हो जाता है",
+      "action": "Time pulse and acid droplet enter together."
+    },
+    {
+      "id": "enamel",
+      "at": 44.924,
+      "voice": "वो दाँत की ऊपरी परत यानी एनेमल को घोलने लगता है",
+      "action": "Trace the enamel cap on the anatomical cutaway."
+    },
+    {
+      "id": "hard",
+      "at": 48.798,
+      "voice": "एनेमल पूरे शरीर में सबसे सख़्त चीज़ है, हड्डी से भी ज़्यादा सख़्त",
+      "action": "Compare the enamel cap to a bone specimen."
+    },
+    {
+      "id": "dissolve",
+      "at": 53.376,
+      "voice": "फिर भी एसिड उसे घोल देता है",
+      "action": "Show acid reaching the enamel and early mineral loss appearing."
+    },
+    {
+      "id": "after",
+      "at": 55.684,
+      "voice": "अगर खाने के बाद कुल्ला नहीं किया",
+      "action": "Glass and meal debris illustrate the after-meal beat."
+    },
+    {
+      "id": "thirty",
+      "at": 57.708,
+      "voice": "तो एसिड क़रीब तीस मिनट तक मुँह में टिका रहता है",
+      "action": "Shift focus to duration, with timing qualified."
+    },
+    {
+      "id": "hole",
+      "at": 60.892,
+      "voice": "पहले एनेमल में छेद होता है",
+      "action": "Show the first breach on the same molar anatomy."
+    },
+    {
+      "id": "dentin",
+      "at": 62.737,
+      "voice": "फिर नीचे की नरम परत में वो और तेज़ी से फैलता है",
+      "action": "Widen the lesion through dentin and label the layer."
+    },
+    {
+      "id": "outerDot",
+      "at": 66.268,
+      "voice": "बाहर से बस एक काला डॉट दिखता है",
+      "action": "Match-cut to the tiny dark spot on the tooth surface."
+    },
+    {
+      "id": "tunnel",
+      "at": 68.724,
+      "voice": "लेकिन अंदर पूरी सुरंग बन चुकी होती है",
+      "action": "Push through the spot into a cross-section."
+    },
+    {
+      "id": "nerve",
+      "at": 71.498,
+      "voice": "जो सीधा नस तक पहुँच जाती है",
+      "action": "Follow advanced decay down to the pulp."
+    },
+    {
+      "id": "cold",
+      "at": 73.965,
+      "voice": "फिर कुछ भी ठंडा या मीठा लगते ही",
+      "action": "Bring ice close to the surface without moving the tooth."
+    },
+    {
+      "id": "zap",
+      "at": 76.05,
+      "voice": "झनझनाहट हो जाती है",
+      "action": "Send a brief signal down through the pulp."
+    },
+    {
+      "id": "clove",
+      "at": 77.549,
+      "voice": "दाँत दर्द में लौंग का तेल नस को सुन्न कर देता है",
+      "action": "Introduce a clove and the bottle while holding the lesion in view."
+    },
+    {
+      "id": "oil",
+      "at": 78.35,
+      "voice": "लौंग का तेल",
+      "action": "Pop the oil bottle next to the clove."
+    },
+    {
+      "id": "onlyPain",
+      "at": 81.025,
+      "voice": "इसलिए दर्द थम जाता है, लेकिन कोई कीड़ा नहीं मरता",
+      "action": "Fade the sensation while retaining the same decay."
+    },
+    {
+      "id": "noKill",
+      "at": 84.49,
+      "voice": "क्योंकि कीड़ा है ही नहीं",
+      "action": "Reframe the persistent lesion to resolve the myth."
+    },
+    {
+      "id": "lost",
+      "at": 86.233,
+      "voice": "एनेमल एक बार चला गया तो कभी वापस नहीं आता",
+      "action": "Stage early mineral loss and an established cavity side by side."
+    },
+    {
+      "id": "white",
+      "at": 89.517,
+      "voice": "सफ़ेद धब्बे हों तो फ्लोराइड से ठीक हो सकते हैं",
+      "action": "Track to the early white spot and show fluoride support."
+    },
+    {
+      "id": "formed",
+      "at": 92.53,
+      "voice": "लेकिन छेद कभी नहीं भरता",
+      "action": "Pan to the established hole, which stays visible."
+    },
+    {
+      "id": "next",
+      "at": 94.682,
+      "voice": "इसलिए अगली बार कोई कीड़े की बात करे",
+      "action": "Return to the real cause on the desk."
+    },
+    {
+      "id": "remember",
+      "at": 97.217,
+      "voice": "तो याद रखना कि ये सब बैक्टीरिया का काम है",
+      "action": "Write the takeaway with the marker."
+    },
+    {
+      "id": "rinse",
+      "at": 100.553,
+      "voice": "खाने के बाद कुल्ला करना मत भूलना",
+      "action": "Move the water glass into focus."
+    },
+    {
+      "id": "dentist",
+      "at": 102.919,
+      "voice": "और दाँत पर काला डॉट दिखे",
+      "action": "Return to the dark spot."
+    },
+    {
+      "id": "see",
+      "at": 106.493,
+      "voice": "सीधा डेंटिस्ट को दिखाना",
+      "action": "Cut from the tooth to a dental visit."
+    },
+    {
+      "id": "nearEnd",
+      "at": 107.62,
+      "voice": "डेंटिस्ट को दिखाना",
+      "action": "Finish with the dentist examining the patient."
+    },
+    {
+      "id": "end",
+      "at": 108.278,
+      "voice": "",
+      "action": "End of supplied narration."
+    }
+  ],
+  "method": "FFmpeg pause boundaries with manual phrase alignment and interpolated anchors for continuous speech."
+}

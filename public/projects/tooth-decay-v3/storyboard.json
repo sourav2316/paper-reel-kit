@@ -1,0 +1,3577 @@
+{
+  "title": "The Tooth Worm Myth | Continuous Mouth Transition",
+  "audio": "/projects/tooth-decay/vo.mp3",
+  "endPadding": 0.45,
+  "paperCreases": false,
+  "musicVolume": 0.08,
+  "scenes": [
+    {
+      "id": "meme-to-cavity",
+      "start": 0,
+      "end": 8.176,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/molar.png",
+        "motion": "specimen"
+      },
+      "transitionIn": "cut",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.035,
+            "x": 0.5,
+            "y": 0.54
+          },
+          {
+            "at": 1.56,
+            "zoom": 1.16,
+            "x": 0.505,
+            "y": 0.549
+          },
+          {
+            "at": 2.32,
+            "zoom": 1.27,
+            "x": 0.515,
+            "y": 0.546
+          },
+          {
+            "at": 4.02,
+            "zoom": 1.33,
+            "x": 0.515,
+            "y": 0.534
+          },
+          {
+            "at": 5.47,
+            "zoom": 1.3,
+            "x": 0.505,
+            "y": 0.552
+          },
+          {
+            "at": 7.72,
+            "zoom": 1.49,
+            "x": 0.506,
+            "y": 0.553
+          },
+          {
+            "at": 8.176,
+            "zoom": 1.52,
+            "x": 0.506,
+            "y": 0.553
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 0,
+          "bigAt": 0.12,
+          "small": "THAT MEME",
+          "big": ""
+        },
+        {
+          "at": 1.56,
+          "bigAt": 1.6800000000000002,
+          "small": "THE OLD MYTH",
+          "big": "A TOOTH WORM?"
+        },
+        {
+          "at": 4.975,
+          "bigAt": 5.095,
+          "small": "THE REAL STORY",
+          "big": "NO WORM",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/decay-dot.png",
+          "x": 0.506,
+          "y": 0.553,
+          "w": 0.117,
+          "at": 1.49,
+          "enter": "fade",
+          "shadow": false,
+          "opacity": 0.89,
+          "out": 5.114999999999999
+        },
+        {
+          "type": "ribbon-cutout",
+          "src": "/projects/tooth-decay-v2/assets/larva.png",
+          "ratio": 6.695238095238095,
+          "amplitude": 8,
+          "rooted": true,
+          "at": 1.56,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 1.56,
+              "x": 0.5090104723277564,
+              "y": 0.5478280125530358,
+              "w": 0.02,
+              "rotate": -67,
+              "opacity": 0
+            },
+            {
+              "at": 1.82,
+              "x": 0.5262010886054365,
+              "y": 0.5109718028905811,
+              "w": 0.16,
+              "rotate": -70,
+              "opacity": 1
+            },
+            {
+              "at": 2.14,
+              "x": 0.5490039995068086,
+              "y": 0.46935303528705774,
+              "w": 0.32,
+              "rotate": -69,
+              "opacity": 1
+            },
+            {
+              "at": 2.62,
+              "x": 0.5228103686890198,
+              "y": 0.477398912960852,
+              "w": 0.28,
+              "rotate": -78,
+              "opacity": 1
+            },
+            {
+              "at": 3.05,
+              "x": 0.5679569239063933,
+              "y": 0.46729851569453773,
+              "w": 0.34,
+              "rotate": -63,
+              "opacity": 1
+            },
+            {
+              "at": 3.45,
+              "x": 0.5315229117735613,
+              "y": 0.4726400731998917,
+              "w": 0.3,
+              "rotate": -75,
+              "opacity": 1
+            },
+            {
+              "at": 3.709,
+              "x": 0.5422612334813994,
+              "y": 0.46555172926401334,
+              "w": 0.33,
+              "rotate": -72,
+              "opacity": 1
+            },
+            {
+              "at": 4.02,
+              "x": 0.5792386987732026,
+              "y": 0.44639824185965443,
+              "w": 0.42,
+              "rotate": -64,
+              "opacity": 1
+            },
+            {
+              "at": 4.52,
+              "x": 0.5436082541210778,
+              "y": 0.4545677477363067,
+              "w": 0.37,
+              "rotate": -73,
+              "opacity": 1
+            },
+            {
+              "at": 4.944999999999999,
+              "x": 0.5811465711018056,
+              "y": 0.45863370258007713,
+              "w": 0.38,
+              "rotate": -61,
+              "opacity": 1
+            },
+            {
+              "at": 5.2749999999999995,
+              "x": 0.5109142478571511,
+              "y": 0.5450304487220964,
+              "w": 0.031,
+              "rotate": -66,
+              "opacity": 0
+            }
+          ],
+          "out": 5.255,
+          "exit": "pop"
+        },
+        {
+          "type": "clinical",
+          "kind": "prohibit",
+          "x": 0.506,
+          "y": 0.529,
+          "w": 0.29,
+          "at": 5.045,
+          "enter": "pop",
+          "out": 5.862,
+          "exit": "pop"
+        },
+        {
+          "type": "mark",
+          "kind": "circle",
+          "x": 0.506,
+          "y": 0.553,
+          "w": 0.17,
+          "at": 5.982,
+          "dur": 0.46,
+          "hand": false,
+          "color": "#ffce80",
+          "h": 0.087,
+          "out": 7.836
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.5,
+        "y": 0.57
+      }
+    },
+    {
+      "id": "childhood-at-the-table",
+      "start": 8.176,
+      "end": 12.473,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/kitchen.png",
+        "motion": "sunlight"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.025,
+            "x": 0.51,
+            "y": 0.62
+          },
+          {
+            "at": 1.574,
+            "zoom": 1.13,
+            "x": 0.52,
+            "y": 0.7
+          },
+          {
+            "at": 2.564,
+            "zoom": 1.19,
+            "x": 0.52,
+            "y": 0.73
+          },
+          {
+            "at": 3.514,
+            "zoom": 1.25,
+            "x": 0.55,
+            "y": 0.69
+          },
+          {
+            "at": 4.297,
+            "zoom": 1.27,
+            "x": 0.55,
+            "y": 0.69
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 8.176,
+          "bigAt": 8.296,
+          "small": "GROWING UP",
+          "big": "TOO MANY SWEETS"
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/vine.png",
+          "x": 0.965,
+          "y": 0.39,
+          "w": 0.23,
+          "at": 8.176,
+          "enter": "none",
+          "anchor": "top",
+          "ambient": "sway",
+          "ambientAmount": 1.8,
+          "shadow": false,
+          "opacity": 0.8
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/dish.png",
+          "x": 0.5,
+          "y": 0.777,
+          "w": 0.72,
+          "at": 8.176,
+          "enter": "slide-up",
+          "out": 12.273000000000001,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/laddu.png",
+          "x": 0.666,
+          "y": 0.761,
+          "w": 0.14,
+          "at": 10.16,
+          "enter": "drop",
+          "rotate": 12,
+          "opacity": 0.9,
+          "out": 12.173,
+          "exit": "fade"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/golden-laddu.png",
+          "x": 0.341,
+          "y": 0.77735,
+          "w": 0.6,
+          "at": 9.83,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 9.83,
+              "x": 0.341,
+              "y": 0.77735,
+              "w": 0.6,
+              "rotate": 0,
+              "opacity": 0
+            },
+            {
+              "at": 10.24,
+              "x": 0.341,
+              "y": 0.85735,
+              "w": 0.6,
+              "rotate": 0,
+              "opacity": 1
+            },
+            {
+              "at": 10.71,
+              "x": 0.341,
+              "y": 0.85735,
+              "w": 0.6,
+              "rotate": 0,
+              "opacity": 1
+            },
+            {
+              "at": 10.83,
+              "x": 0.341,
+              "y": 0.85735,
+              "w": 0.6,
+              "rotate": 0,
+              "opacity": 0
+            }
+          ],
+          "out": 10.84,
+          "shadow": false
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/reaching-hand.png",
+          "x": 0.15,
+          "y": 1.21,
+          "w": 0.55,
+          "at": 10.15,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 10.15,
+              "x": 0.15,
+              "y": 1.21,
+              "w": 0.55,
+              "rotate": -10,
+              "opacity": 1
+            },
+            {
+              "at": 10.58,
+              "x": 0.285,
+              "y": 0.96,
+              "w": 0.6,
+              "rotate": -6,
+              "opacity": 1
+            },
+            {
+              "at": 10.74,
+              "x": 0.341,
+              "y": 0.85735,
+              "w": 0.6,
+              "rotate": 0,
+              "opacity": 1
+            },
+            {
+              "at": 10.835,
+              "x": 0.341,
+              "y": 0.85735,
+              "w": 0.6,
+              "rotate": 0,
+              "opacity": 0
+            }
+          ],
+          "out": 10.84,
+          "shadow": false
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/sweet-hand.png",
+          "x": 0.341,
+          "y": 0.85735,
+          "w": 0.6,
+          "at": 10.715,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 10.715,
+              "x": 0.341,
+              "y": 0.85735,
+              "w": 0.6,
+              "rotate": 0,
+              "opacity": 0
+            },
+            {
+              "at": 10.83,
+              "x": 0.341,
+              "y": 0.85735,
+              "w": 0.6,
+              "rotate": 0,
+              "opacity": 1
+            },
+            {
+              "at": 11.42,
+              "x": 0.378,
+              "y": 0.844,
+              "w": 0.69,
+              "rotate": -4,
+              "opacity": 1
+            },
+            {
+              "at": 11.83,
+              "x": 0.365,
+              "y": 0.83,
+              "w": 0.72,
+              "rotate": -5,
+              "opacity": 1
+            },
+            {
+              "at": 12.473,
+              "x": 0.05,
+              "y": 1.16,
+              "w": 0.67,
+              "rotate": -12,
+              "opacity": 1
+            }
+          ],
+          "shadow": false,
+          "out": 12.3,
+          "exit": "fade"
+        },
+        {
+          "type": "atmosphere",
+          "kind": "lamplight",
+          "x": 0.25,
+          "y": 0.48,
+          "w": 0.65,
+          "at": 8.176,
+          "enter": "fade",
+          "tone": "#ffca7c",
+          "opacity": 0.34
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.51,
+        "y": 0.63
+      }
+    },
+    {
+      "id": "tiruchengode-survey",
+      "start": 12.473,
+      "end": 21.038,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/desk.png",
+        "motion": "sunlight"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.045,
+            "x": 0.52,
+            "y": 0.57
+          },
+          {
+            "at": 1.297,
+            "zoom": 1.19,
+            "x": 0.58,
+            "y": 0.55
+          },
+          {
+            "at": 2.277,
+            "zoom": 1.085,
+            "x": 0.5,
+            "y": 0.6
+          },
+          {
+            "at": 5.027,
+            "zoom": 1.11,
+            "x": 0.5,
+            "y": 0.63
+          },
+          {
+            "at": 8.565,
+            "zoom": 1.24,
+            "x": 0.51,
+            "y": 0.61
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 12.473,
+          "bigAt": 12.593,
+          "small": "TAMIL NADU",
+          "big": "ONE LOCAL SURVEY",
+          "bigColor": "mustard"
+        },
+        {
+          "at": 14.69,
+          "bigAt": 14.809999999999999,
+          "small": "IN THIS SURVEY",
+          "big": "ABOUT 6 IN 10"
+        },
+        {
+          "at": 18.843,
+          "bigAt": 18.963,
+          "small": "THE MYTH",
+          "big": "NO LIVING WORM"
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/desk-lamp.png",
+          "x": 0.15,
+          "y": 0.53,
+          "w": 0.23,
+          "at": 12.473,
+          "enter": "none",
+          "ambient": "sway",
+          "ambientAmount": 0.31
+        },
+        {
+          "type": "atmosphere",
+          "kind": "lamplight",
+          "x": 0.28,
+          "y": 0.58,
+          "w": 0.68,
+          "at": 12.473,
+          "enter": "fade",
+          "tone": "#ffca7c",
+          "opacity": 0.54
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/survey-report.png",
+          "x": 0.66,
+          "y": 0.98,
+          "w": 0.28,
+          "at": 12.473,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 12.473,
+              "x": 0.66,
+              "y": 0.98,
+              "w": 0.28,
+              "rotate": -13,
+              "opacity": 0
+            },
+            {
+              "at": 12.87,
+              "x": 0.526,
+              "y": 0.57,
+              "w": 0.76,
+              "rotate": -4,
+              "opacity": 1
+            },
+            {
+              "at": 13.84,
+              "x": 0.521,
+              "y": 0.551,
+              "w": 0.81,
+              "rotate": -3,
+              "opacity": 1
+            },
+            {
+              "at": 14.65,
+              "x": 0.512,
+              "y": 0.425,
+              "w": 0.56,
+              "rotate": -4,
+              "opacity": 1
+            },
+            {
+              "at": 18.343,
+              "x": 0.535,
+              "y": 0.427,
+              "w": 0.55,
+              "rotate": -2,
+              "opacity": 1
+            },
+            {
+              "at": 19.143,
+              "x": 0.92,
+              "y": 0.4,
+              "w": 0.48,
+              "rotate": 8,
+              "opacity": 0
+            }
+          ],
+          "shadow": true,
+          "out": 18.843,
+          "exit": "fade"
+        },
+        {
+          "type": "isotype",
+          "x": 0.5,
+          "y": 0.634,
+          "w": 0.73,
+          "rows": 2,
+          "cols": 5,
+          "fill": 60,
+          "fillColor": "#df674e",
+          "baseColor": "#f3d8a7",
+          "dur": 1.45,
+          "at": 14.69,
+          "enter": "slide-up",
+          "out": 18.713,
+          "exit": "slide-down"
+        },
+        {
+          "type": "text",
+          "text": "310 RESIDENTS IN TIRUCHENGODE",
+          "at": 14.69,
+          "out": 18.713,
+          "x": 0.5,
+          "y": 0.891,
+          "w": 0.83,
+          "enter": "slide-up",
+          "exit": "slide-down",
+          "screenSpace": true,
+          "backplate": true,
+          "color": "#fff0d0",
+          "size": 38
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/tooth.png",
+          "x": 0.51,
+          "y": 0.61,
+          "w": 0.42,
+          "at": 18.843,
+          "enter": "zoom-in",
+          "ambient": "breathe",
+          "out": 20.808,
+          "exit": "pop"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/decay-dot.png",
+          "x": 0.518,
+          "y": 0.508,
+          "w": 0.11,
+          "at": 19.013,
+          "shadow": false,
+          "opacity": 0.88,
+          "enter": "fade",
+          "out": 20.728
+        },
+        {
+          "type": "ribbon-cutout",
+          "src": "/projects/tooth-decay-v2/assets/larva.png",
+          "ratio": 6.695238095238095,
+          "amplitude": 8,
+          "rooted": true,
+          "at": 19.01,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 19.01,
+              "x": 0.5270643734848616,
+              "y": 0.49886922605730977,
+              "w": 0.03,
+              "rotate": -56,
+              "opacity": 0
+            },
+            {
+              "at": 19.28,
+              "x": 0.5599040176076654,
+              "y": 0.45345046362074576,
+              "w": 0.21,
+              "rotate": -62,
+              "opacity": 1
+            },
+            {
+              "at": 19.57,
+              "x": 0.5875223972818551,
+              "y": 0.4431102537273042,
+              "w": 0.27,
+              "rotate": -54,
+              "opacity": 1
+            },
+            {
+              "at": 19.96,
+              "x": 0.5433781039131025,
+              "y": 0.4448123837279744,
+              "w": 0.23,
+              "rotate": -73,
+              "opacity": 1
+            },
+            {
+              "at": 20.38,
+              "x": 0.5747364366916453,
+              "y": 0.44840769044198764,
+              "w": 0.24,
+              "rotate": -57,
+              "opacity": 1
+            },
+            {
+              "at": 20.68,
+              "x": 0.5266176515319423,
+              "y": 0.49873488945011224,
+              "w": 0.03,
+              "rotate": -58,
+              "opacity": 0
+            }
+          ],
+          "out": 20.7,
+          "exit": "fade"
+        },
+        {
+          "type": "clinical",
+          "kind": "prohibit",
+          "x": 0.559,
+          "y": 0.466,
+          "w": 0.263,
+          "at": 19.52,
+          "enter": "pop",
+          "out": 20.758,
+          "exit": "pop"
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.56,
+        "y": 0.6
+      }
+    },
+    {
+      "id": "probe-follows-the-dark-pit",
+      "start": 21.038,
+      "end": 24.448,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/molar.png",
+        "motion": "specimen"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.12,
+            "x": 0.505,
+            "y": 0.548
+          },
+          {
+            "at": 0.722,
+            "zoom": 1.32,
+            "x": 0.515,
+            "y": 0.556
+          },
+          {
+            "at": 1.612,
+            "zoom": 1.47,
+            "x": 0.506,
+            "y": 0.555
+          },
+          {
+            "at": 3.41,
+            "zoom": 1.94,
+            "x": 0.506,
+            "y": 0.553
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 21.038,
+          "bigAt": 21.158,
+          "small": "AT THE SURFACE",
+          "big": "A DARK PIT"
+        },
+        {
+          "at": 22.721,
+          "bigAt": 22.841,
+          "small": "CAUSED BY",
+          "big": "BACTERIA",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/probe-hand.png",
+          "x": 0.98,
+          "y": 0.83,
+          "w": 0.5,
+          "at": 21.038,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 21.038,
+              "x": 0.98,
+              "y": 0.83,
+              "w": 0.5,
+              "rotate": 0,
+              "opacity": 0
+            },
+            {
+              "at": 21.39,
+              "x": 0.775,
+              "y": 0.716,
+              "w": 0.48,
+              "rotate": -5,
+              "opacity": 1
+            },
+            {
+              "at": 21.8,
+              "x": 0.728,
+              "y": 0.671,
+              "w": 0.48,
+              "rotate": -5,
+              "opacity": 1
+            },
+            {
+              "at": 22.19,
+              "x": 0.733,
+              "y": 0.672,
+              "w": 0.48,
+              "rotate": -6,
+              "opacity": 1
+            },
+            {
+              "at": 22.721,
+              "x": 0.753,
+              "y": 0.686,
+              "w": 0.49,
+              "rotate": -7,
+              "opacity": 1
+            },
+            {
+              "at": 23.22,
+              "x": 1.05,
+              "y": 0.86,
+              "w": 0.48,
+              "rotate": 6,
+              "opacity": 0
+            }
+          ],
+          "shadow": true,
+          "out": 23.19,
+          "exit": "fade"
+        },
+        {
+          "type": "mark",
+          "kind": "circle",
+          "x": 0.506,
+          "y": 0.553,
+          "w": 0.123,
+          "at": 22.721,
+          "dur": 0.46,
+          "hand": false,
+          "color": "#ffce80",
+          "h": 0.065,
+          "out": 24.118000000000002
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/bacteria.png",
+          "x": 0.508,
+          "y": 0.56,
+          "w": 0.074,
+          "at": 22.72,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 22.72,
+              "x": 0.508,
+              "y": 0.56,
+              "w": 0.074,
+              "rotate": -32,
+              "opacity": 0
+            },
+            {
+              "at": 22.98,
+              "x": 0.51,
+              "y": 0.533,
+              "w": 0.29,
+              "rotate": -17,
+              "opacity": 1
+            },
+            {
+              "at": 23.37,
+              "x": 0.49,
+              "y": 0.507,
+              "w": 0.4,
+              "rotate": -10,
+              "opacity": 1
+            },
+            {
+              "at": 24.15,
+              "x": 0.48,
+              "y": 0.502,
+              "w": 0.38,
+              "rotate": 2,
+              "opacity": 1
+            },
+            {
+              "at": 24.48,
+              "x": 0.49,
+              "y": 0.502,
+              "w": 0.36,
+              "rotate": 5,
+              "opacity": 0
+            }
+          ],
+          "shadow": true,
+          "ambient": "bob",
+          "ambientAmount": 0.38,
+          "out": 24.39,
+          "exit": "fade"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/bacteria.png",
+          "x": 0.534,
+          "y": 0.567,
+          "w": 0.07,
+          "at": 23.04,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 23.04,
+              "x": 0.534,
+              "y": 0.567,
+              "w": 0.07,
+              "rotate": 53,
+              "opacity": 0
+            },
+            {
+              "at": 23.43,
+              "x": 0.619,
+              "y": 0.587,
+              "w": 0.204,
+              "rotate": 49,
+              "opacity": 0.9
+            },
+            {
+              "at": 24.17,
+              "x": 0.615,
+              "y": 0.575,
+              "w": 0.228,
+              "rotate": 46,
+              "opacity": 0.95
+            },
+            {
+              "at": 24.48,
+              "x": 0.615,
+              "y": 0.575,
+              "w": 0.2,
+              "rotate": 46,
+              "opacity": 0
+            }
+          ],
+          "shadow": true,
+          "ambient": "sway",
+          "ambientAmount": 0.62,
+          "out": 24.38,
+          "exit": "fade"
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.52,
+        "y": 0.57
+      }
+    },
+    {
+      "id": "plaque-up-close",
+      "start": 24.448,
+      "end": 33.942,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/micro.png",
+        "motion": "plaque"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.52,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.1,
+            "x": 0.5,
+            "y": 0.55
+          },
+          {
+            "at": 1.552,
+            "zoom": 1.16,
+            "x": 0.49,
+            "y": 0.61
+          },
+          {
+            "at": 2.982,
+            "zoom": 1.08,
+            "x": 0.5,
+            "y": 0.57
+          },
+          {
+            "at": 5.163,
+            "zoom": 1.15,
+            "x": 0.54,
+            "y": 0.56
+          },
+          {
+            "at": 7.869,
+            "zoom": 1.24,
+            "x": 0.53,
+            "y": 0.62
+          },
+          {
+            "at": 9.494,
+            "zoom": 1.3,
+            "x": 0.53,
+            "y": 0.66
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 24.448,
+          "bigAt": 24.568,
+          "small": "ONE BACTERIUM",
+          "big": "S. MUTANS",
+          "bigColor": "blue"
+        },
+        {
+          "at": 26.91,
+          "bigAt": 27.03,
+          "small": "IN DENTAL",
+          "big": "PLAQUE"
+        },
+        {
+          "at": 29.191,
+          "bigAt": 29.311,
+          "small": "BACTERIA FEED",
+          "big": "ON SUGAR",
+          "bigColor": "mustard"
+        },
+        {
+          "at": 31.597,
+          "bigAt": 31.717000000000002,
+          "small": "SUGAR BECOMES",
+          "big": "ACID"
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/bacteria.png",
+          "x": 0.09,
+          "y": 0.76,
+          "w": 0.34,
+          "at": 24.448,
+          "enter": "fade",
+          "opacity": 0.3,
+          "ambient": "sway",
+          "ambientAmount": 2.1,
+          "rotate": 31,
+          "shadow": false,
+          "out": 33.642
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/bacteria.png",
+          "x": 0.93,
+          "y": 0.39,
+          "w": 0.31,
+          "at": 24.448,
+          "enter": "fade",
+          "opacity": 0.32,
+          "ambient": "sway",
+          "ambientAmount": 2.6,
+          "rotate": 29,
+          "shadow": false,
+          "out": 33.642
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/bacteria.png",
+          "x": 0.46,
+          "y": 0.58,
+          "w": 0.53,
+          "at": 24.448,
+          "shadow": false,
+          "ambient": "sway",
+          "ambientAmount": 0.8,
+          "enter": "zoom-in",
+          "move": {
+            "toX": 0.46,
+            "toY": 0.57,
+            "toW": 0.37,
+            "at": 29.191,
+            "dur": 1,
+            "ease": "inOut"
+          },
+          "out": 33.742,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/bacteria.png",
+          "x": 0.72,
+          "y": 0.65,
+          "w": 0.28,
+          "at": 26.91,
+          "shadow": false,
+          "ambient": "sway",
+          "ambientAmount": 0.8,
+          "rotate": 41,
+          "opacity": 0.77,
+          "out": 33.742,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/bacteria.png",
+          "x": 0.24,
+          "y": 0.73,
+          "w": 0.26,
+          "at": 26.91,
+          "shadow": false,
+          "ambient": "sway",
+          "ambientAmount": 0.8,
+          "rotate": -21,
+          "opacity": 0.6,
+          "out": 33.742,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/sugar.png",
+          "x": 0.75,
+          "y": 0.37,
+          "w": 0.14,
+          "at": 29.191,
+          "enter": "fade",
+          "move": {
+            "toX": 0.46,
+            "toY": 0.54,
+            "toW": 0.025,
+            "at": 29.191,
+            "dur": 1.5,
+            "ease": "inOut"
+          },
+          "out": 31.597
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/sugar.png",
+          "x": 0.68,
+          "y": 0.46,
+          "w": 0.13,
+          "at": 29.191,
+          "enter": "fade",
+          "move": {
+            "toX": 0.51,
+            "toY": 0.54,
+            "toW": 0.025,
+            "at": 29.191,
+            "dur": 1.75,
+            "ease": "inOut"
+          },
+          "out": 31.597
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/sugar.png",
+          "x": 0.28,
+          "y": 0.4,
+          "w": 0.12,
+          "at": 29.191,
+          "enter": "fade",
+          "move": {
+            "toX": 0.56,
+            "toY": 0.54,
+            "toW": 0.025,
+            "at": 29.191,
+            "dur": 2,
+            "ease": "inOut"
+          },
+          "out": 31.597
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/acid-drop.png",
+          "x": 0.45,
+          "y": 0.57,
+          "w": 0.15,
+          "at": 31.597,
+          "enter": "pop",
+          "move": {
+            "toX": 0.33,
+            "toY": 0.74,
+            "toW": 0.1,
+            "at": 31.597,
+            "dur": 1.65,
+            "ease": "inOut"
+          },
+          "ambient": "bob",
+          "out": 33.742,
+          "exit": "fade"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/acid-drop.png",
+          "x": 0.52,
+          "y": 0.6,
+          "w": 0.15,
+          "at": 31.597,
+          "enter": "pop",
+          "move": {
+            "toX": 0.52,
+            "toY": 0.74,
+            "toW": 0.1,
+            "at": 31.597,
+            "dur": 1.9,
+            "ease": "inOut"
+          },
+          "ambient": "bob",
+          "out": 33.742,
+          "exit": "fade"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/acid-drop.png",
+          "x": 0.57,
+          "y": 0.56,
+          "w": 0.15,
+          "at": 31.597,
+          "enter": "pop",
+          "move": {
+            "toX": 0.69,
+            "toY": 0.74,
+            "toW": 0.1,
+            "at": 31.597,
+            "dur": 2.15,
+            "ease": "inOut"
+          },
+          "ambient": "bob",
+          "out": 33.742,
+          "exit": "fade"
+        },
+        {
+          "type": "trace",
+          "path": "M 39 57 Q 55 65 76 73",
+          "at": 31.597,
+          "seconds": 1.8,
+          "tone": "#f7be66",
+          "weight": 5,
+          "style": "air",
+          "out": 33.742,
+          "exit": "fade"
+        },
+        {
+          "type": "motion",
+          "kind": "light",
+          "x": 0.82,
+          "y": 0.65,
+          "w": 0.9,
+          "at": 24.448,
+          "opacity": 0.36,
+          "ambient": "flicker",
+          "ambientAmount": 0.35,
+          "tone": "#81e0df"
+        },
+        {
+          "type": "snow",
+          "at": 24.448,
+          "density": 13,
+          "speed": 0.22,
+          "opacity": 0.13
+        },
+        {
+          "type": "trace",
+          "path": "M 38 50 C 43 51 49 54 54 56",
+          "at": 29.191,
+          "out": 31.597,
+          "seconds": 0.87,
+          "tone": "#c9e8eb",
+          "weight": 4,
+          "style": "air"
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.5,
+        "y": 0.55
+      }
+    },
+    {
+      "id": "food-to-fermentable-sugars",
+      "start": 33.942,
+      "end": 40.779,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/kitchen.png",
+        "motion": "sunlight"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.035,
+            "x": 0.52,
+            "y": 0.6
+          },
+          {
+            "at": 1.556,
+            "zoom": 1.12,
+            "x": 0.42,
+            "y": 0.72
+          },
+          {
+            "at": 2.068,
+            "zoom": 1.13,
+            "x": 0.56,
+            "y": 0.72
+          },
+          {
+            "at": 2.928,
+            "zoom": 1.19,
+            "x": 0.63,
+            "y": 0.75
+          },
+          {
+            "at": 4.108,
+            "zoom": 1.21,
+            "x": 0.62,
+            "y": 0.706
+          },
+          {
+            "at": 4.628,
+            "zoom": 1.34,
+            "x": 0.535,
+            "y": 0.6
+          },
+          {
+            "at": 5.288,
+            "zoom": 1.36,
+            "x": 0.525,
+            "y": 0.589
+          },
+          {
+            "at": 6.098,
+            "zoom": 1.4,
+            "x": 0.515,
+            "y": 0.585
+          },
+          {
+            "at": 6.837,
+            "zoom": 1.43,
+            "x": 0.513,
+            "y": 0.582
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 33.942,
+          "bigAt": 34.062,
+          "small": "STARCHY FOODS",
+          "big": "ROTI • RICE"
+        },
+        {
+          "at": 36.3,
+          "bigAt": 36.419999999999995,
+          "small": "ALSO IN",
+          "big": "BISCUITS",
+          "bigColor": "mustard"
+        },
+        {
+          "at": 38.42,
+          "bigAt": 39.21,
+          "small": "IN THE MOUTH",
+          "big": "TO SUGARS"
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/vine.png",
+          "x": 0.965,
+          "y": 0.39,
+          "w": 0.23,
+          "at": 33.942,
+          "enter": "none",
+          "anchor": "top",
+          "ambient": "sway",
+          "ambientAmount": 1.8,
+          "shadow": false,
+          "opacity": 0.8
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/dish.png",
+          "x": 0.5,
+          "y": 0.76,
+          "w": 0.77,
+          "at": 33.942,
+          "enter": "fade",
+          "out": 40.579,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/roti.png",
+          "x": 0.32,
+          "y": 0.735,
+          "w": 0.31,
+          "at": 35.238,
+          "enter": "slide-up",
+          "out": 40.579,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/rice.png",
+          "x": 0.63,
+          "y": 0.718,
+          "w": 0.27,
+          "at": 35.69,
+          "enter": "slide-up",
+          "out": 40.579,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/biscuits.png",
+          "x": 0.64,
+          "y": 0.795,
+          "w": 0.24,
+          "at": 36.3,
+          "enter": "slide-up",
+          "out": 40.579,
+          "exit": "slide-down"
+        },
+        {
+          "type": "motion",
+          "kind": "light",
+          "x": 0.27,
+          "y": 0.34,
+          "w": 0.8,
+          "at": 33.942,
+          "opacity": 0.36,
+          "ambient": "flicker",
+          "ambientAmount": 0.35
+        },
+        {
+          "type": "snow",
+          "at": 33.942,
+          "density": 13,
+          "speed": 0.22,
+          "opacity": 0.13
+        },
+        {
+          "type": "image",
+          "src": "assets/mouth-interior.png",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 1.04,
+          "at": 38.28,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 38.28,
+              "x": 0.5,
+              "y": 0.5,
+              "w": 1.04,
+              "rotate": 0,
+              "opacity": 0
+            },
+            {
+              "at": 38.72,
+              "x": 0.5,
+              "y": 0.5,
+              "w": 1.04,
+              "rotate": 0,
+              "opacity": 0.92
+            },
+            {
+              "at": 39.03,
+              "x": 0.5,
+              "y": 0.5,
+              "w": 1.04,
+              "rotate": 0,
+              "opacity": 1
+            }
+          ],
+          "shadow": false
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/biscuits.png",
+          "x": 0.65,
+          "y": 0.773,
+          "w": 0.14,
+          "at": 38.06,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 38.06,
+              "x": 0.65,
+              "y": 0.773,
+              "w": 0.14,
+              "rotate": -8,
+              "opacity": 0
+            },
+            {
+              "at": 38.24,
+              "x": 0.638,
+              "y": 0.715,
+              "w": 0.129,
+              "rotate": -13,
+              "opacity": 1
+            },
+            {
+              "at": 38.58,
+              "x": 0.539,
+              "y": 0.592,
+              "w": 0.111,
+              "rotate": -28,
+              "opacity": 1
+            },
+            {
+              "at": 38.88,
+              "x": 0.514,
+              "y": 0.58,
+              "w": 0.093,
+              "rotate": -40,
+              "opacity": 1
+            },
+            {
+              "at": 39.2,
+              "x": 0.51,
+              "y": 0.602,
+              "w": 0.049,
+              "rotate": -42,
+              "opacity": 0
+            }
+          ],
+          "shadow": true,
+          "out": 39.18,
+          "exit": "fade"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/sugar.png",
+          "x": 0.515,
+          "y": 0.597,
+          "w": 0.038,
+          "at": 38.94,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 38.94,
+              "x": 0.515,
+              "y": 0.597,
+              "w": 0.038,
+              "rotate": -29,
+              "opacity": 0
+            },
+            {
+              "at": 39.2,
+              "x": 0.479,
+              "y": 0.59544,
+              "w": 0.065,
+              "rotate": -29,
+              "opacity": 1
+            },
+            {
+              "at": 39.75,
+              "x": 0.43,
+              "y": 0.606,
+              "w": 0.115,
+              "rotate": -13,
+              "opacity": 1
+            },
+            {
+              "at": 40.46,
+              "x": 0.4201,
+              "y": 0.576,
+              "w": 0.1081,
+              "rotate": -1,
+              "opacity": 1
+            },
+            {
+              "at": 40.94,
+              "x": 0.43,
+              "y": 0.526,
+              "w": 0.06325000000000001,
+              "rotate": 4,
+              "opacity": 0
+            }
+          ],
+          "shadow": false,
+          "ambient": "bob",
+          "ambientAmount": 0.42,
+          "out": 40.74,
+          "exit": "fade"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/sugar.png",
+          "x": 0.515,
+          "y": 0.597,
+          "w": 0.038,
+          "at": 39.015,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 39.015,
+              "x": 0.515,
+              "y": 0.597,
+              "w": 0.038,
+              "rotate": 13,
+              "opacity": 0
+            },
+            {
+              "at": 39.267,
+              "x": 0.514,
+              "y": 0.5798,
+              "w": 0.065,
+              "rotate": 13,
+              "opacity": 1
+            },
+            {
+              "at": 39.82,
+              "x": 0.53,
+              "y": 0.56,
+              "w": 0.13,
+              "rotate": 29,
+              "opacity": 1
+            },
+            {
+              "at": 40.46,
+              "x": 0.5311,
+              "y": 0.53,
+              "w": 0.1222,
+              "rotate": 41,
+              "opacity": 1
+            },
+            {
+              "at": 40.94,
+              "x": 0.53,
+              "y": 0.48000000000000004,
+              "w": 0.07150000000000001,
+              "rotate": 46,
+              "opacity": 0
+            }
+          ],
+          "shadow": false,
+          "ambient": "bob",
+          "ambientAmount": 0.42,
+          "out": 40.74,
+          "exit": "fade"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/sugar.png",
+          "x": 0.515,
+          "y": 0.597,
+          "w": 0.038,
+          "at": 39.089999999999996,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 39.089999999999996,
+              "x": 0.515,
+              "y": 0.597,
+              "w": 0.038,
+              "rotate": 31,
+              "opacity": 0
+            },
+            {
+              "at": 39.334,
+              "x": 0.542,
+              "y": 0.60292,
+              "w": 0.065,
+              "rotate": 31,
+              "opacity": 1
+            },
+            {
+              "at": 39.89,
+              "x": 0.61,
+              "y": 0.628,
+              "w": 0.105,
+              "rotate": 47,
+              "opacity": 1
+            },
+            {
+              "at": 40.46,
+              "x": 0.6199,
+              "y": 0.598,
+              "w": 0.0987,
+              "rotate": 59,
+              "opacity": 1
+            },
+            {
+              "at": 40.94,
+              "x": 0.61,
+              "y": 0.548,
+              "w": 0.05775,
+              "rotate": 64,
+              "opacity": 0
+            }
+          ],
+          "shadow": false,
+          "ambient": "bob",
+          "ambientAmount": 0.42,
+          "out": 40.74,
+          "exit": "fade"
+        },
+        {
+          "type": "text",
+          "text": "SALIVA STARTS BREAKING DOWN STARCH",
+          "x": 0.5,
+          "y": 0.889,
+          "w": 0.81,
+          "at": 39.33,
+          "size": 35,
+          "color": "#ffecca",
+          "backplate": true,
+          "enter": "slide-up",
+          "exit": "fade",
+          "screenSpace": true,
+          "out": 40.72
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.54,
+        "y": 0.64
+      }
+    },
+    {
+      "id": "acid-clock",
+      "start": 40.779,
+      "end": 44.924,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/micro.png",
+        "motion": "plaque"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.02,
+            "x": 0.5,
+            "y": 0.55
+          },
+          {
+            "at": 1.512,
+            "zoom": 1.11,
+            "x": 0.52,
+            "y": 0.56
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 40.779,
+          "bigAt": 40.899,
+          "small": "AFTER SUGAR",
+          "big": "WITHIN MINUTES"
+        },
+        {
+          "at": 42.291,
+          "bigAt": 42.410999999999994,
+          "small": "ACID BEGINS",
+          "big": "FAST",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/bacteria.png",
+          "x": 0.27,
+          "y": 0.67,
+          "w": 0.38,
+          "at": 40.779,
+          "shadow": false,
+          "ambient": "sway",
+          "ambientAmount": 0.8,
+          "opacity": 0.63,
+          "rotate": -26,
+          "out": 44.724,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/stopwatch.png",
+          "x": 0.66,
+          "y": 0.54,
+          "w": 0.47,
+          "at": 40.779,
+          "enter": "drop",
+          "rotate": 11,
+          "move": {
+            "toX": 0.59,
+            "toY": 0.56,
+            "toW": 0.54,
+            "at": 42.291,
+            "dur": 1.1,
+            "ease": "inOut"
+          },
+          "out": 44.724,
+          "exit": "slide-down"
+        },
+        {
+          "type": "articulated-cutout",
+          "src": "/projects/tooth-decay/assets/clock-needle.png",
+          "x": 0.66,
+          "y": 0.54,
+          "w": 0.47,
+          "at": 40.779,
+          "shadow": false,
+          "ratio": 0.7465753424657534,
+          "parts": [
+            {
+              "outline": "M 0 0 H 100 V 100 H 0 Z",
+              "pivot": [
+                50,
+                61.130136986301366
+              ],
+              "poses": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.25,
+                  0
+                ],
+                [
+                  1.45,
+                  105
+                ]
+              ]
+            }
+          ],
+          "enter": "drop",
+          "rotate": 11,
+          "move": {
+            "toX": 0.59,
+            "toY": 0.56,
+            "toW": 0.54,
+            "at": 42.291,
+            "dur": 1.1,
+            "ease": "inOut"
+          },
+          "out": 44.724,
+          "exit": "fade"
+        },
+        {
+          "type": "counter",
+          "x": 0.32,
+          "y": 0.46,
+          "w": 0.17,
+          "from": 0,
+          "to": 3,
+          "digits": 1,
+          "dur": 0.65,
+          "at": 42.291,
+          "enter": "pop",
+          "out": 44.724,
+          "exit": "fade"
+        },
+        {
+          "type": "text",
+          "text": "MIN",
+          "x": 0.32,
+          "y": 0.53,
+          "w": 0.22,
+          "at": 42.291,
+          "size": 42,
+          "color": "#ffedca",
+          "backplate": true,
+          "out": 44.724,
+          "exit": "fade"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/acid-drop.png",
+          "x": 0.3,
+          "y": 0.63,
+          "w": 0.13,
+          "at": 42.291,
+          "enter": "pop",
+          "move": {
+            "toX": 0.37,
+            "toY": 0.75,
+            "toW": 0.1,
+            "at": 42.291,
+            "dur": 1.4,
+            "ease": "inOut"
+          },
+          "out": 44.724,
+          "exit": "fade"
+        },
+        {
+          "type": "text",
+          "text": "ILLUSTRATIVE TIMING",
+          "x": 0.5,
+          "y": 0.889,
+          "w": 0.8,
+          "at": 42.291,
+          "size": 36,
+          "color": "#ffedca",
+          "backplate": true,
+          "screenSpace": true,
+          "out": 44.724,
+          "exit": "fade"
+        },
+        {
+          "type": "snow",
+          "at": 40.779,
+          "density": 13,
+          "speed": 0.22,
+          "opacity": 0.13
+        },
+        {
+          "type": "trace",
+          "path": "M 28 74 Q 41 78 47 72",
+          "at": 42.440999999999995,
+          "out": 44.704,
+          "seconds": 1.1,
+          "tone": "#ffca7d",
+          "weight": 4,
+          "style": "air"
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.56,
+        "y": 0.6
+      }
+    },
+    {
+      "id": "enamel-close-up",
+      "start": 44.924,
+      "end": 55.684,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/anatomy.png",
+        "motion": "specimen"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.035,
+            "x": 0.5,
+            "y": 0.51
+          },
+          {
+            "at": 2.376,
+            "zoom": 1.14,
+            "x": 0.5,
+            "y": 0.44
+          },
+          {
+            "at": 4.544,
+            "zoom": 1.14,
+            "x": 0.47,
+            "y": 0.56
+          },
+          {
+            "at": 6.596,
+            "zoom": 1.19,
+            "x": 0.38,
+            "y": 0.53
+          },
+          {
+            "at": 8.452,
+            "zoom": 1.18,
+            "x": 0.49,
+            "y": 0.43
+          },
+          {
+            "at": 10.76,
+            "zoom": 1.29,
+            "x": 0.5,
+            "y": 0.41
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 44.924,
+          "bigAt": 45.044,
+          "small": "THE OUTER LAYER",
+          "big": "ENAMEL",
+          "bigColor": "mustard"
+        },
+        {
+          "at": 48.798,
+          "bigAt": 48.918,
+          "small": "HARDER THAN",
+          "big": "BONE"
+        },
+        {
+          "at": 53.376,
+          "bigAt": 53.495999999999995,
+          "small": "UNDER ATTACK",
+          "big": "MINERAL LOSS"
+        }
+      ],
+      "layers": [
+        {
+          "type": "trace",
+          "path": "M 20 36 Q 33 25 50 34 Q 65 26 79 35",
+          "at": 44.924,
+          "seconds": 1,
+          "tone": "#81e0df",
+          "weight": 5,
+          "out": 55.483999999999995,
+          "exit": "fade"
+        },
+        {
+          "type": "text",
+          "text": "ENAMEL",
+          "x": 0.2,
+          "y": 0.44,
+          "w": 0.34,
+          "at": 44.924,
+          "size": 35,
+          "color": "#ffedca",
+          "backplate": true,
+          "out": 48.798
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/bone.png",
+          "x": 0.2,
+          "y": 0.71,
+          "w": 0.38,
+          "at": 48.798,
+          "enter": "slide-left",
+          "rotate": -18,
+          "out": 53.376
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/acid-drop.png",
+          "x": 0.54,
+          "y": 0.29,
+          "w": 0.15,
+          "at": 53.376,
+          "enter": "fade",
+          "shadow": false,
+          "move": {
+            "toX": 0.5,
+            "toY": 0.351,
+            "toW": 0.11,
+            "at": 53.376,
+            "dur": 1.35,
+            "ease": "inOut"
+          },
+          "out": 55.483999999999995,
+          "exit": "fade"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/white-spot.png",
+          "x": 0.5,
+          "y": 0.37,
+          "w": 0.15,
+          "at": 53.376,
+          "enter": "fade",
+          "shadow": false,
+          "out": 55.483999999999995,
+          "exit": "fade"
+        },
+        {
+          "type": "text",
+          "text": "REPEATED ACID ATTACKS WEAKEN ENAMEL",
+          "x": 0.5,
+          "y": 0.889,
+          "w": 0.8,
+          "at": 53.376,
+          "size": 36,
+          "color": "#ffedca",
+          "backplate": true,
+          "screenSpace": true,
+          "out": 55.483999999999995,
+          "exit": "fade"
+        },
+        {
+          "type": "snow",
+          "at": 44.924,
+          "density": 13,
+          "speed": 0.22,
+          "opacity": 0.13
+        },
+        {
+          "type": "trace",
+          "path": "M 50 36 C 52 37 54 38 56 37",
+          "at": 53.796,
+          "out": 55.534,
+          "seconds": 1.2,
+          "tone": "#f9d697",
+          "weight": 4,
+          "style": "air"
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.51,
+        "y": 0.43
+      }
+    },
+    {
+      "id": "after-meal-clock",
+      "start": 55.684,
+      "end": 60.892,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/kitchen.png",
+        "motion": "sunlight"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.035,
+            "x": 0.65,
+            "y": 0.57
+          },
+          {
+            "at": 1.756,
+            "zoom": 1.18,
+            "x": 0.65,
+            "y": 0.65
+          },
+          {
+            "at": 2.744,
+            "zoom": 1.21,
+            "x": 0.48,
+            "y": 0.63
+          },
+          {
+            "at": 5.208,
+            "zoom": 1.36,
+            "x": 0.38,
+            "y": 0.55
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 55.684,
+          "bigAt": 55.803999999999995,
+          "small": "AFTER A MEAL",
+          "big": "RINSE WITH WATER",
+          "bigColor": "blue"
+        },
+        {
+          "at": 57.708,
+          "bigAt": 57.827999999999996,
+          "small": "THE ACID ATTACK",
+          "big": "ABOUT 30 MIN"
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/vine.png",
+          "x": 0.965,
+          "y": 0.39,
+          "w": 0.23,
+          "at": 55.684,
+          "enter": "none",
+          "anchor": "top",
+          "ambient": "sway",
+          "ambientAmount": 1.8,
+          "shadow": false,
+          "opacity": 0.8
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/dish.png",
+          "x": 0.43,
+          "y": 0.77,
+          "w": 0.72,
+          "at": 55.684,
+          "enter": "fade",
+          "out": 60.692,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/glass.png",
+          "x": 0.69,
+          "y": 0.69,
+          "w": 0.27,
+          "at": 55.684,
+          "enter": "slide-right",
+          "move": {
+            "toX": 0.65,
+            "toY": 0.67,
+            "toW": 0.29,
+            "at": 55.684,
+            "dur": 1.4,
+            "ease": "inOut"
+          },
+          "out": 60.692,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/stopwatch.png",
+          "x": 0.38,
+          "y": 0.58,
+          "w": 0.4,
+          "at": 57.708,
+          "enter": "drop",
+          "rotate": -9,
+          "out": 60.692,
+          "exit": "slide-down"
+        },
+        {
+          "type": "articulated-cutout",
+          "src": "/projects/tooth-decay/assets/clock-needle.png",
+          "x": 0.38,
+          "y": 0.58,
+          "w": 0.4,
+          "at": 57.708,
+          "shadow": false,
+          "ratio": 0.7465753424657534,
+          "parts": [
+            {
+              "outline": "M 0 0 H 100 V 100 H 0 Z",
+              "pivot": [
+                50,
+                61.130136986301366
+              ],
+              "poses": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0.25,
+                  0
+                ],
+                [
+                  1.45,
+                  180
+                ]
+              ]
+            }
+          ],
+          "enter": "drop",
+          "rotate": -9,
+          "out": 60.692,
+          "exit": "fade"
+        },
+        {
+          "type": "text",
+          "text": "TIMING VARIES AS SALIVA BUFFERS ACID",
+          "x": 0.5,
+          "y": 0.889,
+          "w": 0.8,
+          "at": 57.708,
+          "size": 36,
+          "color": "#ffedca",
+          "backplate": true,
+          "screenSpace": true,
+          "out": 60.692,
+          "exit": "fade"
+        },
+        {
+          "type": "trace",
+          "path": "M 18 72 Q 42 80 72 71",
+          "at": 57.708,
+          "seconds": 1.25,
+          "tone": "#f7be66",
+          "weight": 5,
+          "out": 60.692,
+          "exit": "fade"
+        },
+        {
+          "type": "motion",
+          "kind": "light",
+          "x": 0.21,
+          "y": 0.35,
+          "w": 0.82,
+          "at": 55.684,
+          "opacity": 0.36,
+          "ambient": "flicker",
+          "ambientAmount": 0.35
+        },
+        {
+          "type": "trace",
+          "path": "M 66 65 Q 69 63 73 64",
+          "at": 56.224,
+          "out": 57.588,
+          "seconds": 0.75,
+          "tone": "#d2f5f9",
+          "weight": 4,
+          "style": "air"
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.64,
+        "y": 0.61
+      }
+    },
+    {
+      "id": "one-tooth-enamel-to-pulp-and-sensitivity",
+      "start": 60.892,
+      "end": 86.233,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/anatomy.png",
+        "motion": "specimen"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.09,
+            "x": 0.5,
+            "y": 0.44
+          },
+          {
+            "at": 0.608,
+            "zoom": 1.23,
+            "x": 0.5,
+            "y": 0.435
+          },
+          {
+            "at": 2.405,
+            "zoom": 1.39,
+            "x": 0.52,
+            "y": 0.414
+          },
+          {
+            "at": 4.308,
+            "zoom": 1.27,
+            "x": 0.54,
+            "y": 0.425
+          },
+          {
+            "at": 5.376,
+            "zoom": 1.15,
+            "x": 0.503,
+            "y": 0.53
+          },
+          {
+            "at": 6.778,
+            "zoom": 1.29,
+            "x": 0.505,
+            "y": 0.554
+          },
+          {
+            "at": 7.832,
+            "zoom": 1.41,
+            "x": 0.506,
+            "y": 0.552
+          },
+          {
+            "at": 8.538,
+            "zoom": 1.37,
+            "x": 0.5,
+            "y": 0.425
+          },
+          {
+            "at": 11.256,
+            "zoom": 1.54,
+            "x": 0.5,
+            "y": 0.421
+          },
+          {
+            "at": 13.073,
+            "zoom": 1.52,
+            "x": 0.5,
+            "y": 0.43
+          },
+          {
+            "at": 15.498,
+            "zoom": 1.58,
+            "x": 0.5,
+            "y": 0.428
+          },
+          {
+            "at": 17.307,
+            "zoom": 1.11,
+            "x": 0.53,
+            "y": 0.51
+          },
+          {
+            "at": 20.653,
+            "zoom": 1.19,
+            "x": 0.54,
+            "y": 0.51
+          },
+          {
+            "at": 24.258,
+            "zoom": 1.35,
+            "x": 0.505,
+            "y": 0.427
+          },
+          {
+            "at": 25.341,
+            "zoom": 1.38,
+            "x": 0.505,
+            "y": 0.427
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 60.892,
+          "bigAt": 61.012,
+          "small": "FIRST",
+          "big": "ENAMEL BREAKS"
+        },
+        {
+          "at": 62.737,
+          "bigAt": 62.857,
+          "small": "THE SOFTER LAYER",
+          "big": "DENTIN",
+          "bigColor": "mustard"
+        },
+        {
+          "at": 66.268,
+          "bigAt": 66.388,
+          "small": "ON THE SURFACE",
+          "big": "JUST A DOT"
+        },
+        {
+          "at": 68.724,
+          "bigAt": 68.84400000000001,
+          "small": "BENEATH IT",
+          "big": "DEEP DECAY"
+        },
+        {
+          "at": 71.498,
+          "bigAt": 71.61800000000001,
+          "small": "IT CAN REACH",
+          "big": "THE PULP"
+        },
+        {
+          "at": 73.965,
+          "bigAt": 74.08500000000001,
+          "small": "COLD OR SWEET",
+          "big": "SENSITIVITY",
+          "bigColor": "blue"
+        },
+        {
+          "at": 77.549,
+          "bigAt": 77.66900000000001,
+          "small": "CLOVE OIL",
+          "big": "TEMPORARY RELIEF",
+          "bigColor": "mustard"
+        },
+        {
+          "at": 81.025,
+          "bigAt": 81.14500000000001,
+          "small": "PAIN MAY FADE",
+          "big": "DECAY REMAINS"
+        },
+        {
+          "at": 84.49,
+          "bigAt": 84.61,
+          "small": "THERE WAS",
+          "big": "NO WORM",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/lesion-enamel.png",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 1,
+          "at": 60.892,
+          "enter": "fade",
+          "shadow": false,
+          "out": 62.737
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/lesion-dentin.png",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 1,
+          "at": 62.737,
+          "enter": "fade",
+          "shadow": false,
+          "out": 66.388
+        },
+        {
+          "type": "text",
+          "text": "ENAMEL",
+          "x": 0.22,
+          "y": 0.353,
+          "w": 0.31,
+          "at": 60.892,
+          "size": 34,
+          "color": "#ffedca",
+          "backplate": true,
+          "out": 62.737
+        },
+        {
+          "type": "text",
+          "text": "DENTIN",
+          "x": 0.72,
+          "y": 0.49,
+          "w": 0.31,
+          "at": 62.737,
+          "size": 35,
+          "color": "#ffedca",
+          "backplate": true,
+          "out": 66.148
+        },
+        {
+          "type": "trace",
+          "path": "M 69 47 L 54 43",
+          "at": 62.737,
+          "seconds": 0.6,
+          "tone": "#f7be66",
+          "weight": 5,
+          "out": 66.148
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/molar.png",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 1,
+          "at": 66.268,
+          "enter": "fade",
+          "shadow": false,
+          "out": 68.824
+        },
+        {
+          "type": "mark",
+          "kind": "circle",
+          "x": 0.506,
+          "y": 0.553,
+          "w": 0.12,
+          "at": 66.498,
+          "dur": 0.46,
+          "hand": false,
+          "color": "#ffce80",
+          "h": 0.055,
+          "out": 68.534
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/lesion-dentin.png",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 1,
+          "at": 68.724,
+          "enter": "fade",
+          "shadow": false,
+          "out": 71.498
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/lesion-pulp.png",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 1,
+          "at": 71.498,
+          "enter": "fade",
+          "shadow": false
+        },
+        {
+          "type": "trace",
+          "path": "M 50 38 C 50 40 48 44 50 48",
+          "at": 71.498,
+          "seconds": 1.2,
+          "tone": "#df674e",
+          "weight": 5,
+          "out": 86.033,
+          "exit": "fade"
+        },
+        {
+          "type": "text",
+          "text": "PULP + NERVES",
+          "x": 0.68,
+          "y": 0.65,
+          "w": 0.43,
+          "at": 71.498,
+          "size": 32,
+          "color": "#ffedca",
+          "backplate": true,
+          "out": 73.815,
+          "exit": "slide-right"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/ice.png",
+          "x": 0.72,
+          "y": 0.35,
+          "w": 0.25,
+          "at": 73.965,
+          "enter": "slide-down",
+          "move": {
+            "toX": 0.54,
+            "toY": 0.37,
+            "toW": 0.18,
+            "at": 73.965,
+            "dur": 1.15,
+            "ease": "inOut"
+          },
+          "out": 77.549
+        },
+        {
+          "type": "trace",
+          "path": "M 52 36 Q 46 43 51 49 L 48 58",
+          "at": 76.05,
+          "seconds": 0.62,
+          "tone": "#81e0df",
+          "weight": 5,
+          "style": "air",
+          "out": 77.549
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/clove.png",
+          "x": 0.24,
+          "y": 0.67,
+          "w": 0.34,
+          "at": 77.549,
+          "rotate": -24,
+          "enter": "slide-left",
+          "ambient": "sway",
+          "ambientAmount": 0.72,
+          "out": 85.96300000000001,
+          "exit": "slide-left"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/bottle.png",
+          "x": 0.74,
+          "y": 0.65,
+          "w": 0.3,
+          "at": 78.35,
+          "enter": "slide-right",
+          "rotate": 12,
+          "ambient": "sway",
+          "ambientAmount": 0.72,
+          "out": 85.96300000000001,
+          "exit": "slide-right"
+        },
+        {
+          "type": "text",
+          "text": "CLOVE OIL DOES NOT TREAT A CAVITY",
+          "x": 0.5,
+          "y": 0.889,
+          "w": 0.8,
+          "at": 81.025,
+          "size": 36,
+          "color": "#ffedca",
+          "backplate": true,
+          "screenSpace": true,
+          "out": 86.033,
+          "exit": "fade"
+        },
+        {
+          "type": "mark",
+          "kind": "circle",
+          "x": 0.5,
+          "y": 0.418,
+          "w": 0.22,
+          "at": 84.49,
+          "hand": false,
+          "dur": 0.46,
+          "h": 0.16,
+          "color": "#f7be66",
+          "out": 86.033,
+          "exit": "fade"
+        },
+        {
+          "type": "motion",
+          "kind": "light",
+          "x": 0.83,
+          "y": 0.58,
+          "w": 0.8,
+          "at": 73.965,
+          "opacity": 0.2,
+          "ambient": "flicker",
+          "ambientAmount": 0.35
+        },
+        {
+          "type": "atmosphere",
+          "kind": "lamplight",
+          "x": 0.5,
+          "y": 0.468,
+          "w": 0.29,
+          "at": 71.498,
+          "enter": "fade",
+          "tone": "#ff9c52",
+          "opacity": 0.58,
+          "out": 74.345
+        },
+        {
+          "type": "trace",
+          "path": "M 50 38 Q 52 45 49 48 T 38 64",
+          "at": 76.05,
+          "out": 77.24900000000001,
+          "seconds": 1.1,
+          "tone": "#a8eafa",
+          "weight": 4,
+          "style": "air"
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.5,
+        "y": 0.43
+      }
+    },
+    {
+      "id": "one-desk-fluoride-to-takeaway",
+      "start": 86.233,
+      "end": 100.553,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/desk.png",
+        "motion": "sunlight"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.02,
+            "x": 0.5,
+            "y": 0.55
+          },
+          {
+            "at": 3.764,
+            "zoom": 1.16,
+            "x": 0.37,
+            "y": 0.55
+          },
+          {
+            "at": 6.907,
+            "zoom": 1.19,
+            "x": 0.65,
+            "y": 0.55
+          },
+          {
+            "at": 8.449,
+            "zoom": 1.12,
+            "x": 0.52,
+            "y": 0.53
+          },
+          {
+            "at": 11.684,
+            "zoom": 1.13,
+            "x": 0.48,
+            "y": 0.56
+          },
+          {
+            "at": 14.32,
+            "zoom": 1.17,
+            "x": 0.48,
+            "y": 0.59
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 86.233,
+          "bigAt": 86.35300000000001,
+          "small": "LOST ENAMEL",
+          "big": "DOES NOT REGROW"
+        },
+        {
+          "at": 89.517,
+          "bigAt": 89.637,
+          "small": "EARLY WHITE SPOTS",
+          "big": "FLUORIDE",
+          "bigColor": "blue"
+        },
+        {
+          "at": 92.53,
+          "bigAt": 92.65,
+          "small": "A FORMED HOLE",
+          "big": "NEEDS TREATMENT"
+        },
+        {
+          "at": 94.682,
+          "bigAt": 94.802,
+          "small": "THE TOOTH WORM",
+          "big": "A MYTH"
+        },
+        {
+          "at": 97.217,
+          "bigAt": 97.337,
+          "small": "THE REAL CAUSE",
+          "big": "BACTERIA",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/tooth.png",
+          "x": 0.31,
+          "y": 0.59,
+          "w": 0.44,
+          "at": 86.233,
+          "enter": "slide-left",
+          "out": 94.502,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/tooth.png",
+          "x": 0.7,
+          "y": 0.59,
+          "w": 0.44,
+          "at": 86.233,
+          "enter": "slide-right",
+          "out": 94.502,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/white-spot.png",
+          "x": 0.31,
+          "y": 0.525,
+          "w": 0.16,
+          "at": 89.517,
+          "enter": "fade",
+          "shadow": false,
+          "out": 94.502,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/decay-dot.png",
+          "x": 0.7,
+          "y": 0.524,
+          "w": 0.14,
+          "at": 89.517,
+          "shadow": false,
+          "enter": "fade",
+          "out": 94.502,
+          "exit": "slide-down"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/paste.png",
+          "x": 0.2,
+          "y": 0.76,
+          "w": 0.31,
+          "at": 89.517,
+          "enter": "slide-up",
+          "rotate": -20,
+          "out": 94.502,
+          "exit": "slide-down"
+        },
+        {
+          "type": "trace",
+          "path": "M 22 74 Q 28 65 30 54",
+          "at": 89.517,
+          "seconds": 1.18,
+          "tone": "#81e0df",
+          "weight": 5,
+          "style": "air",
+          "out": 94.502,
+          "exit": "fade"
+        },
+        {
+          "type": "mark",
+          "kind": "circle",
+          "x": 0.31,
+          "y": 0.526,
+          "w": 0.18,
+          "at": 89.517,
+          "hand": false,
+          "dur": 0.46,
+          "color": "#81e0df",
+          "h": 0.08,
+          "out": 92.53
+        },
+        {
+          "type": "mark",
+          "kind": "check",
+          "x": 0.28,
+          "y": 0.41,
+          "w": 0.17,
+          "at": 89.517,
+          "hand": false,
+          "dur": 0.46,
+          "color": "#81e0df",
+          "h": 0.08,
+          "out": 92.53
+        },
+        {
+          "type": "mark",
+          "kind": "circle",
+          "x": 0.7,
+          "y": 0.525,
+          "w": 0.23,
+          "at": 92.53,
+          "hand": false,
+          "dur": 0.46,
+          "color": "#df674e",
+          "h": 0.15,
+          "out": 94.502,
+          "exit": "fade"
+        },
+        {
+          "type": "text",
+          "text": "EARLY MINERAL LOSS CAN SOMETIMES BE REVERSED",
+          "x": 0.5,
+          "y": 0.889,
+          "w": 0.8,
+          "at": 89.517,
+          "size": 32,
+          "color": "#ffedca",
+          "backplate": true,
+          "screenSpace": true,
+          "out": 92.53
+        },
+        {
+          "type": "text",
+          "text": "A DENTIST CAN TREAT AN ESTABLISHED CAVITY",
+          "x": 0.5,
+          "y": 0.889,
+          "w": 0.8,
+          "at": 92.53,
+          "size": 32,
+          "color": "#ffedca",
+          "backplate": true,
+          "screenSpace": true,
+          "out": 94.502,
+          "exit": "fade"
+        },
+        {
+          "type": "motion",
+          "kind": "light",
+          "x": 0.84,
+          "y": 0.44,
+          "w": 0.77,
+          "at": 86.233,
+          "opacity": 0.36,
+          "ambient": "flicker",
+          "ambientAmount": 0.35
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/tooth.png",
+          "x": 0.47,
+          "y": 0.6,
+          "w": 0.4,
+          "at": 94.69,
+          "enter": "pop",
+          "out": 96.64,
+          "exit": "slide-down"
+        },
+        {
+          "type": "ribbon-cutout",
+          "src": "/projects/tooth-decay-v2/assets/larva.png",
+          "ratio": 6.695238095238095,
+          "amplitude": 8,
+          "rooted": true,
+          "at": 94.81,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 94.81,
+              "x": 0.4848825799182135,
+              "y": 0.49789321612397697,
+              "w": 0.028,
+              "rotate": -64,
+              "opacity": 0
+            },
+            {
+              "at": 95.06,
+              "x": 0.5256136972430377,
+              "y": 0.4570064087016564,
+              "w": 0.2,
+              "rotate": -57,
+              "opacity": 1
+            },
+            {
+              "at": 95.47,
+              "x": 0.5242809779683929,
+              "y": 0.4437486450405078,
+              "w": 0.243,
+              "rotate": -63,
+              "opacity": 1
+            },
+            {
+              "at": 96.03,
+              "x": 0.5314543422424931,
+              "y": 0.45891310968209453,
+              "w": 0.2,
+              "rotate": -53,
+              "opacity": 1
+            },
+            {
+              "at": 96.51,
+              "x": 0.4863859176140253,
+              "y": 0.4982808972182319,
+              "w": 0.028,
+              "rotate": -57,
+              "opacity": 0
+            }
+          ],
+          "out": 96.55,
+          "exit": "fade"
+        },
+        {
+          "type": "clinical",
+          "kind": "prohibit",
+          "x": 0.527,
+          "y": 0.478,
+          "w": 0.22,
+          "at": 95.56,
+          "out": 96.57,
+          "enter": "pop",
+          "exit": "pop"
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay/assets/bacteria.png",
+          "x": 0.58,
+          "y": 0.456,
+          "w": 0.5,
+          "at": 96.93,
+          "shadow": false,
+          "ambient": "sway",
+          "ambientAmount": 0.8,
+          "enter": "zoom-in",
+          "out": 100.553
+        },
+        {
+          "type": "written-card",
+          "hand": "/hands/marker_hand.png",
+          "x": 0.507,
+          "y": 0.657,
+          "w": 0.78,
+          "at": 97.217,
+          "enter": "slide-up",
+          "rows": [
+            {
+              "text": "BACTERIA + ACID",
+              "at": 0.3,
+              "dur": 2
+            }
+          ],
+          "textScale": 0.9,
+          "rowSpacing": 112,
+          "out": 100.553,
+          "handTip": [
+            0.006,
+            0.974
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/desk-lamp.png",
+          "x": 0.1,
+          "y": 0.46,
+          "w": 0.2,
+          "at": 86.233,
+          "enter": "none",
+          "ambient": "sway",
+          "ambientAmount": 0.37,
+          "shadow": false,
+          "opacity": 0.7
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.5,
+        "y": 0.56
+      }
+    },
+    {
+      "id": "water-after-food",
+      "start": 100.553,
+      "end": 102.919,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay-v2/assets/rinse-clean.png",
+        "motion": "clinic"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.02,
+            "x": 0.46,
+            "y": 0.57
+          },
+          {
+            "at": 2.1,
+            "zoom": 1.11,
+            "x": 0.43,
+            "y": 0.61
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 100.553,
+          "bigAt": 100.673,
+          "small": "AFTER EATING",
+          "big": "RINSE WITH WATER",
+          "bigColor": "blue"
+        }
+      ],
+      "layers": [
+        {
+          "type": "water-flow",
+          "source": [
+            0.25,
+            0.841
+          ],
+          "target": [
+            0.24,
+            0.952
+          ],
+          "width": 22,
+          "at": 100.57,
+          "out": 102.919
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/rinse-actor.png",
+          "x": 0.516,
+          "y": 0.511,
+          "w": 1.035,
+          "at": 100.553,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 100.553,
+              "x": 0.516,
+              "y": 0.511,
+              "w": 1.035,
+              "rotate": -1,
+              "opacity": 1
+            },
+            {
+              "at": 101.223,
+              "x": 0.503,
+              "y": 0.505,
+              "w": 1.015,
+              "rotate": 0.2,
+              "opacity": 1
+            },
+            {
+              "at": 101.973,
+              "x": 0.495,
+              "y": 0.504,
+              "w": 1.017,
+              "rotate": 0.36,
+              "opacity": 1
+            },
+            {
+              "at": 102.919,
+              "x": 0.504,
+              "y": 0.515,
+              "w": 1.025,
+              "rotate": -0.22,
+              "opacity": 1
+            }
+          ],
+          "shadow": false
+        },
+        {
+          "type": "atmosphere",
+          "kind": "lamplight",
+          "x": 0.24,
+          "y": 0.42,
+          "w": 0.58,
+          "at": 100.553,
+          "enter": "fade",
+          "tone": "#ffd397",
+          "opacity": 0.33
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.45,
+        "y": 0.57
+      }
+    },
+    {
+      "id": "spot-and-exam",
+      "start": 102.919,
+      "end": 108.278,
+      "dark": true,
+      "set": {
+        "image": "/projects/tooth-decay/assets/molar.png",
+        "motion": "specimen"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.49,
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.15,
+            "x": 0.5,
+            "y": 0.55
+          },
+          {
+            "at": 1.581,
+            "zoom": 1.32,
+            "x": 0.505,
+            "y": 0.554
+          },
+          {
+            "at": 3.574,
+            "zoom": 1.39,
+            "x": 0.505,
+            "y": 0.551
+          },
+          {
+            "at": 4.031,
+            "zoom": 1.14,
+            "x": 0.55,
+            "y": 0.552
+          },
+          {
+            "at": 4.701,
+            "zoom": 1.2,
+            "x": 0.56,
+            "y": 0.56
+          },
+          {
+            "at": 5.359,
+            "zoom": 1.23,
+            "x": 0.56,
+            "y": 0.57
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 102.919,
+          "bigAt": 103.039,
+          "small": "A DARK SPOT?",
+          "big": "GET IT CHECKED"
+        },
+        {
+          "at": 106.493,
+          "bigAt": 106.613,
+          "small": "MAKE A",
+          "big": "DENTAL VISIT",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "mark",
+          "kind": "circle",
+          "x": 0.506,
+          "y": 0.553,
+          "w": 0.144,
+          "at": 103.06,
+          "hand": false,
+          "dur": 0.34,
+          "color": "#ffd18a",
+          "h": 0.085,
+          "out": 105.93
+        },
+        {
+          "type": "image",
+          "src": "assets/cavity-lens.png",
+          "x": 0.506,
+          "y": 0.553,
+          "w": 0.049,
+          "at": 103.18,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 103.18,
+              "x": 0.506,
+              "y": 0.553,
+              "w": 0.049,
+              "rotate": 0,
+              "opacity": 0
+            },
+            {
+              "at": 103.45,
+              "x": 0.548,
+              "y": 0.578,
+              "w": 0.19,
+              "rotate": -6,
+              "opacity": 0.96
+            },
+            {
+              "at": 103.94,
+              "x": 0.68,
+              "y": 0.681,
+              "w": 0.33,
+              "rotate": -7,
+              "opacity": 1
+            },
+            {
+              "at": 104.8,
+              "x": 0.69,
+              "y": 0.675,
+              "w": 0.36,
+              "rotate": -5,
+              "opacity": 1
+            },
+            {
+              "at": 105.78,
+              "x": 0.675,
+              "y": 0.673,
+              "w": 0.349,
+              "rotate": -2,
+              "opacity": 1
+            },
+            {
+              "at": 106.41,
+              "x": 0.507,
+              "y": 0.553,
+              "w": 0.08,
+              "rotate": 4,
+              "opacity": 0
+            }
+          ],
+          "shadow": true,
+          "out": 106.34
+        },
+        {
+          "type": "trace",
+          "path": "M 53 57 Q 61 59 63 62",
+          "at": 103.67,
+          "out": 106,
+          "seconds": 0.42,
+          "tone": "#f3dba9",
+          "weight": 3,
+          "opacity": 0.65,
+          "style": "line"
+        },
+        {
+          "type": "text",
+          "text": "DARK SPOT",
+          "x": 0.663,
+          "y": 0.815,
+          "w": 0.29,
+          "at": 104.05,
+          "size": 33,
+          "color": "#ffecca",
+          "backplate": true,
+          "enter": "slide-up",
+          "exit": "fade",
+          "out": 105.98
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/clinic-clean.png",
+          "x": 0.5,
+          "y": 0.5,
+          "w": 1,
+          "at": 106.493,
+          "enter": "fade",
+          "shadow": false
+        },
+        {
+          "type": "image",
+          "src": "/projects/tooth-decay-v2/assets/patient-actor.png",
+          "x": 0.53,
+          "y": 0.508,
+          "w": 1.025,
+          "at": 106.493,
+          "enter": "none",
+          "keyframes": [
+            {
+              "at": 106.493,
+              "x": 0.53,
+              "y": 0.508,
+              "w": 1.025,
+              "rotate": -0.7,
+              "opacity": 0
+            },
+            {
+              "at": 106.79299999999999,
+              "x": 0.512,
+              "y": 0.505,
+              "w": 1.021,
+              "rotate": -0.25,
+              "opacity": 1
+            },
+            {
+              "at": 107.51299999999999,
+              "x": 0.503,
+              "y": 0.501,
+              "w": 1.022,
+              "rotate": -0.12,
+              "opacity": 1
+            },
+            {
+              "at": 108.278,
+              "x": 0.506,
+              "y": 0.507,
+              "w": 1.023,
+              "rotate": 0.15,
+              "opacity": 1
+            }
+          ],
+          "shadow": false
+        },
+        {
+          "type": "articulated-cutout",
+          "src": "/projects/tooth-decay-v2/assets/dentist-actor.png",
+          "ratio": 0.5625,
+          "x": 0.5,
+          "y": 0.504,
+          "w": 1.018,
+          "at": 106.493,
+          "enter": "fade",
+          "shadow": false,
+          "keyframes": [
+            {
+              "at": 106.493,
+              "x": 0.477,
+              "y": 0.51,
+              "w": 1.02,
+              "rotate": -0.4,
+              "opacity": 1
+            },
+            {
+              "at": 106.823,
+              "x": 0.495,
+              "y": 0.505,
+              "w": 1.018,
+              "rotate": 0,
+              "opacity": 1
+            },
+            {
+              "at": 108.278,
+              "x": 0.5,
+              "y": 0.503,
+              "w": 1.016,
+              "rotate": 0.19,
+              "opacity": 1
+            }
+          ],
+          "parts": [
+            {
+              "outline": "M 0 0 H 100 V 59 H 47 L 47 67 L 43 73 L 48 79 L 100 80 V 100 H 0 Z"
+            },
+            {
+              "outline": "M 42 58 H 71 V 66 L 56 73 L 50 80 L 44 81 L 39 75 L 43 69 Z",
+              "pivot": [
+                46,
+                74
+              ],
+              "poses": [
+                [
+                  0,
+                  -3
+                ],
+                [
+                  0.42,
+                  0
+                ],
+                [
+                  0.92,
+                  1.6
+                ],
+                [
+                  1.52,
+                  -0.6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "type": "motion",
+          "kind": "light",
+          "x": 0.8,
+          "y": 0.37,
+          "w": 0.64,
+          "at": 106.493,
+          "opacity": 0.42,
+          "ambient": "flicker",
+          "ambientAmount": 0.35
+        },
+        {
+          "type": "snow",
+          "at": 106.493,
+          "density": 13,
+          "speed": 0.22,
+          "opacity": 0.13
+        },
+        {
+          "type": "text",
+          "text": "ASK YOUR DENTIST ABOUT A DARK SPOT",
+          "x": 0.5,
+          "y": 0.889,
+          "w": 0.8,
+          "at": 106.493,
+          "size": 36,
+          "color": "#ffedca",
+          "backplate": true,
+          "screenSpace": true
+        },
+        {
+          "type": "atmosphere",
+          "kind": "lamplight",
+          "x": 0.795,
+          "y": 0.34,
+          "w": 0.61,
+          "at": 106.493,
+          "enter": "fade",
+          "tone": "#ffe7a8",
+          "opacity": 0.54
+        }
+      ],
+      "transitionFocus": {
+        "x": 0.5,
+        "y": 0.57
+      }
+    }
+  ]
+}

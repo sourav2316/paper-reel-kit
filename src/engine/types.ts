@@ -1,7 +1,10 @@
+import type { PaperDiagramKind } from "../components/PaperDiagram";
+import type { CutoutPart } from "../components/ArticulatedCutout";
 import type { Ambient, EnterKind } from "./anim";
 import type { MotionKind } from "../components/MotionIllustration";
 import type { ClinicalKind } from "../components/ClinicalMotion";
 import type { AtmosphereKind } from "../components/Atmosphere";
+import type { ActionKind } from "../components/ActionEffect";
 
 /**
  * STORYBOARD SCHEMA — the only thing an AI agent writes for a new video.
@@ -11,6 +14,7 @@ import type { AtmosphereKind } from "../components/Atmosphere";
  */
 export type Storyboard = {
   title: string;
+  paperCreases?: boolean;    // defaults to true for the folded-poster overlay
   audio?: string;            // voiceover, e.g. "vo.mp3"
   audioVolume?: number;      // default 1
   music?: string | false;    // background music; omitted = kit default, false = none
@@ -21,15 +25,18 @@ export type Storyboard = {
 
 export type Tint = "normal" | "desaturate" | "night" | "sunset" | "calm" | "warm" | "dark";
 
-export type Transition = "cut" | "fade" | "blur" | "scan" | "push" | "wipe-left";
+export type Transition = "cut" | "fade" | "blur" | "scan" | "push" | "wipe-left" | "travel";
+
+export type SetMotion = "sunlight" | "plaque" | "specimen" | "clinic";
 
 export type SetSpec =
   | { builtin: BuiltinSet; options?: Record<string, unknown> }
-  | { image: string; fit?: "cover" | "contain"; ambient?: Ambient;
+  | { image: string; fit?: "cover" | "contain"; ambient?: Ambient; motion?: SetMotion;
       /** time-lapse with AI images: same picture at another time of day, crossfaded in at `at` (abs s) over `fade` s */
       variants?: { at: number; image: string; fade?: number }[] };
 
 export type BuiltinSet =
+  | "layered-paper-stage"
   | "skyline"       // sky + paper clouds + apartment blocks + road with zebra crossing
   | "street"        // shop row with signboards + road + kerb + footpath
   | "balcony"       // sky, distant city, railing, ledge, clothesline
@@ -52,9 +59,12 @@ export type BuiltinSet =
   | "paper";        // plain paper
 
 export type Camera = {
+  keyframes?: { at: number; zoom: number; x: number; y: number }[]; // scene-local; x/y identify the subject
   zoomFrom?: number;   // default 1
   zoomTo?: number;     // default 1.04 (slow breathing push)
   focusX?: number;     // 0..1 zoom origin
+  focusToX?: number;   // optional ending zoom origin, in frame fractions
+  focusToY?: number;
   focusY?: number;
   pushAt?: number;     // absolute second to start an extra fast push-in
   pushTo?: number;     // zoom reached by the push
@@ -82,6 +92,7 @@ export type Scene = {
   tintChanges?: TintChange[];
   camera?: Camera;
   transitionIn?: Transition;     // how this scene arrives (default "blur")
+  transitionFocus?: { x: number; y: number }; // screen position for the travel transition
   transitionDuration?: number;   // seconds, default 0.6 (scan 0.9)
   caption?: string;              // tiny mono caption top-right, e.g. "GRAY'S ANATOMY, 1918"
   dark?: boolean;                // light text + light rule (auto for anatomy/night-city)
@@ -93,6 +104,7 @@ export type Scene = {
 export type Base = {
   x?: number; y?: number; w?: number;
   z?: number;                  // stacking; default by order
+  screenSpace?: boolean;       // fixed overlay, outside of the scene camera
   at?: number;                 // appear time (abs s). default scene start
   out?: number;                // disappear time (abs s)
   enter?: EnterKind;           // default "pop"
@@ -103,6 +115,7 @@ export type Base = {
   flipX?: boolean;
   opacity?: number;
   move?: { toX?: number; toY?: number; toW?: number; at?: number; dur?: number; ease?: "linear" | "inOut" | "out" };
+  keyframes?: { at: number; x: number; y: number; w: number; rotate?: number; opacity?: number }[]; // scene-absolute seconds
   parallax?: number;           // 0 = locked to camera, 1 = full camera zoom (default 1)
   shadow?: boolean;            // soft contact shadow under cutouts (default true for images)
   anchor?: "top" | "center";  // transform pivot for a hanging layer
@@ -112,8 +125,16 @@ export type Base = {
 };
 
 export type Layer = Base & (
+  | { type: "action"; kind: ActionKind }
+  | { type: "ribbon-cutout"; src: string; ratio: number; amplitude?: number; rooted?: boolean }
+  | { type: "paper-diagram"; kind: PaperDiagramKind; mode?: string; value?: number }
+  | { type: "cloth-flag"; src: string; wind?: number }
+  | { type: "water-flow"; source: [number, number]; target: [number, number]; width?: number }
+  | { type: "trace"; path: string; seconds: number; tone?: string; style?: "line" | "air"; weight?: number }
+  | { type: "articulated-cutout"; src: string; ratio: number; parts: CutoutPart[] }
+  | { type: "snow"; density?: number; speed?: number; near?: boolean }
   | { type: "atmosphere"; kind: AtmosphereKind; tone?: string; dim?: boolean }
-  | { type: "written-card"; hand: string; rows: { text: string; at: number; dur: number }[]; textScale?: number; rowSpacing?: number }
+  | { type: "written-card"; hand: string; handTip?: [number, number]; rows: { text: string; at: number; dur: number }[]; textScale?: number; rowSpacing?: number }
   | { type: "clinical"; kind: ClinicalKind; dur?: number; src?: string }
   | { type: "motion"; kind: MotionKind; dur?: number; tone?: string }
   | { type: "image"; src: string; blend?: "normal" | "multiply"; label?: string }
