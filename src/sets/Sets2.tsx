@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { C, W, H, DISPLAY_FONT, MONO_FONT } from "../theme";
 import { rand } from "../engine/anim";
 
@@ -8,7 +8,8 @@ const box = { position: "absolute" as const, inset: 0 };
 
 /** Phone / electronics showroom: spotlit wall shelves with boxes, swinging sale banner, glass display counter. */
 export const Showroom: React.FC<{ options?: Opts }> = ({ options = {} }) => {
-  const t = useCurrentFrame() / 30;
+  const { fps } = useVideoConfig();
+  const t = useCurrentFrame() / fps;
   const banner: string = options.banner ?? "MEGA SALE";
   const banner2: string | undefined = options.banner2;
   const sw = Math.sin(t * 1.4) * 2.2;
@@ -79,7 +80,8 @@ export const Showroom: React.FC<{ options?: Opts }> = ({ options = {} }) => {
 
 /** Bank hall: teller windows with signs, LED token board, ceiling fan, wall clock, wooden counter, rope barrier. */
 export const Bank: React.FC<{ options?: Opts }> = ({ options = {} }) => {
-  const t = useCurrentFrame() / 30;
+  const { fps } = useVideoConfig();
+  const t = useCurrentFrame() / fps;
   const windows: string[] = options.windows ?? ["LOANS", "EMI", "CASH"];
   const token = `A-${String(27 + Math.floor(t / 2.5)).padStart(2, "0")}`;
   return (
@@ -140,7 +142,8 @@ export const Bank: React.FC<{ options?: Opts }> = ({ options = {} }) => {
 
 /** Iceberg: small tip above the waterline, huge hidden mass below. Labels go on top as layers. */
 export const Iceberg: React.FC<{ options?: Opts }> = ({ options = {} }) => {
-  const t = useCurrentFrame() / 30;
+  const { fps } = useVideoConfig();
+  const t = useCurrentFrame() / fps;
   const wl = options.waterline ?? 720; // waterline y
   const bob = Math.sin(t * 1.2) * 6;
   const wave = (yy: number, amp: number, ph: number) =>

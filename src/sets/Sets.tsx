@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { C, W, H, DISPLAY_FONT } from "../theme";
 import { rand } from "../engine/anim";
 import { SkyClouds } from "../components/Bits";
@@ -117,7 +117,8 @@ const Shop: React.FC<{ x: number; y: number; w: number; sign: string; color: str
 
 export const SetView: React.FC<{ name: BuiltinSet; options?: Opts; tAbs?: number }> = ({ name, options = {}, tAbs = 0 }) => {
   const frame = useCurrentFrame();
-  const t = frame / 30;
+  const { fps } = useVideoConfig();
+  const t = frame / fps;
   switch (name) {
     case "layered-paper-stage": return <LayeredPaperStage time={tAbs} location={options.location} dawn={options.dawn} />;
     case "skyline":

@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, useCurrentFrame } from "remotion";
+import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 import { C, W, H, DISPLAY_FONT } from "../theme";
 import { rand, clamp01 } from "../engine/anim";
 
@@ -101,7 +101,8 @@ export const Curtain: React.FC<{ x: number; y: number; w: number; h: number; t: 
  *  light: "phone" (cold blue glow) | "lamp" (warm) | "day" | "dark"; clock: "3:00"; curtain: true; wall: colour
  */
 export const Bedroom: React.FC<{ options?: Opts; tAbs: number }> = ({ options = {}, tAbs }) => {
-  const t = useCurrentFrame() / 30;
+  const { fps } = useVideoConfig();
+  const t = useCurrentFrame() / fps;
   const sky = skyAt((options.sky ?? "night") as SkyMode, options.skyChanges, tAbs);
   const light: string = options.light ?? "phone";
   const dayK = sky.sun; // room brightens with daylight
@@ -157,7 +158,8 @@ export const Bedroom: React.FC<{ options?: Opts; tAbs: number }> = ({ options = 
 
 /** Library / study: tall bookshelves, reading lamp, desk. Good for "a study found…", books, exams. */
 export const Library: React.FC<{ options?: Opts }> = ({ options = {} }) => {
-  const t = useCurrentFrame() / 30;
+  const { fps } = useVideoConfig();
+  const t = useCurrentFrame() / fps;
   return (
     <AbsoluteFill>
       <svg width={W} height={H} style={box}>

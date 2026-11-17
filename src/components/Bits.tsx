@@ -71,7 +71,8 @@ export const Birds: React.FC<{ count?: number; local: number; y?: number }> = ({
 /** Wavy rising steam (place over a cup). Renders in a 120x220 box. */
 export const Steam: React.FC = () => {
   const frame = useCurrentFrame();
-  const t = frame / 30;
+  const { fps } = useVideoConfig();
+  const t = frame / fps;
   return (
     <svg viewBox="0 0 120 220" width="100%" style={{ overflow: "visible" }}>
       {[0, 1, 2].map((i) => {
@@ -89,13 +90,14 @@ export const Steam: React.FC = () => {
 };
 
 export const Rain: React.FC = () => {
-  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const elapsed = useCurrentFrame() / fps;
   return (
     <svg width={W} height={H} style={{ position: "absolute", inset: 0 }}>
       {Array.from({ length: 90 }).map((_, i) => {
         const x = rand(i) * W;
-        const sp = 40 + rand(i + 9) * 25;
-        const y = ((rand(i + 3) * H + frame * sp) % (H + 100)) - 100;
+        const speed = 1200 + rand(i + 9) * 750;
+        const y = ((rand(i + 3) * H + elapsed * speed) % (H + 100)) - 100;
         return <line key={i} x1={x} y1={y} x2={x - 6} y2={y + 40} stroke="#dfe6ea" strokeWidth={2} opacity={0.45} />;
       })}
     </svg>

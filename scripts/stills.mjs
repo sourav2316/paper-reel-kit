@@ -10,7 +10,6 @@ const name = projectName();
 const storyboard = loadStoryboard(name);
 const every = Number(flag("every", "1"));
 const at = flag("at");
-const fps = 30;
 const inputProps = { storyboard, base: `projects/${name}`, available: listPublic() };
 
 const serveUrl = await bundle({ entryPoint: path.join(ROOT, "src/index.ts") });
@@ -21,7 +20,7 @@ fs.mkdirSync(dir, { recursive: true });
 
 const times = at ? at.split(",").map(Number) : Array.from({ length: Math.floor(totalSeconds(storyboard) / every) + 1 }, (_, i) => i * every);
 for (const t of times) {
-  const frame = Math.min(composition.durationInFrames - 1, Math.round(t * fps));
+  const frame = Math.min(composition.durationInFrames - 1, Math.round(t * composition.fps));
   const output = path.join(dir, `t_${t.toFixed(1).padStart(5, "0")}.jpg`);
   await renderStill({ composition, serveUrl, output, frame, inputProps, imageFormat: "jpeg", jpegQuality: 80, scale: 0.4 });
   process.stdout.write(".");

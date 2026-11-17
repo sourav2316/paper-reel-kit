@@ -41,7 +41,7 @@ Read these before your first video: `docs/STYLE.md` (how to direct), `docs/SCHEM
    look at them. Check for: text overlapping props, empty or static-looking frames, items cut off at the edges,
    headlines out of sync, or more than ~3 s without a new visual beat. Fix the JSON and repeat.
 9. **Render.** Run `npm run render -- <name> --quality=draft` for a quick half-resolution check, then
-   `npm run render -- <name>` for the final `out/<name>.mp4` (1080×1920, 30 fps, h264).
+   `npm run render -- <name>` for the final `out/<name>.mp4` (1080×1920, 60 fps, H.264). Drafts use 540×960 at 30 fps.
 10. **Report to the user.** Give the output path, a list of any images still missing, and a short note on what
     you would improve.
 

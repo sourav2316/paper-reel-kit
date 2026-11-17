@@ -8,6 +8,7 @@ import musicDefaults from "../music-defaults.json";
 
 export type VideoProps = {
   storyboard: Storyboard;
+  frameRate?: number;
   base: string;                 // e.g. "projects/demo"
   available?: string[] | null;  // list of existing public/ files (passed by the render script)
 };

@@ -9,14 +9,16 @@ import { ROOT, projectName, loadStoryboard, listPublic, flag, totalSeconds } fro
 const name = projectName();
 const storyboard = loadStoryboard(name);
 const quality = flag("quality", "final");
-const fps = 30;
+const { draftFps, finalFps } = JSON.parse(fs.readFileSync(path.join(ROOT, "src/render-defaults.json"), "utf8"));
+const frameRate = quality === "draft" ? draftFps : finalFps;
 
-const inputProps = { storyboard, base: `projects/${name}`, available: listPublic() };
+const inputProps = { storyboard, frameRate, base: `projects/${name}`, available: listPublic() };
 
 console.log(`Bundling…`);
 const serveUrl = await bundle({ entryPoint: path.join(ROOT, "src/index.ts") });
 const composition = await selectComposition({ serveUrl, id: "Reel", inputProps });
 
+const { fps } = composition;
 const from = flag("from"), to = flag("to");
 const frameRange = from || to ? [Math.round(Number(from ?? 0) * fps), Math.min(composition.durationInFrames - 1, Math.round(Number(to ?? totalSeconds(storyboard)) * fps))] : undefined;
 
