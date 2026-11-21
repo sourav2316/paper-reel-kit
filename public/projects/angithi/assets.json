@@ -1,0 +1,82 @@
+[
+  {
+    "file": "assets/street.jpg",
+    "kind": "background",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "assets/room.jpg",
+    "kind": "background",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "assets/window-view.jpg",
+    "kind": "cutout",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "assets/coal.png",
+    "kind": "cutout",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "assets/family-room.jpg",
+    "kind": "background",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "assets/closure.jpg",
+    "kind": "background",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "assets/symptom-room.jpg",
+    "kind": "background",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "assets/breath-body.png",
+    "kind": "cutout",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "assets/fan-blade.png",
+    "kind": "cutout",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "assets/fan-motor.png",
+    "kind": "cutout",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "assets/door-actor.png",
+    "kind": "cutout",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "assets/window-actor.png",
+    "kind": "cutout",
+    "source": "Project ImageGen source"
+  },
+  {
+    "file": "/projects/hair-nails-after-death/assets/lungs-real.png",
+    "kind": "cutout",
+    "source": "Paper-Reel Kit library"
+  },
+  {
+    "file": "/projects/hair-nails-after-death/assets/cell-world.jpg",
+    "kind": "background",
+    "source": "Paper-Reel Kit library"
+  },
+  {
+    "file": "/projects/pimple-danger-triangle/assets/red-cell.png",
+    "kind": "cutout",
+    "source": "Paper-Reel Kit library"
+  },
+  {
+    "file": "assets/brand.png",
+    "kind": "cutout",
+    "source": "Somehow Sourav approved branding folder"
+  }
+]

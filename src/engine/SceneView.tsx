@@ -113,7 +113,12 @@ export const SceneView: React.FC<{ scene: Scene; seqStart: number; base: string;
   switch (isFirst ? "cut" : scene.transitionIn ?? "blur") {
     case "travel": {
       const focus = scene.transitionFocus ?? { x: .5, y: .5 };
-      wrap = { opacity: p, transform: `scale(${1 + .15 * (1-p)})`, transformOrigin: `${focus.x * 100}% ${focus.y * 100}%` };
+      const origin = `${focus.x * 100}% ${focus.y * 100}%`;
+      wrap = scene.transitionAperture ? {
+        opacity: Math.min(1, p * 7),
+        maskImage: `radial-gradient(circle at ${origin}, #000 ${Math.max(0, Math.hypot(W,H) * p - 54)}px, transparent ${Math.hypot(W,H) * p + 54}px)`,
+        transform: `scale(${1 + .22 * (1 - p)})`, transformOrigin: origin,
+      } : { opacity: p, transform: `scale(${1 + .15 * (1-p)})`, transformOrigin: origin };
       break;
     }
     case "fade": wrap = { opacity: p }; break;

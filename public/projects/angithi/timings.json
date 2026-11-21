@@ -1,0 +1,245 @@
+{
+  "audioDuration": 91.010563,
+  "alignment": "Opening checked against local Hindi recognition. Phrase boundaries matched from the supplied script and FFmpeg silence detection, with sub-phrase action cues estimated inside the corresponding phrases.",
+  "cues": {
+    "sleep": 5.56,
+    "seal": 8.04,
+    "case": 17.35,
+    "family": 23.66,
+    "locked": 28.39,
+    "morning": 32.62,
+    "question": 38.85,
+    "locate": 18.86,
+    "alipur": 20.53,
+    "approach": 22.14,
+    "co": 44.02,
+    "invisible": 49.96,
+    "noOdor": 51.93,
+    "airway": 56.68,
+    "blood": 60.39,
+    "dizzy": 66.6,
+    "weak": 67.39,
+    "faint": 68.84,
+    "high": 70.42,
+    "severe": 72.39,
+    "fan": 82,
+    "last": 85.1
+  },
+  "beats": [
+    {
+      "at": 0,
+      "end": 3.17,
+      "cue": "Outside in winter"
+    },
+    {
+      "at": 3.17,
+      "end": 5.56,
+      "cue": "A brazier in the room"
+    },
+    {
+      "at": 5.56,
+      "end": 7.12,
+      "cue": "Falling asleep"
+    },
+    {
+      "at": 7.12,
+      "end": 9.01,
+      "cue": "Closing the door"
+    },
+    {
+      "at": 9.01,
+      "end": 10.8,
+      "cue": "Closing the window"
+    },
+    {
+      "at": 10.8,
+      "end": 13.51,
+      "cue": "The danger"
+    },
+    {
+      "at": 13.51,
+      "end": 15.65,
+      "cue": "One small mistake"
+    },
+    {
+      "at": 15.65,
+      "end": 17.35,
+      "cue": "This happened"
+    },
+    {
+      "at": 17.35,
+      "end": 18.86,
+      "cue": "A real Delhi incident"
+    },
+    {
+      "at": 18.86,
+      "end": 20.53,
+      "cue": "A real incident"
+    },
+    {
+      "at": 20.53,
+      "end": 22.14,
+      "cue": "January 2024 in Alipur"
+    },
+    {
+      "at": 22.14,
+      "end": 23.65,
+      "cue": "The family in Alipur"
+    },
+    {
+      "at": 23.65,
+      "end": 25.22,
+      "cue": "Four family members,"
+    },
+    {
+      "at": 25.22,
+      "end": 28,
+      "cue": "The brazier kept burning"
+    },
+    {
+      "at": 28,
+      "end": 30.08,
+      "cue": "Door shuts"
+    },
+    {
+      "at": 30.08,
+      "end": 32.59,
+      "cue": "Window shuts"
+    },
+    {
+      "at": 32.59,
+      "end": 33.98,
+      "cue": "The next morning"
+    },
+    {
+      "at": 33.98,
+      "end": 35.63,
+      "cue": "Four lives lost"
+    },
+    {
+      "at": 35.63,
+      "end": 38.83,
+      "cue": "How can it be so dangerous?"
+    },
+    {
+      "at": 38.83,
+      "end": 41.12,
+      "cue": "When coal or wood burns"
+    },
+    {
+      "at": 41.12,
+      "end": 43.82,
+      "cue": "Fuel burns"
+    },
+    {
+      "at": 43.82,
+      "end": 46.06,
+      "cue": "Carbon monoxide"
+    },
+    {
+      "at": 46.06,
+      "end": 48.13,
+      "cue": "The toxic gas"
+    },
+    {
+      "at": 48.13,
+      "end": 49.96,
+      "cue": "The most dangerous part"
+    },
+    {
+      "at": 49.96,
+      "end": 51.93,
+      "cue": "No color"
+    },
+    {
+      "at": 51.93,
+      "end": 54,
+      "cue": "No odor"
+    },
+    {
+      "at": 54,
+      "end": 56.68,
+      "cue": "You may breathe it in"
+    },
+    {
+      "at": 56.68,
+      "end": 58.48,
+      "cue": "The gas enters your body"
+    },
+    {
+      "at": 58.48,
+      "end": 60.38,
+      "cue": "The lungs"
+    },
+    {
+      "at": 60.38,
+      "end": 62.68,
+      "cue": "Blood carries less oxygen"
+    },
+    {
+      "at": 62.68,
+      "end": 64.91,
+      "cue": "Less oxygen reaches tissues"
+    },
+    {
+      "at": 64.91,
+      "end": 66.6,
+      "cue": "Headache"
+    },
+    {
+      "at": 66.6,
+      "end": 67.39,
+      "cue": "Dizziness"
+    },
+    {
+      "at": 67.39,
+      "end": 68.84,
+      "cue": "Weakness"
+    },
+    {
+      "at": 68.84,
+      "end": 70.42,
+      "cue": "Fainting"
+    },
+    {
+      "at": 70.42,
+      "end": 72.39,
+      "cue": "High exposure"
+    },
+    {
+      "at": 72.39,
+      "end": 74.68,
+      "cue": "Severe exposure can be fatal"
+    },
+    {
+      "at": 74.68,
+      "end": 77.01,
+      "cue": "Never sleep with burning coals indoors"
+    },
+    {
+      "at": 77.01,
+      "end": 79.52,
+      "cue": "Do not go to sleep"
+    },
+    {
+      "at": 79.52,
+      "end": 82,
+      "cue": "Keep burning coals out"
+    },
+    {
+      "at": 82,
+      "end": 85.08,
+      "cue": "A fan does not get rid of CO"
+    },
+    {
+      "at": 85.08,
+      "end": 88.06,
+      "cue": "Incorrect heating can be fatal"
+    },
+    {
+      "at": 88.06,
+      "end": 91.010563,
+      "cue": "Final warning"
+    }
+  ]
+}

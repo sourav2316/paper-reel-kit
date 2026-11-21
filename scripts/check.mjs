@@ -33,7 +33,10 @@ scenes.forEach((s, i) => {
       key.w <= 0 || (i > 0 && key.at <= keys[i - 1].at) || (key.opacity !== undefined && (key.opacity < 0 || key.opacity > 1)))) {
       errors.push(`scene ${s.id}: invalid layer keyframes`);
     }
-    if (l.type === "action") {
+    if (l.type === "angithi-world") {
+      if (!["street","room","door","window","case","chemistry","breath","blood","symptoms","severity","safety"].includes(l.mode) || !Object.keys(l.art ?? {}).length || !Object.values(l.cues ?? {}).every(Number.isFinite))
+        errors.push(`scene ${s.id}: invalid Angithi diorama or cue`);
+    } else if (l.type === "action") {
       if (!["torch","powder","radar","breath","flame","depth","radio","rotor"].includes(l.kind)) errors.push(`scene ${s.id}: unknown action "${l.kind}"`);
     } else if (l.type === "ribbon-cutout") {
       if (!l.src || !(l.ratio > 0) || (l.amplitude !== undefined && (!(l.amplitude >= 0) || l.amplitude > 8))) errors.push(`scene ${s.id}: invalid ribbon cutout`);

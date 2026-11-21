@@ -1,0 +1,3556 @@
+{
+  "title": "Angithi — the danger you cannot see",
+  "audio": "vo.mp3",
+  "audioVolume": 1,
+  "musicVolume": 0.08,
+  "endPadding": 1,
+  "paperCreases": false,
+  "scenes": [
+    {
+      "id": "street-01",
+      "start": 0,
+      "end": 3.17,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1,
+            "x": 0.5,
+            "y": 0.51
+          },
+          {
+            "at": 3.17,
+            "zoom": 2.1,
+            "x": 0.529,
+            "y": 0.475
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 0.035,
+          "bigAt": 0.16,
+          "small": "OUTSIDE",
+          "big": "BITTER COLD",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "street",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "street": "assets/street.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "room-02",
+      "start": 3.17,
+      "end": 5.56,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.46,
+      "transitionAperture": true,
+      "transitionFocus": {
+        "x": 0.48,
+        "y": 0.49
+      },
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.42,
+            "x": 0.44,
+            "y": 0.38
+          },
+          {
+            "at": 0.61,
+            "zoom": 1.47,
+            "x": 0.48,
+            "y": 0.49
+          },
+          {
+            "at": 2.3899999999999997,
+            "zoom": 2.02,
+            "x": 0.486,
+            "y": 0.735
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 3.205,
+          "bigAt": 3.33,
+          "small": "INSIDE THE ROOM",
+          "big": "ANGITHI",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "room",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "room-03",
+      "start": 5.56,
+      "end": 7.12,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 2.02,
+            "x": 0.486,
+            "y": 0.735
+          },
+          {
+            "at": 1.5600000000000005,
+            "zoom": 1.41,
+            "x": 0.482,
+            "y": 0.553
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 5.595,
+          "bigAt": 5.72,
+          "small": "WARM AND QUIET",
+          "big": "ASLEEP",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "room",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "door-04",
+      "start": 7.12,
+      "end": 9.01,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1,
+            "x": 0.51,
+            "y": 0.53
+          },
+          {
+            "at": 1.8899999999999997,
+            "zoom": 1.08,
+            "x": 0.58,
+            "y": 0.54
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 7.155,
+          "bigAt": 7.28,
+          "small": "TO KEEP THE HEAT IN",
+          "big": "DOOR SHUT",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "door",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "closure": "assets/closure.jpg",
+            "doorActor": "assets/door-actor.png",
+            "windowView": "assets/window-view.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "window-05",
+      "start": 9.01,
+      "end": 10.8,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.06,
+            "x": 0.51,
+            "y": 0.53
+          },
+          {
+            "at": 1.790000000000001,
+            "zoom": 1.1,
+            "x": 0.49,
+            "y": 0.53
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 9.045,
+          "bigAt": 9.17,
+          "small": "THE WINDOW TOO",
+          "big": "CLOSED",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "window",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "closure": "assets/closure.jpg",
+            "windowView": "assets/window-view.jpg",
+            "windowActor": "assets/window-actor.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "room-06",
+      "start": 10.8,
+      "end": 13.51,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.18,
+            "x": 0.5,
+            "y": 0.56
+          },
+          {
+            "at": 2.709999999999999,
+            "zoom": 1.32,
+            "x": 0.49,
+            "y": 0.66
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 10.835,
+          "bigAt": 10.96,
+          "small": "THIS SMALL CHOICE",
+          "big": "CAN BE DEADLY",
+          "bigColor": "red"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "room",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "room-07",
+      "start": 13.51,
+      "end": 15.65,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.32,
+            "x": 0.49,
+            "y": 0.66
+          },
+          {
+            "at": 2.1400000000000006,
+            "zoom": 1.36,
+            "x": 0.49,
+            "y": 0.654
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 13.545,
+          "bigAt": 13.67,
+          "small": "A CLOSED ROOM",
+          "big": "WITH LIVE COALS",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "room",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "room-08",
+      "start": 15.65,
+      "end": 17.35,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.36,
+            "x": 0.49,
+            "y": 0.654
+          },
+          {
+            "at": 1.700000000000001,
+            "zoom": 1.64,
+            "x": 0.43,
+            "y": 0.365
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 15.685,
+          "bigAt": 15.81,
+          "small": "IT SOUNDS SCARY",
+          "big": "IT HAPPENED",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "room",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "case-09",
+      "start": 17.35,
+      "end": 18.86,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.46,
+      "transitionAperture": true,
+      "transitionFocus": {
+        "x": 0.49,
+        "y": 0.45
+      },
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1,
+            "x": 0.5,
+            "y": 0.54
+          },
+          {
+            "at": 1.509999999999998,
+            "zoom": 1.14,
+            "x": 0.51,
+            "y": 0.55
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 17.385,
+          "bigAt": 17.51,
+          "small": "A REAL INCIDENT",
+          "big": "NORTH DELHI",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "case",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "street": "assets/street.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "case-10",
+      "start": 18.86,
+      "end": 20.53,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.14,
+            "x": 0.51,
+            "y": 0.55
+          },
+          {
+            "at": 1.6700000000000017,
+            "zoom": 1.3,
+            "x": 0.52,
+            "y": 0.5
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 18.895,
+          "bigAt": 19.02,
+          "small": "NORTH DELHI",
+          "big": "A WINTER NIGHT",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "case",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "street": "assets/street.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "case-11",
+      "start": 20.53,
+      "end": 22.14,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.3,
+            "x": 0.52,
+            "y": 0.5
+          },
+          {
+            "at": 1.6099999999999994,
+            "zoom": 1.16,
+            "x": 0.5,
+            "y": 0.55
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 20.565,
+          "bigAt": 20.69,
+          "small": "JANUARY 2024",
+          "big": "ALIPUR",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "case",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "street": "assets/street.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "case-12",
+      "start": 22.14,
+      "end": 23.65,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.16,
+            "x": 0.5,
+            "y": 0.55
+          },
+          {
+            "at": 1.509999999999998,
+            "zoom": 2.1,
+            "x": 0.53,
+            "y": 0.49
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 22.175,
+          "bigAt": 22.3,
+          "small": "ALIPUR",
+          "big": "THE FAMILY",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "case",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "street": "assets/street.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "room-13",
+      "start": 23.65,
+      "end": 25.22,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.46,
+      "transitionAperture": true,
+      "transitionFocus": {
+        "x": 0.48,
+        "y": 0.49
+      },
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.12,
+            "x": 0.5,
+            "y": 0.52
+          },
+          {
+            "at": 1.5700000000000003,
+            "zoom": 1.55,
+            "x": 0.49,
+            "y": 0.557
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 23.685,
+          "bigAt": 23.81,
+          "small": "THE SAME ROOM",
+          "big": "FOUR ASLEEP",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "room",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "room-14",
+      "start": 25.22,
+      "end": 28,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.55,
+            "x": 0.49,
+            "y": 0.557
+          },
+          {
+            "at": 2.780000000000001,
+            "zoom": 1.96,
+            "x": 0.487,
+            "y": 0.738
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 25.255,
+          "bigAt": 25.38,
+          "small": "IN THE ROOM",
+          "big": "COALS STILL LIT",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "room",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "door-15",
+      "start": 28,
+      "end": 30.08,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.04,
+            "x": 0.55,
+            "y": 0.53
+          },
+          {
+            "at": 2.0799999999999983,
+            "zoom": 1.1,
+            "x": 0.58,
+            "y": 0.55
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 28.035,
+          "bigAt": 28.16,
+          "small": "KEEPING WARM",
+          "big": "THE DOOR",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "door",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "closure": "assets/closure.jpg",
+            "doorActor": "assets/door-actor.png",
+            "windowView": "assets/window-view.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "window-16",
+      "start": 30.08,
+      "end": 32.59,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.09,
+            "x": 0.52,
+            "y": 0.53
+          },
+          {
+            "at": 2.510000000000005,
+            "zoom": 1.14,
+            "x": 0.49,
+            "y": 0.53
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 30.115,
+          "bigAt": 30.24,
+          "small": "KEEPING WARM",
+          "big": "THE WINDOW",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "window",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "closure": "assets/closure.jpg",
+            "windowView": "assets/window-view.jpg",
+            "windowActor": "assets/window-actor.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "room-17",
+      "start": 32.59,
+      "end": 33.98,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.25,
+            "x": 0.46,
+            "y": 0.42
+          },
+          {
+            "at": 1.3899999999999935,
+            "zoom": 1.33,
+            "x": 0.49,
+            "y": 0.53
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 32.625,
+          "bigAt": 32.75,
+          "small": "THE NEXT",
+          "big": "MORNING",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "room",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "room-18",
+      "start": 33.98,
+      "end": 35.63,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.33,
+            "x": 0.49,
+            "y": 0.53
+          },
+          {
+            "at": 1.6500000000000057,
+            "zoom": 1.36,
+            "x": 0.49,
+            "y": 0.56
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 34.01499999999999,
+          "bigAt": 34.13999999999999,
+          "small": "THE NEXT MORNING",
+          "big": "FOUR LIVES LOST",
+          "bigColor": "red"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "room",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "room-19",
+      "start": 35.63,
+      "end": 38.83,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.36,
+            "x": 0.49,
+            "y": 0.56
+          },
+          {
+            "at": 3.1999999999999957,
+            "zoom": 2.15,
+            "x": 0.489,
+            "y": 0.733
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 35.665,
+          "bigAt": 35.79,
+          "small": "HOW CAN A SMALL",
+          "big": "ANGITHI KILL?",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "room",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "chemistry-20",
+      "start": 38.83,
+      "end": 41.12,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.46,
+      "transitionAperture": true,
+      "transitionFocus": {
+        "x": 0.49,
+        "y": 0.57
+      },
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.32,
+            "x": 0.5,
+            "y": 0.65
+          },
+          {
+            "at": 2.289999999999999,
+            "zoom": 1,
+            "x": 0.5,
+            "y": 0.54
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 38.864999999999995,
+          "bigAt": 38.989999999999995,
+          "small": "WHEN FUEL BURNS",
+          "big": "COAL OR WOOD",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "chemistry",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "chemistry-21",
+      "start": 41.12,
+      "end": 43.82,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1,
+            "x": 0.5,
+            "y": 0.54
+          },
+          {
+            "at": 2.700000000000003,
+            "zoom": 1.57,
+            "x": 0.5,
+            "y": 0.66
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 41.154999999999994,
+          "bigAt": 41.279999999999994,
+          "small": "GLOWING",
+          "big": "EMBERS",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "chemistry",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "chemistry-22",
+      "start": 43.82,
+      "end": 46.06,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.57,
+            "x": 0.5,
+            "y": 0.66
+          },
+          {
+            "at": 2.240000000000002,
+            "zoom": 1.32,
+            "x": 0.53,
+            "y": 0.53
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 43.855,
+          "bigAt": 43.98,
+          "small": "A TOXIC GAS",
+          "big": "CARBON MONOXIDE",
+          "bigColor": "red"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "chemistry",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "chemistry-23",
+      "start": 46.06,
+      "end": 48.13,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.32,
+            "x": 0.53,
+            "y": 0.53
+          },
+          {
+            "at": 2.0700000000000003,
+            "zoom": 1.63,
+            "x": 0.51,
+            "y": 0.405
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 46.095,
+          "bigAt": 46.22,
+          "small": "A TOXIC GAS",
+          "big": "CARBON MONOXIDE",
+          "bigColor": "red"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "chemistry",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "chemistry-24",
+      "start": 48.13,
+      "end": 49.96,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.63,
+            "x": 0.51,
+            "y": 0.405
+          },
+          {
+            "at": 1.8299999999999983,
+            "zoom": 1.12,
+            "x": 0.5,
+            "y": 0.46
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 48.165,
+          "bigAt": 48.29,
+          "small": "THE HIDDEN DANGER",
+          "big": "HARD TO DETECT",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "chemistry",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "chemistry-25",
+      "start": 49.96,
+      "end": 51.93,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.12,
+            "x": 0.5,
+            "y": 0.46
+          },
+          {
+            "at": 1.9699999999999989,
+            "zoom": 1.14,
+            "x": 0.5,
+            "y": 0.47
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 49.995,
+          "bigAt": 50.12,
+          "small": "YOU CANNOT SEE IT",
+          "big": "NO COLOR",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "chemistry",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "chemistry-26",
+      "start": 51.93,
+      "end": 54,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.14,
+            "x": 0.5,
+            "y": 0.47
+          },
+          {
+            "at": 2.0700000000000003,
+            "zoom": 1.17,
+            "x": 0.5,
+            "y": 0.48
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 51.964999999999996,
+          "bigAt": 52.089999999999996,
+          "small": "YOU CANNOT SMELL IT",
+          "big": "NO ODOR",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "chemistry",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "breath-27",
+      "start": 54,
+      "end": 56.68,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.46,
+      "transitionAperture": true,
+      "transitionFocus": {
+        "x": 0.62,
+        "y": 0.46
+      },
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.05,
+            "x": 0.57,
+            "y": 0.51
+          },
+          {
+            "at": 2.6799999999999997,
+            "zoom": 1.27,
+            "x": 0.55,
+            "y": 0.44
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 54.035,
+          "bigAt": 54.16,
+          "small": "WITH EACH BREATH",
+          "big": "CO GETS IN",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "breath",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "room": "assets/room.jpg",
+            "lungs": "/projects/hair-nails-after-death/assets/lungs-real.png",
+            "breathBody": "assets/breath-body.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "breath-28",
+      "start": 56.68,
+      "end": 58.48,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.27,
+            "x": 0.55,
+            "y": 0.44
+          },
+          {
+            "at": 1.7999999999999972,
+            "zoom": 1.36,
+            "x": 0.54,
+            "y": 0.566
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 56.714999999999996,
+          "bigAt": 56.839999999999996,
+          "small": "WITH EACH BREATH",
+          "big": "DOWN THE AIRWAY",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "breath",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "room": "assets/room.jpg",
+            "lungs": "/projects/hair-nails-after-death/assets/lungs-real.png",
+            "breathBody": "assets/breath-body.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "breath-29",
+      "start": 58.48,
+      "end": 60.38,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.36,
+            "x": 0.54,
+            "y": 0.566
+          },
+          {
+            "at": 1.9000000000000057,
+            "zoom": 1.4,
+            "x": 0.52,
+            "y": 0.633
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 58.51499999999999,
+          "bigAt": 58.63999999999999,
+          "small": "INSIDE THE CHEST",
+          "big": "INTO THE LUNGS",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "breath",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "room": "assets/room.jpg",
+            "lungs": "/projects/hair-nails-after-death/assets/lungs-real.png",
+            "breathBody": "assets/breath-body.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "blood-30",
+      "start": 60.38,
+      "end": 62.68,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.46,
+      "transitionAperture": true,
+      "transitionFocus": {
+        "x": 0.5,
+        "y": 0.58
+      },
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.13,
+            "x": 0.5,
+            "y": 0.52
+          },
+          {
+            "at": 2.299999999999997,
+            "zoom": 1.04,
+            "x": 0.5,
+            "y": 0.51
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 60.415,
+          "bigAt": 60.54,
+          "small": "IN THE BLOOD",
+          "big": "LESS OXYGEN",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "blood",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "cells": "/projects/hair-nails-after-death/assets/cell-world.jpg",
+            "redCell": "/projects/pimple-danger-triangle/assets/red-cell.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "blood-31",
+      "start": 62.68,
+      "end": 64.91,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.04,
+            "x": 0.5,
+            "y": 0.51
+          },
+          {
+            "at": 2.229999999999997,
+            "zoom": 1.22,
+            "x": 0.5,
+            "y": 0.57
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 62.714999999999996,
+          "bigAt": 62.839999999999996,
+          "small": "OXYGEN DELIVERY",
+          "big": "DROPS",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "blood",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "cells": "/projects/hair-nails-after-death/assets/cell-world.jpg",
+            "redCell": "/projects/pimple-danger-triangle/assets/red-cell.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "symptoms-32",
+      "start": 64.91,
+      "end": 66.6,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.46,
+      "transitionAperture": true,
+      "transitionFocus": {
+        "x": 0.51,
+        "y": 0.52
+      },
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.16,
+            "x": 0.52,
+            "y": 0.54
+          },
+          {
+            "at": 1.6899999999999977,
+            "zoom": 1.22,
+            "x": 0.52,
+            "y": 0.54
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 64.945,
+          "bigAt": 65.07,
+          "small": "THE FIRST SIGNS",
+          "big": "HEADACHE",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "symptoms",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "symptomRoom": "assets/symptom-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "symptoms-33",
+      "start": 66.6,
+      "end": 67.39,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.22,
+            "x": 0.52,
+            "y": 0.54
+          },
+          {
+            "at": 0.7900000000000063,
+            "zoom": 1.31,
+            "x": 0.51,
+            "y": 0.51
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 66.63499999999999,
+          "bigAt": 66.75999999999999,
+          "small": "THEN",
+          "big": "DIZZINESS",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "symptoms",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "symptomRoom": "assets/symptom-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "symptoms-34",
+      "start": 67.39,
+      "end": 68.84,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.31,
+            "x": 0.51,
+            "y": 0.51
+          },
+          {
+            "at": 1.4500000000000028,
+            "zoom": 1.71,
+            "x": 0.37,
+            "y": 0.62
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 67.425,
+          "bigAt": 67.55,
+          "small": "AS IT GETS WORSE",
+          "big": "WEAKNESS",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "symptoms",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "symptomRoom": "assets/symptom-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "symptoms-35",
+      "start": 68.84,
+      "end": 70.42,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.71,
+            "x": 0.37,
+            "y": 0.62
+          },
+          {
+            "at": 1.5799999999999983,
+            "zoom": 1.31,
+            "x": 0.52,
+            "y": 0.54
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 68.875,
+          "bigAt": 69,
+          "small": "AS IT GETS WORSE",
+          "big": "FAINTING",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "symptoms",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "symptomRoom": "assets/symptom-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "severity-36",
+      "start": 70.42,
+      "end": 72.39,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.16,
+            "x": 0.52,
+            "y": 0.55
+          },
+          {
+            "at": 1.9699999999999989,
+            "zoom": 1.12,
+            "x": 0.51,
+            "y": 0.55
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 70.455,
+          "bigAt": 70.58,
+          "small": "AT HIGH EXPOSURE",
+          "big": "SERIOUS DANGER",
+          "bigColor": "red"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "severity",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "symptomRoom": "assets/symptom-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "severity-37",
+      "start": 72.39,
+      "end": 74.68,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.12,
+            "x": 0.51,
+            "y": 0.55
+          },
+          {
+            "at": 2.2900000000000063,
+            "zoom": 1.24,
+            "x": 0.51,
+            "y": 0.57
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 72.425,
+          "bigAt": 72.55,
+          "small": "AT HIGH EXPOSURE",
+          "big": "IT CAN KILL",
+          "bigColor": "red"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "severity",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "symptomRoom": "assets/symptom-room.jpg"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "safety-38",
+      "start": 74.68,
+      "end": 77.01,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "travel",
+      "transitionDuration": 0.46,
+      "transitionAperture": true,
+      "transitionFocus": {
+        "x": 0.52,
+        "y": 0.58
+      },
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.14,
+            "x": 0.5,
+            "y": 0.53
+          },
+          {
+            "at": 2.3299999999999983,
+            "zoom": 1.49,
+            "x": 0.482,
+            "y": 0.69
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 74.715,
+          "bigAt": 74.84,
+          "small": "WINTER SAFETY",
+          "big": "KEEP COALS OUT",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "safety",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg",
+            "fanBlade": "assets/fan-blade.png",
+            "fanMotor": "assets/fan-motor.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "safety-39",
+      "start": 77.01,
+      "end": 79.52,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.49,
+            "x": 0.482,
+            "y": 0.69
+          },
+          {
+            "at": 2.509999999999991,
+            "zoom": 1.24,
+            "x": 0.49,
+            "y": 0.52
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 77.045,
+          "bigAt": 77.17,
+          "small": "IN A CLOSED ROOM",
+          "big": "DO NOT SLEEP",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "safety",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg",
+            "fanBlade": "assets/fan-blade.png",
+            "fanMotor": "assets/fan-motor.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "safety-40",
+      "start": 79.52,
+      "end": 82,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.24,
+            "x": 0.49,
+            "y": 0.52
+          },
+          {
+            "at": 2.480000000000004,
+            "zoom": 1.39,
+            "x": 0.49,
+            "y": 0.69
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 79.55499999999999,
+          "bigAt": 79.67999999999999,
+          "small": "BURNING CHARCOAL",
+          "big": "KEEP IT OUTSIDE",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "safety",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg",
+            "fanBlade": "assets/fan-blade.png",
+            "fanMotor": "assets/fan-motor.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "safety-41",
+      "start": 82,
+      "end": 85.08,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.39,
+            "x": 0.49,
+            "y": 0.69
+          },
+          {
+            "at": 3.0799999999999983,
+            "zoom": 1.13,
+            "x": 0.49,
+            "y": 0.38
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 82.035,
+          "bigAt": 82.16,
+          "small": "A FAN ONLY",
+          "big": "MOVES THE AIR",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "safety",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg",
+            "fanBlade": "assets/fan-blade.png",
+            "fanMotor": "assets/fan-motor.png"
+          }
+        },
+        {
+          "type": "text",
+          "text": "A FAN DOES NOT REMOVE CO",
+          "x": 0.5,
+          "y": 0.81,
+          "w": 0.82,
+          "size": 37,
+          "color": "#f1deb6",
+          "backplate": true,
+          "screenSpace": true,
+          "enter": "slide-up"
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "safety-42",
+      "start": 85.08,
+      "end": 88.06,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.13,
+            "x": 0.49,
+            "y": 0.38
+          },
+          {
+            "at": 2.980000000000004,
+            "zoom": 1.11,
+            "x": 0.5,
+            "y": 0.54
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 85.115,
+          "bigAt": 85.24,
+          "small": "STAY WARM SAFELY",
+          "big": "KEEP IT OUTSIDE",
+          "bigColor": "red"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "safety",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg",
+            "fanBlade": "assets/fan-blade.png",
+            "fanMotor": "assets/fan-motor.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    },
+    {
+      "id": "safety-43",
+      "start": 88.06,
+      "end": 91.010563,
+      "dark": true,
+      "set": {
+        "builtin": "layered-paper-stage"
+      },
+      "transitionIn": "cut",
+      "camera": {
+        "keyframes": [
+          {
+            "at": 0,
+            "zoom": 1.11,
+            "x": 0.5,
+            "y": 0.54
+          },
+          {
+            "at": 2.9505630000000025,
+            "zoom": 1.28,
+            "x": 0.49,
+            "y": 0.645
+          }
+        ]
+      },
+      "headlines": [
+        {
+          "at": 88.095,
+          "bigAt": 88.22,
+          "small": "WINTER SAFETY",
+          "big": "KEEP IT OUTSIDE",
+          "bigColor": "mustard"
+        }
+      ],
+      "layers": [
+        {
+          "type": "angithi-world",
+          "mode": "safety",
+          "cues": {
+            "sleep": 5.56,
+            "seal": 8.04,
+            "case": 17.35,
+            "family": 23.66,
+            "locked": 28.39,
+            "morning": 32.62,
+            "question": 38.85,
+            "locate": 18.86,
+            "alipur": 20.53,
+            "approach": 22.14,
+            "co": 44.02,
+            "invisible": 49.96,
+            "noOdor": 51.93,
+            "airway": 56.68,
+            "blood": 60.39,
+            "dizzy": 66.6,
+            "weak": 67.39,
+            "faint": 68.84,
+            "high": 70.42,
+            "severe": 72.39,
+            "fan": 82,
+            "last": 85.1
+          },
+          "art": {
+            "windowView": "assets/window-view.jpg",
+            "room": "assets/room.jpg",
+            "coal": "assets/coal.png",
+            "familyRoom": "assets/family-room.jpg",
+            "fanBlade": "assets/fan-blade.png",
+            "fanMotor": "assets/fan-motor.png"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/brand.png",
+          "x": 0.914,
+          "y": 0.901,
+          "w": 0.083,
+          "screenSpace": true,
+          "shadow": false,
+          "opacity": 0.8,
+          "enter": "none"
+        }
+      ]
+    }
+  ]
+}

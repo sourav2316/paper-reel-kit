@@ -93,6 +93,7 @@ export type Scene = {
   camera?: Camera;
   transitionIn?: Transition;     // how this scene arrives (default "blur")
   transitionFocus?: { x: number; y: number }; // screen position for the travel transition
+  transitionAperture?: boolean;  // open the shot around the shared point during travel
   transitionDuration?: number;   // seconds, default 0.6 (scan 0.9)
   caption?: string;              // tiny mono caption top-right, e.g. "GRAY'S ANATOMY, 1918"
   dark?: boolean;                // light text + light rule (auto for anatomy/night-city)
@@ -125,6 +126,7 @@ export type Base = {
 };
 
 export type Layer = Base & (
+  | ({type: "angithi-world"} & Omit<import('../components/AngithiWorld').AngithiWorldProps, "time">)
   | { type: "action"; kind: ActionKind }
   | { type: "ribbon-cutout"; src: string; ratio: number; amplitude?: number; rooted?: boolean }
   | { type: "paper-diagram"; kind: PaperDiagramKind; mode?: string; value?: number }

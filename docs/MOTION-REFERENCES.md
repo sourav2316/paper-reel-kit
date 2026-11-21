@@ -27,3 +27,18 @@ Use the storyboards and their referenced assets in `public/projects/` as the sou
 | 0:13 and 0:23 | Bring the study into frame on its spoken cue. Let the magnified plaque visual take over before the camera leaves the tooth. |
 | 0:38–0:41 | Keep the kitchen camera framing through the incoming mouth plate and carry the same bite across. The camera holds or continues forward while the new plate resolves. Sugar particles appear inside the mouth. |
 | 1:37 and 1:41 | Follow the ink with the measured nib, and attach the water column and basin splash to their on-screen contact points. |
+
+## Angithi V2
+
+[Approved storyboard](../public/projects/angithi/storyboard.json) and [narration cue sheet](../public/projects/angithi/shotlist.md). The 43-shot review was approved on 21 November 2026. Most beats last two to three seconds. Each change in narration has a visible action or a new camera target.
+
+| Cue | What to reuse |
+| --- | --- |
+| 0:07–0:11 and 0:28–0:33 | Block the full actor on a clear floor beside the furniture. Keep the reaching hand on the moving handle and pivot the panel and sash on their real hinges. Carry the closed door into the next shot. Let the curtain settle as the draft stops. |
+| 0:17–0:24 | Give the location reveal separate actions. Pick out the house, bring in the dated card, then clear it so the camera can move through the lit window. |
+| 0:33–0:36 | Use one aligned family and bed plate. Anchor dawn light and divided shadows to the window and dim the remaining coals. |
+| 0:44–1:05 | Let the camera pick out a specific particle. Reveal colorless and odorless on their own spoken cues, then hand focus from nose to airway, expanding lungs and blood. Keep schematic markers distinct from the room air. |
+| 1:05–1:14 | Reframe from the head to the hand braced on the bed. Use the next action to advance the symptom sequence. |
+| 1:17–1:28 | Keep actors and furniture in perspective with visible contact. Build the fan from a fixed mount and turning blades, ramp the speed and tie the curtain response to the airflow. |
+
+Before the full review, check approach, contact, movement, release and the camera handoff in short rendered excerpts. Keep object, actor and background motion on separate controls. Change what the viewer sees or learns on the next narration beat.

@@ -1,0 +1,9 @@
+{
+  "channelName": "Somehow Sourav",
+  "branding": "assets/brand.png",
+  "language": "Hindi",
+  "voice": "User-supplied Angithi.mp3.mpeg",
+  "status": "v2-demo-approved",
+  "demo": "out/angithi-v2-demo.mp4 — 540x960 at 30 fps",
+  "final": "1080x1920 60 fps pending review"
+}

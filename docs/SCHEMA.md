@@ -172,3 +172,7 @@ An articulated part can emit moving particles from a local `trail` with a `tip` 
 
 A written-card layer accepts a measured handTip [x, y] in normalized sprite coordinates. With an explicit nib anchor, the pen also lifts during travel between ink strokes.
 A water-flow layer takes normalized source and target pairs for the faucet outlet and basin impact, plus an optional width in composition pixels. The stream, splash and ripples follow that same world-space placement.
+
+### Angithi scene layers
+
+The Angithi V2 storyboard uses a full-stage `angithi-world` layer with a scene `mode`, an `art` map of asset paths and absolute voiceover `cues`. The closure points and camera poses are calibrated to its assets. A `travel` transition with `transitionAperture: true` reveals the incoming scene around the shared `transitionFocus` point in screen coordinates.

@@ -23,6 +23,7 @@ import { WaterFlow } from "../components/WaterFlow";
 import { SceneTrace } from "../components/SceneTrace";
 import { ArticulatedCutout } from "../components/ArticulatedCutout";
 import { ActionEffect } from "../components/ActionEffect";
+import { AngithiWorld } from "../components/AngithiWorld";
 import type { HandLink } from "../components/HandDraw";
 
 export const resolvePath = (base: string, p: string) => (p.startsWith("/") ? p.slice(1) : `${base}/${p}`);
@@ -41,6 +42,7 @@ export const LayerView: React.FC<{ layer: Layer; t: number; sceneStart: number; 
   if (t < at - 0.001) return null;
   if (layer.out !== undefined && t >= layer.out + .3) return null;
   // full-frame effects don't need a box
+  if (layer.type === "angithi-world") return <div style={{position:"absolute",inset:0,zIndex:layer.z??0}}><AngithiWorld {...layer} art={Object.fromEntries(Object.entries(layer.art).map(([key,file])=>[key,resolvePath(ctx.base,file)]))} time={t}/></div>;
   if (layer.type === "birds") return <Birds count={layer.count} local={t - at} y={(layer.y ?? 0.25) * H} />;
   if (layer.type === "rain") return <Rain />;
   if (layer.type === "water-flow") return <div style={{ position: "absolute", inset: 0, zIndex: layer.z ?? index + 1, opacity: layer.opacity ?? 1 }}>
